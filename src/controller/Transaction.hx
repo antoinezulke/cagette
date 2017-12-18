@@ -31,8 +31,8 @@ class Transaction extends controller.Controller
 		for ( t in db.Operation.getPaymentTypes(app.user.amap) ) data.push({label:t.name,value:t.type});
 		f.addElement(new sugoi.form.elements.StringSelect("Mtype", t._("Payment type"), data, null, true));
 		
-		//unpaid orders
-		var unpaid = db.Operation.manager.search($user == user && $group == app.user.amap && $type != Payment && $pending == true);
+		//related operation
+		var unpaid = db.Operation.manager.search($user == user && $group == app.user.amap && $type != Payment ,{limit:20,orderBy:-date});
 		var data = unpaid.map(function(x) return {label:x.name, value:x.id}).array();
 		f.addElement(new sugoi.form.elements.IntSelect("unpaid", t._("As a payment for :"), data, null, false));
 		
@@ -52,7 +52,6 @@ class Transaction extends controller.Controller
 					t2.lock();
 					t2.pending = false;
 					t2.update();
-					
 				}
 			}
 			
@@ -72,7 +71,9 @@ class Transaction extends controller.Controller
 	@tpl('form.mtt')
 	public function doEdit(op:db.Operation){
 		
-		if (!app.user.canAccessMembership() || op.group.id != app.user.amap.id ) throw Error("/member/payments/" + op.user.id, t._("Action forbidden"));		
+		if (!app.user.canAccessMembership() || op.group.id != app.user.amap.id ) {
+			throw Error("/member/payments/" + op.user.id, t._("Action forbidden"));		
+		}
 		
 		op.lock();
 		
@@ -81,10 +82,28 @@ class Transaction extends controller.Controller
 		f.addElement(new sugoi.form.elements.FloatInput("amount", t._("Amount"), op.amount, true));
 		f.addElement(new sugoi.form.elements.DatePicker("date", t._("Date"), op.date, true));
 		//f.addElement(new sugoi.form.elements.DatePicker("pending", t._("Confirmed"), !op.pending, true));
+		//related operation
+		var unpaid = db.Operation.manager.search( $user == op.user && $group == op.group && $type != Payment ,{limit:20,orderBy:-date});
+		var data = unpaid.map(function(x) return {label:x.name, value:x.id}).array();
+		if (op.relation != null) data.push({label:op.relation.name,value:op.relation.id});
+		f.addElement(new sugoi.form.elements.IntSelect("unpaid", t._("As a payment for :"), data, op.relation!=null ? op.relation.id : null, false));
+		
 		
 		if (f.isValid()){
 			f.toSpod(op);
 			op.pending = false;
+			
+			if (f.getValueOf("unpaid") != null){
+				var t2 = db.Operation.manager.get(f.getValueOf("unpaid"));
+				op.relation = t2;
+				if (t2.amount + op.amount == 0) {
+					op.pending = false;
+					t2.lock();
+					t2.pending = false;
+					t2.update();
+				}
+			}
+			
 			op.update();
 			throw Ok("/member/payments/" + op.user.id, t._("Operation updated"));
 		}
@@ -126,6 +145,7 @@ class Transaction extends controller.Controller
 		//order in session
 		var tmpOrder : OrderInSession = app.session.data.order;	
 		if (tmpOrder == null) throw Redirect("/contract");
+		if (tmpOrder.products.length == 0) throw Error("/", t._("Your cart is empty"));
 		
 		//get a code
 		var d = db.Distribution.manager.get(tmpOrder.products[0].distributionId, false);		
@@ -143,10 +163,11 @@ class Transaction extends controller.Controller
 			
 			if (Lambda.array(ordersGrouped).length == 1){				
 				//all orders are for the same multidistrib
-				db.Operation.makePaymentOperation(app.user,app.user.amap, payment.Check.TYPE, tmpOrder.total, "Chèque pour commande du " + view.hDate(d.date)+" ("+code+")", ops[0] );		
+				var name = t._("Check for the order of ::date::", {date:view.hDate(d.date)}) + " ("+code+")";
+				db.Operation.makePaymentOperation(app.user,app.user.amap, payment.Check.TYPE, tmpOrder.total, name, ops[0] );		
 			}else{				
 				//orders are for multiple distribs : create one payment
-				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Check.TYPE, tmpOrder.total, "Chèque ("+code+")" );			
+				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Check.TYPE, tmpOrder.total, t._("Check") + " ("+code+")" );			
 			}
 			
 
@@ -164,6 +185,7 @@ class Transaction extends controller.Controller
 		//order in session
 		var tmpOrder : OrderInSession = app.session.data.order;	
 		if (tmpOrder == null) throw Redirect("/contract");
+		if (tmpOrder.products.length == 0) throw Error("/", t._("Your cart is empty"));
 		
 		//get a code
 		var d = db.Distribution.manager.get(tmpOrder.products[0].distributionId, false);		
@@ -181,10 +203,11 @@ class Transaction extends controller.Controller
 			
 			if (Lambda.array(ordersGrouped).length == 1){
 				//one multidistrib
-				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Transfer.TYPE, tmpOrder.total, "Virement pour commande du " + view.hDate(d.date)+" ("+code+")", ops[0] );
+				var name = t._("Transfer for the order of ::date::", {date:view.hDate(d.date)}) + " ("+code+")";
+				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Transfer.TYPE, tmpOrder.total, name, ops[0] );
 			}else{
 				//many distribs
-				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Transfer.TYPE, tmpOrder.total, "Paiement par virement ("+code+")");			
+				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Transfer.TYPE, tmpOrder.total, t._("Bank transfer")+" ("+code+")" );			
 			}
 			
 
@@ -202,6 +225,8 @@ class Transaction extends controller.Controller
 		//order in session
 		var tmpOrder : OrderInSession = app.session.data.order;		
 		if (tmpOrder == null) throw Redirect("/contract");
+		if (tmpOrder.products.length == 0) throw Error("/", t._("Your cart is empty"));
+		
 		view.amount = tmpOrder.total;
 		var d = db.Distribution.manager.get(tmpOrder.products[0].distributionId, false);	
 		
@@ -214,7 +239,8 @@ class Transaction extends controller.Controller
 			
 			if (Lambda.array(ordersGrouped).length == 1){
 				//same multidistrib
-				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Cash.TYPE, tmpOrder.total, t._("Cash for the order of the ") + view.hDate(d.date), ops[0] );										
+				var name = t._("Cash for the order of ::date::", {date:view.hDate(d.date)});				
+				db.Operation.makePaymentOperation(app.user,app.user.amap,payment.Cash.TYPE, tmpOrder.total, name , ops[0] );										
 			}else{				
 				//various distribs
 				db.Operation.makePaymentOperation(app.user, app.user.amap, payment.Cash.TYPE, tmpOrder.total, t._("Cash payment"));
