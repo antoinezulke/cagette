@@ -1,7 +1,6 @@
 package controller;
 import db.UserContract;
 import sugoi.form.Form;
-import haxe.crypto.Md5;
 
 class Amap extends Controller
 {
