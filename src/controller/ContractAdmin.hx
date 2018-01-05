@@ -58,11 +58,11 @@ class ContractAdmin extends Controller
 		checkToken();
 		
 
-		//multidistribs to validate
+		//Multidistribs to validate
 		if(app.user.isAmapManager() && app.user.amap.hasPayments()){
 			var cids = db.Contract.manager.search($amap == app.user.amap && $endDate > Date.now() && $type == db.Contract.TYPE_VARORDER,false).getIds();
-			var oneMonth = tools.DateTool.deltaDays(now, 0 - db.Distribution.DISTRIBUTION_VALIDATION_LIMIT );
-			var ds = db.Distribution.manager.search( !$validated && ($date > oneMonth) && ($date < now) && ($contractId in cids), {orderBy:date}, false);
+			//var oneMonth = tools.DateTool.deltaDays(now, 0 - db.Distribution.DISTRIBUTION_VALIDATION_LIMIT );
+			var ds = db.Distribution.manager.search( !$validated /*&& ($date > oneMonth)*/ && ($date < now) && ($contractId in cids), {orderBy:date}, false);
 			view.distribs = tools.ObjectListTool.deduplicateDistribsByKey( ds );
 		}else{
 			view.distribs = [];
@@ -972,7 +972,6 @@ class ContractAdmin extends Controller
 							if (user.id == user2.id) throw t._("Both selected accounts must be different ones");
 							
 							invert = app.params.get("invert" + pid) == "1";
-							
 						}
 						
 						//quantity
@@ -1005,7 +1004,6 @@ class ContractAdmin extends Controller
 				}else {
 					throw Ok("/contractAdmin/orders/" + c.id, t._("The order has been updated"));						
 				}
-				
 			}
 			view.userOrders = userOrders;
 		}

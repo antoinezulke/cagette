@@ -348,8 +348,13 @@ class UserContract extends Object
 		}
 		
 		if (newquantity == 0) {
-			order.delete();
-			return null;
+			order.quantity = 0;			
+			order.paid = true;
+			order.flags.set(OrderFlags.Canceled);
+			order.update();
+			//order.delete();			
+			//return null; //need to get an order object with zero qt to manage payment operations properly			
+			return order;
 		}else {
 			order.quantity = newquantity;
 			order.update();	
@@ -482,7 +487,8 @@ class UserContract extends Object
 	 * @param	distribKey "$date|$placeId"
 	 */
 	public static function getUserOrdersByMultiDistrib(distribKey:String, user:db.User,group:db.Amap):Array<db.UserContract>{	
-		var contracts = db.Contract.getActiveContracts(group);
+		//var contracts = db.Contract.getActiveContracts(group);
+		var contracts = db.Contract.manager.search($amap == group, false); //should be able to edit a contract which is closed
 		for ( c in Lambda.array(contracts)){
 			if (c.type == db.Contract.TYPE_CONSTORDERS){
 				contracts.remove(c); //only varying orders
@@ -499,7 +505,6 @@ class UserContract extends Object
 		}
 		
 		return out;
-		
 	}
 	
 	/**
