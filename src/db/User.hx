@@ -56,7 +56,7 @@ class User extends Object {
 		rights = sys.db.Types.SFlags.ofInt(0);
 		flags = sys.db.Types.SFlags.ofInt(0);
 		flags.set(HasEmailNotif24h);
-		lang = "fr";
+		lang = "de";
 		pass = "";
 		
 	}
@@ -490,8 +490,9 @@ class User extends Object {
 			email2:email2,
 			groupName:(group == null?null:group.name),			
 			name:firstName,
-			k:k 			
-		} );		
+			k:k,
+			appName:App.config.get("name")
+		} );
 		e.setHtmlBody(html);
 		
 		App.sendMail(e);	

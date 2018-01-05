@@ -24,3 +24,7 @@ MakeFile
 .haxelib
 html
 www/css/.sass-cache
+
+Makefile_template
+
+configprod\.xml

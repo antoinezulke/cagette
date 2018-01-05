@@ -331,6 +331,12 @@ Called from controller/Main.hx line 117
 		view.category = 'messages';
 		d.dispatch(new Messages());
 	}
+
+	@logged
+	function doLemonway(d:Dispatch) {
+		view.category = 'lemonway';
+		d.dispatch(new Lemonway());
+	}
 	
 	@logged
 	function doAmapadmin(d:Dispatch) {

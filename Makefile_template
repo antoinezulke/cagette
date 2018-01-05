@@ -1,5 +1,5 @@
 ROPTS=-zav --no-p --chmod=u=rwX,g=rX,o= --delete --exclude=www/.htaccess --exclude=.svn --exclude=.git --exclude=*.mtt --exclude=tpl/css --exclude=www/file --exclude=*node_modules* --exclude=*.php
-LANG=fr
+LANG=de
 
 compile:
 	haxe cagette.hxml
@@ -14,11 +14,11 @@ deploy:
 	@make LANG=fr deploy_site deploy_tpl
 
 deploy_site:
-	rsync $(ROPTS) www www-data@www.cagette.net:/data/cagette/
-	rsync $(ROPTS) data www-data@www.cagette.net:/data/cagette/
+	rsync $(ROPTS) www antoine@198.178.126.78:/home/antoine/lemilo/
+	rsync $(ROPTS) data antoine@198.178.126.78:/home/antoine/lemilo/
 
 deploy_tpl:
-	rsync $(ROPTS) lang/$(LANG) www-data@www.cagette.net:/data/cagette/lang/
+	rsync $(ROPTS) lang/$(LANG) antoine@198.178.126.78:/home/antoine/lemilo/lang/
 	
 
 	

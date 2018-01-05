@@ -41,19 +41,19 @@ class RegisterBox extends react.ReactComponentOfPropsAndState<RegisterBoxProps,R
 				<$Error error="${state.error}" />
 				<form action="" method="post" className="form-horizontal">
 					<div className="form-group">
-						<label htmlFor="firstName" className="col-sm-4 control-label">Prénom : </label>
+						<label htmlFor="firstName" className="col-sm-4 control-label">Vorname: </label>
 						<div className="col-sm-8">
 							<input id="firstName" type="text" name="firstName" value="${state.firstName}" className="form-control" onChange={onChange}/>					
 						</div>					
 					</div>
 					<div className="form-group">
-						<label htmlFor="lastName" className="col-sm-4 control-label">Nom : </label>
+						<label htmlFor="lastName" className="col-sm-4 control-label">Name: </label>
 						<div className="col-sm-8">
 							<input id="lastName" type="text" name="lastName" value="${state.lastName}" className="form-control" onChange={onChange}/>					
 						</div>					
 					</div>
 					<div className="form-group">
-						<label htmlFor="email" className="col-sm-4 control-label">Email : </label>
+						<label htmlFor="email" className="col-sm-4 control-label">Email: </label>
 						<div className="col-sm-8">
 							<input id="email"  type="text" className="form-control" name="email" value="${state.email}" onChange={onChange} />			
 						</div>
@@ -62,19 +62,19 @@ class RegisterBox extends react.ReactComponentOfPropsAndState<RegisterBoxProps,R
 					${phone}
 					
 					<div className="form-group">
-						<label htmlFor="password" className="col-sm-4 control-label">Mot de passe : </label>
+						<label htmlFor="password" className="col-sm-4 control-label">Passwort: </label>
 						<div className="col-sm-8">
 							<input id="password" type="password" name="password" value="${state.password}" className="form-control" onChange={onChange}/>					
 						</div>					
 					</div>
 					<p className="text-center">
-						<a onClick={submit} className="btn btn-primary btn-lg" ><span className="glyphicon glyphicon-chevron-right"></span> Inscription</a>
+						<a onClick={submit} className="btn btn-primary btn-lg" ><span className="glyphicon glyphicon-chevron-right"></span> Konto erstellen</a>
 					</p>
 				</form>
 				<hr/>
 				<p className="text-center">
-					<b>Déjà inscrit ? </b>
-					<a onClick={loginBox} className="btn btn-default"><span className="glyphicon glyphicon-user"></span> Connectez-vous ici</a>
+					<b>Haben Sie schon einen Konto?  </b>
+					<a onClick={loginBox} className="btn btn-default"><span className="glyphicon glyphicon-user"></span> Anmelden</a>
 				</p>
 			</div>
 			
@@ -102,7 +102,7 @@ class RegisterBox extends react.ReactComponentOfPropsAndState<RegisterBoxProps,R
 		var body = js.Browser.document.querySelector('#myModal .modal-body');
 		ReactDOM.unmountComponentAtNode( body );
 	
-		js.Browser.document.querySelector("#myModal .modal-title").innerHTML = "Connexion";
+		js.Browser.document.querySelector("#myModal .modal-title").innerHTML = "anmelden";
 		ReactDOM.render(jsx('<$LoginBox redirectUrl="${props.redirectUrl}" />'),  body );
 	}
 
@@ -110,27 +110,27 @@ class RegisterBox extends react.ReactComponentOfPropsAndState<RegisterBoxProps,R
 	public function submit(e:js.html.Event ){
 		
 		if (state.email == ""){
-			setError("Veuillez saisir votre email");
+			setError("Bitte Ihre Email eintippen");
 			return;
 		}
 		
 		if (state.password == ""){
-			setError("Veuillez saisir un mot de passe");
+			setError("Bitte Ihre Passwort eintippen");
 			return;
 		}
 		
 		if (state.firstName == ""){
-			setError("Veuillez saisir votre prénom");
+			setError("Bitte Ihre Vorname eintippen");
 			return;
 		}
 		
 		if (state.lastName == ""){
-			setError("Veuillez saisir votre nom de famille");
+			setError("Bitte Ihre Name eintippen");
 			return;
 		}
 		
 		if (state.phone == "" && props.phoneRequired){
-			setError("Veuillez saisir votre numéro de téléphone");
+			setError("Bitte Ihre Telefonnummer eintippen");
 			return;
 		}
 		

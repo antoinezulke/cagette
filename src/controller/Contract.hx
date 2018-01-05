@@ -160,6 +160,13 @@ class Contract extends Controller
 		view.category = 'contractadmin';
 		if (!app.user.isContractManager(c)) throw Error('/', t._("Forbidden action"));
 		
+		// //Add here some translation
+		// var out = new Map<String,String>();
+		// out.set("UsersCanOrder", "Members can key-in their orders online");
+		// out.set("StockManagement", "Stock management");
+		// out.set("PercentageOnOrders", "Add fees (%) to the order");
+		// App.t = sugoi.form.Form.translator = new sugoi.i18n.translator.TMap(out, "fr");
+
 		var currentContact = c.contact;
 		var form = Form.fromSpod(c);
 		form.removeElement( form.getElement("amapId") );

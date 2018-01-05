@@ -36,7 +36,7 @@ class Product extends Controller
 		for (k in app.user.amap.vatRates.keys()) {
 			data.push( { label:k, value:app.user.amap.vatRates[k] } );
 		}
-		f.addElement( new FloatSelect("vat", "TVA", data, d.vat ) );
+		f.addElement( new FloatSelect("vat", t._("VAT"), data, d.vat ) );
 
 		f.removeElementByName("contractId");
 		
@@ -45,7 +45,7 @@ class Product extends Controller
 		//f.addElement(new form.TxpProduct("txpProduct", "taxo",null,false) );
 		var txId = d.txpProduct == null ? "" : Std.string(d.txpProduct.id);
 		var html = '<div id="pInput"></div><script language="javascript">_.getProductInput("pInput","${d.name}","$txId","${f.name}");</script>';
-		f.addElement(new sugoi.form.elements.Html(html, 'Nom'),1);
+		f.addElement(new sugoi.form.elements.Html(html, t._("Name")),1);
 
 		if (f.isValid()) {
 			
@@ -87,11 +87,11 @@ class Product extends Controller
 		for (k in app.user.amap.vatRates.keys()) {
 			data.push( { value:app.user.amap.vatRates[k], label:k } );
 		}
-		f.addElement( new FloatSelect("vat", "TVA", data, d.vat ) );
+		f.addElement( new FloatSelect("vat", t._("VAT"), data, d.vat ) );
 		
 		var formName = f.name;
 		var html = '<div id="pInput"></div><script language="javascript">_.getProductInput("pInput","",null,"$formName");</script>';
-		f.addElement(new sugoi.form.elements.Html(html, 'Nom'),1);
+		f.addElement(new sugoi.form.elements.Html(html, t._("Name")),1);
 		
 		
 		if (f.isValid()) {

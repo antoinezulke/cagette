@@ -119,9 +119,11 @@
 			
 				<div class="col-md-3" >
 					<a href="http://www.cagette.net" target="_blank">
-						<img src="/img/logo.png" alt="::_("Cagette.net")::"/>
+						<!--<img src="/img/logo.png" alt="::_("Cagette.net")::"/>-->
+						<img src="/img/lemilo-logotype-baseline-blanc1.png" alt="::_("Cagette.net")::"/>
 					</a>  
 				</div>
+				<!--
 				<div class="col-md-3" >
 					::_("HELP")::
 					<ul>
@@ -136,11 +138,11 @@
 						</li>
 					</ul>
 					
-					<!--<p style="position: absolute;display: block;top: 96px;width: 700px;">
+					<p style="position: absolute;display: block;top: 96px;width: 700px;">
 						<b>::raw _("Vous êtes producteur ?")::</b>
 						::raw _("Découvrez nos formations gratuites pour utiliser <b>Cagette Pro</b> "):: 
 						&nbsp;&nbsp;<a href="http://alilo.fr/formations-producteurs" target="_blank" class="btn btn-xs btn-info">C'est parti !</a>
-					</p>-->
+					</p>
 					
 				</div>
 				<div class="col-md-3" >
@@ -164,14 +166,18 @@
 							<a href="https://www.youtube.com/channel/UC3cvGxAUrbN9oSZmr1oZEaw" target="_blank"> <i class="fa fa-youtube"></i></a> 						
 						</li>
 					</ul>
+				</div>-->
+
+				<div class="col-md-3" >
+					<a href="https://www.lemilo.de" target="_blank">::_("CONTACT US")::</a>
 				</div>
 			
 		</div>
-		
+		<!--
 		<div class="row" id="subfooter">
 			::raw _("Cagette.net is made by <a href='https://www.alilo.fr' target='_blank'><img src='/img/alilo-trans-black.png' /></a>")::<br/>
 			<span>version ::VERSION::-::getPlatform()::</span>
-		</div>
+		</div>-->
 		
 		<div class="row">
 			<div class="col-md-12">			

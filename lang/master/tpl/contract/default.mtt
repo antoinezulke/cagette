@@ -237,7 +237,7 @@
 	
 	<h3>::_("Language")::</h3>
 	<div class="article">
-		::_("Display the interface in another language"):: (beta)
+		::_("Display the interface in another language")::
 		:
 		<ul>
 

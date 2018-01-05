@@ -46,22 +46,22 @@ class LoginBox extends react.ReactComponentOfPropsAndState<LoginBoxProps,LoginBo
 					</div>
 				</div>
 				<div className="form-group">
-					<label htmlFor="password" className="col-sm-4 control-label">Mot de passe : </label>
+					<label htmlFor="password" className="col-sm-4 control-label">Passwort: </label>
 					<div className="col-sm-8">
 						<input id="password" type="password" name="password" value="${state.password}" className="form-control" required="1" onChange={onChange}/>					
 					</div>					
 				</div>
 				<p className="text-center">						
-					<a onClick={submit} className="btn btn-primary btn-lg" ><span className="glyphicon glyphicon-user"></span> S\'identifier</a>
+					<a onClick={submit} className="btn btn-primary btn-lg" ><span className="glyphicon glyphicon-user"></span> Anmelden</a>
 					<br/>
 					<br/>
-					<a href="/user/forgottenPassword">Mot de passe oublié ?</a>
+					<a href="/user/forgottenPassword">Passwort vergessen?</a>
 				</p>
 			</form>
 			<hr/>
 			<p className="text-center">
-				<b>C\'est votre première visite sur Cagette.net ?</b>&nbsp;&nbsp;
-				<a onClick={registerBox} className="btn btn-default"><span className="glyphicon glyphicon-chevron-right"></span> S\'inscrire</a>
+				<b>Kein Konto?  </b>
+				<a onClick={registerBox} className="btn btn-default"><span className="glyphicon glyphicon-chevron-right"></span> Konto erstellen</a>
 			</p>
 		</div>');
 	}
@@ -86,18 +86,18 @@ class LoginBox extends react.ReactComponentOfPropsAndState<LoginBoxProps,LoginBo
 		var body = js.Browser.document.querySelector('#myModal .modal-body');
 		ReactDOM.unmountComponentAtNode( body );
 	
-		js.Browser.document.querySelector("#myModal .modal-title").innerHTML = "Inscription";
+		js.Browser.document.querySelector("#myModal .modal-title").innerHTML = "Konto erstellen";
 		ReactDOM.render(jsx('<$RegisterBox redirectUrl="${props.redirectUrl}" />'),  body );
 	}
 	
 	public function submit(e:js.html.Event ){
 		
 		if (state.email == ""){
-			setError("Veuillez saisir votre email");
+			setError("Bitte Ihre Email eintippen");
 			return;
 		}
 		if (state.password == ""){
-			setError("Veuillez saisir votre mot de passe");
+			setError("Bitte Ihre Passwort eintippen");
 			return;
 		}
 		

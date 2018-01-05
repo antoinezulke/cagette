@@ -139,7 +139,7 @@ class App {
 	 */
 	public function loginBox(redirectUrl:String,?message:String) {
 		var m = App.j("#myModal");
-		m.find(".modal-title").html("S'identifier");
+		m.find(".modal-title").html("Anmelden");
 		m.find(".modal-dialog").removeClass("modal-lg");
 		untyped m.modal();
 		ReactDOM.render(jsx('<$LoginBox redirectUrl="$redirectUrl" message=$message/>'),  js.Browser.document.querySelector('#myModal .modal-body'));
@@ -148,7 +148,7 @@ class App {
 
 	public function registerBox(redirectUrl:String,?phoneRequired=false) {
 		var m = App.j("#myModal");
-		m.find(".modal-title").html("S'inscrire");
+		m.find(".modal-title").html("Konto erstellen");
 		m.find(".modal-dialog").removeClass("modal-lg");
 		untyped m.modal();
 		ReactDOM.render(jsx('<$RegisterBox redirectUrl="$redirectUrl" phoneRequired="$phoneRequired"/>'),  js.Browser.document.querySelector('#myModal .modal-body'));
