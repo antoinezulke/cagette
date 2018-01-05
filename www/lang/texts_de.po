@@ -15,25 +15,27 @@ msgstr ""
 
 #: src/service/UserService.hx:503
 msgid "There is no account with this email"
-msgstr ""
+msgstr "Es gibt kein Konto mit dieser Emailadresse"
 
 #: src/service/UserService.hx:636
 msgid ""
 "Your account have not been validated yet. We sent an e-mail to ::email:: to "
 "finalize your subscription!"
 msgstr ""
+"Dein Konto wurde noch nicht bestätigt. Du erhältst in Kürze eine E-Mail an ::"
+"email:: mit der Anleitung, wie Du Dein Account freischalten kannst!"
 
 #: src/service/UserService.hx:903
 msgid "Invalid password"
-msgstr ""
+msgstr "Ungültiges Passwort"
 
 #: src/service/UserService.hx:1455
 msgid "Invalid email address"
-msgstr ""
+msgstr "Ungültige Emailadresse"
 
 #: src/service/UserService.hx:1566
 msgid "We already have an account with this email address"
-msgstr ""
+msgstr "Es existiert bereits ein Konto mit dieser E-Mail-Adresse"
 
 #: src/App.hx:2430 src/db/User.hx:15434 lang/master/tpl/member/import.mtt:592
 #: lang/master/tpl/member/import.mtt:1320
@@ -207,7 +209,7 @@ msgstr "Menge"
 
 #: src/controller/Validate.hx:2084
 msgid "Means of payment"
-msgstr ""
+msgstr "Zahlungsart"
 
 #: src/controller/Validate.hx:2586
 msgid "Refund saved"
@@ -215,7 +217,7 @@ msgstr "Kostenerstattung gespeichert"
 
 #: src/controller/Validate.hx:2630
 msgid "Key-in a refund for ::user::"
-msgstr ""
+msgstr "Rückerstattung eingeben für ::user::"
 
 #: src/controller/Validate.hx:3044
 msgid "Additional payment"
@@ -251,7 +253,7 @@ msgstr "Bezahlung gespeichert"
 
 #: src/controller/Validate.hx:4011
 msgid "Key-in a payment for ::user::"
-msgstr ""
+msgstr "Erfassung der Bezahlung für ::user::"
 
 #: src/controller/Validate.hx:4627
 msgid "Order validated"
@@ -302,6 +304,8 @@ msgstr "Mitgliedschaftsanfrage gelöscht"
 #: src/controller/Messages.hx:2462
 msgid "An error occurred while sending emails, please retry"
 msgstr ""
+"Beim Versenden der Nachricht ist ein Fehler aufgetreten, bitte versuchen Sie "
+"es noch einmal"
 
 #: src/controller/Member.hx:5482
 msgid "Invitation sent."
@@ -340,7 +344,7 @@ msgstr ""
 
 #: src/controller/Member.hx:10483 src/controller/Member.hx:22588
 msgid "Phone number is required in this group."
-msgstr ""
+msgstr "In dieser Gruppe wird eine Telefonnr. benötigt."
 
 #: src/controller/Member.hx:11072
 msgid ""
@@ -410,7 +414,7 @@ msgstr " ist aus der Gruppe gelöscht worden"
 
 #: src/controller/Member.hx:13800
 msgid "This person does not belong to \"::amapname::\""
-msgstr "Diese Person gehört nicht zu \"::amapname::\""
+msgstr "Diese Person gehört nicht zu \\\"::amapname::\\\""
 
 #: src/controller/Member.hx:14106
 msgid "Merge an account with another one"
@@ -559,6 +563,9 @@ msgid ""
 "::admin:: just keyed-in contact details of a new member: <br/><strong>::"
 "newMember::</strong><br/> <a href='::url::'>See contact details</a>"
 msgstr ""
+"::admin:: hat die Kontaktdaten eines neuen Mitglieds aufgenommen: <br/"
+"><strong>::newMember::</strong><br/> <a href=‘::url::’>Kontaktdaten "
+"einsehen</a>"
 
 #: src/controller/Member.hx:23333 lang/master/tpl/member/default.mtt:2119
 msgid "New member"
@@ -571,6 +578,8 @@ msgstr "Diese Person ist jetzt ein Mitglied ihrer Gruppe"
 #: src/controller/Shop.hx:3845
 msgid "In order to confirm your order, You need to authenticate."
 msgstr ""
+"Um Ihre Bestellung zu bestätigen, müssen Sie sich identifizieren. Bitte "
+"geben Sie ihren Login ein."
 
 #: src/controller/Shop.hx:4274
 msgid "Your order is empty"
@@ -672,7 +681,7 @@ msgstr "Jean Martin EURL"
 
 #: src/controller/Install.hx:2413
 msgid "Vegetables Contract Example"
-msgstr ""
+msgstr "Angebot Beispiel Gemüse"
 
 #: src/controller/Install.hx:2780 src/controller/Group.hx:8266
 msgid "Big basket of vegetables"
@@ -766,7 +775,7 @@ msgstr "Herzlichen Glückwunsch ::userName::, ihre Konto wurde bestätigt!"
 
 #: src/controller/Product.hx:1032 src/controller/Product.hx:2569
 msgid "VAT"
-msgstr ""
+msgstr "MwSt"
 
 #: src/controller/Product.hx:1503 src/controller/Product.hx:2803
 #: src/db/Place.hx:1344 lang/master/tpl/product/import.mtt:1866
@@ -807,7 +816,6 @@ msgid "Product deleted"
 msgstr "Produkt löschen"
 
 #: src/controller/Product.hx:3746 src/controller/Contract.hx:8409
-#, fuzzy
 msgid "Token error"
 msgstr "Token Fehlermeldung"
 
@@ -840,7 +848,7 @@ msgid ""
 "your products"
 msgstr ""
 "Vorsicht, Sie haben das Management für Vorräte aktiviert. Bitte füllen Sie "
-"das Feld \"Vorrat\" aller ihrer Produkte aus"
+"das Feld \\\"Vorrat\\\" aller ihrer Produkte aus"
 
 #: src/controller/Contract.hx:5530
 msgid "The management of stock is not available for CSA contracts"
@@ -1033,7 +1041,7 @@ msgstr "Die Gruppe wurde aktualisiert."
 #: src/controller/Transaction.hx:364 src/controller/Transaction.hx:2358
 #: src/controller/Transaction.hx:3934
 msgid "Action forbidden"
-msgstr ""
+msgstr "Aktion nicht erlaubt"
 
 #: src/controller/Transaction.hx:1021
 msgid "Payment type"
@@ -1053,30 +1061,31 @@ msgstr "Erfassung der Bezahlung für ::user::"
 
 #: src/controller/Transaction.hx:2816
 msgid "Confirmed"
-msgstr ""
+msgstr "Bestätigt"
 
 #: src/controller/Transaction.hx:3711
 msgid "Operation updated"
-msgstr ""
+msgstr "Operation aktualisiert"
 
 #: src/controller/Transaction.hx:4346 src/controller/Transaction.hx:4758
 #: src/controller/Transaction.hx:6199 src/controller/Transaction.hx:7556
 msgid "Your cart is empty"
-msgstr ""
+msgstr "Keine Bestellungen vorhanden"
 
 #: src/controller/Transaction.hx:5357
 msgid "Check for the order of ::date::"
-msgstr ""
+msgstr "Überprüfe die Bestellung vom ::date::"
 
 #: src/controller/Transaction.hx:5799
+#, fuzzy
 msgid ""
 "Your payment by check has been saved. It will be validated by a coordinator "
 "at the delivery."
-msgstr ""
+msgstr "löschen"
 
 #: src/controller/Transaction.hx:6770
 msgid "Transfer for the order of ::date::"
-msgstr ""
+msgstr "Überweisung für die Bestellung am ::date::"
 
 #: src/controller/Transaction.hx:7102 src/payment/Transfer.hx:302
 msgid "Bank transfer"
@@ -1092,26 +1101,26 @@ msgstr ""
 
 #: src/controller/Transaction.hx:8026
 msgid "Cash for the order of ::date::"
-msgstr ""
+msgstr "Barbezahlung für die Bestellung vom ::date::"
 
 #: src/controller/Transaction.hx:8354
 msgid "Cash payment"
-msgstr "Bar bezahlen"
+msgstr "Barbezahlung"
 
 #: src/controller/Transaction.hx:8413
-#, fuzzy
 msgid "Your order is validated, you commited to pay in cash at the delivery."
 msgstr ""
 "Ihre Bestellung wurde bestätigt. Sie verpflichten sich zu einer Barzahlung "
 "bei Lieferung."
 
 #: src/controller/admin/Admin.hx:1802
+#, fuzzy
 msgid "Configuration updated"
-msgstr ""
+msgstr "Zusammenstellung aktualisiert"
 
 #: src/controller/admin/Admin.hx:1860
 msgid "Email service configuration"
-msgstr ""
+msgstr "Emailservice konfigurieren"
 
 #: src/controller/Group.hx:1021
 msgid "You are already in the waiting list of this group"
@@ -1145,7 +1154,7 @@ msgstr ""
 
 #: src/controller/Group.hx:2473
 msgid "Subscription to \"::groupeName::\" waiting list"
-msgstr "Tragen Sie sich in die \"::groupeName::\" Warteliste ein"
+msgstr "Tragen Sie sich in die \\\"::groupeName::\\\" Warteliste ein"
 
 #: src/controller/Group.hx:3093
 msgid "Join the group"
@@ -1153,7 +1162,7 @@ msgstr "Treten Sie der Gruppe bei"
 
 #: src/controller/Group.hx:3163
 msgid "Confirm your subscription to \"::groupName::\""
-msgstr "Bestätigen Sie ihre Anmeldung zur \"::groupName::\""
+msgstr "Bestätigen Sie ihre Anmeldung zur \\\"::groupName::\\\""
 
 #: src/controller/Group.hx:3625
 msgid "Address"
@@ -1184,7 +1193,7 @@ msgstr "Ihre Anmeldung ist bei uns eingegangen"
 
 #: src/controller/Group.hx:4740
 msgid "Subscription to \"::groupName::\""
-msgstr "Anmeldung zur \"::groupName::\""
+msgstr "Anmeldung zur \\\"::groupName::\\\""
 
 #: src/controller/Group.hx:4926
 msgid "Create a new Cagette Group"
@@ -1208,7 +1217,7 @@ msgstr "Hofladen"
 
 #: src/controller/Group.hx:5572 src/controller/Group.hx:5830
 msgid "Consultant"
-msgstr ""
+msgstr "Berater"
 
 #: src/controller/Group.hx:5925 src/db/Amap.hx:9318
 msgid "Group type"
@@ -1216,11 +1225,11 @@ msgstr "Gruppentyp"
 
 #: src/controller/Group.hx:7323
 msgid "Market square"
-msgstr ""
+msgstr "Marktplatz"
 
 #: src/controller/Group.hx:7764
 msgid "CSA contract Vegetables - Example"
-msgstr ""
+msgstr "Solawi Angebot : Gemüse-Beispiel"
 
 #: src/controller/Group.hx:7833
 msgid ""
@@ -1241,7 +1250,7 @@ msgstr "Bazas"
 
 #: src/controller/Group.hx:9152
 msgid "Chicken Contract - Example"
-msgstr ""
+msgstr "Angebot : Hühnchen-Beispiel"
 
 #: src/controller/Group.hx:9213
 msgid ""
@@ -1253,11 +1262,11 @@ msgstr ""
 
 #: src/controller/Group.hx:9705
 msgid "12 eggs"
-msgstr ""
+msgstr "12 Eier"
 
 #: src/controller/Group.hx:9869
 msgid "Chicken"
-msgstr ""
+msgstr "Bio-Hühnchen"
 
 #: src/controller/Distribution.hx:946
 msgid "One person per page"
@@ -1377,7 +1386,7 @@ msgstr "Email des Senders"
 
 #: src/controller/Messages.hx:1011
 msgid "Recipients"
-msgstr ""
+msgstr "Empfänger"
 
 #: src/controller/Messages.hx:1122 lang/master/tpl/messages/message.mtt:110
 msgid "Subject:"
@@ -1385,7 +1394,7 @@ msgstr "Betreff:"
 
 #: src/controller/Messages.hx:1219
 msgid "Message:"
-msgstr ""
+msgstr "Nachricht:"
 
 #: src/controller/Messages.hx:2564
 msgid "The message has been sent"
@@ -1418,18 +1427,18 @@ msgstr "Mitglieder "
 
 #: src/controller/Cron.hx:7974
 msgid "Opening of orders for the delivery of <b>::date::</b>"
-msgstr ""
+msgstr "Öffnung der Bestellungen for die Lieferung vom <b>::date::</b>"
 
 #: src/controller/Cron.hx:8108
 msgid "The following suppliers are involved :"
-msgstr ""
+msgstr "Die folgenden Landwirte sind beteiligt:"
 
 #: src/controller/Cron.hx:8379
 msgid ""
 "The web address of your group is: <a href=\" + ::groupurl:: + \"> ::"
 "groupurl:: </a><br>"
 msgstr ""
-"Dies ist die Webadresse ihrer Gruppe: <a href=\" + ::groupurl:: + \"> ::"
+"Dies ist die Webadresse ihrer Gruppe: <a href=\\\" + ::groupurl:: + \\\"> ::"
 "groupurl:: </a><br>"
 
 #: src/controller/Cron.hx:8556
@@ -1449,6 +1458,8 @@ msgid ""
 "<b>Warning: you are in charge of the delivery ! Do not forget to print the "
 "attendance sheet.</b>"
 msgstr ""
+"<b>Achtung! Sie sind mit der nächsten Lieferung betraut! Vergessen Sie nicht "
+"sich die Anwesenheitsliste auszudrucken.</b>"
 
 #: src/controller/Cron.hx:9726 lang/master/tpl/shop/default.mtt:643
 msgid "Distribution on ::date::"
@@ -1554,6 +1565,8 @@ msgstr "Zahlung"
 #: src/controller/AmapAdmin.hx:1627
 msgid "The image sent is too heavy. The maximum authorized weight is 12Mb"
 msgstr ""
+"Das hochgeladene Foto ist leider zu groß. Das authorisierte Maximum beträgt "
+"12 Mb"
 
 #: src/controller/AmapAdmin.hx:2398 src/controller/Vendor.hx:2839
 msgid "Image updated"
@@ -1572,11 +1585,11 @@ msgstr "Rechte"
 
 #: src/controller/AmapAdmin.hx:4283
 msgid "All contracts"
-msgstr ""
+msgstr "Alle Angebote"
 
 #: src/controller/AmapAdmin.hx:4784
 msgid "Contracts management"
-msgstr ""
+msgstr "Management Angebote"
 
 #: src/controller/AmapAdmin.hx:5807
 #, fuzzy
@@ -1593,11 +1606,11 @@ msgstr "Rechte hinzugefügt oder geändert"
 
 #: src/controller/AmapAdmin.hx:6163
 msgid "Create rights for a user"
-msgstr ""
+msgstr "Rechte für einen User hinzufügen"
 
 #: src/controller/AmapAdmin.hx:6222
 msgid "Modify rights of ::user::"
-msgstr ""
+msgstr "Rechte ändern von ::user::"
 
 #: src/controller/AmapAdmin.hx:6632 src/controller/AmapAdmin.hx:6896
 msgid "Name "
@@ -1637,8 +1650,9 @@ msgid "Authorized payment types"
 msgstr "Bezahlungsart wählen"
 
 #: src/controller/AmapAdmin.hx:8948
+#, fuzzy
 msgid "Make the check payable to"
-msgstr ""
+msgstr "löschen"
 
 #: src/controller/AmapAdmin.hx:9078
 msgid "IBAN of your bank account for transfers"
@@ -1661,13 +1675,12 @@ msgid "This supplier has been saved"
 msgstr "Der Landwirt wurde gespeichert"
 
 #: src/controller/Vendor.hx:1813
-#, fuzzy
 msgid ""
 "You cannot delete this supplier because some contracts (current or old) are "
 "referencing this supplier."
 msgstr ""
-"Der Landwirt kann nicht gelöscht werden, da noch einige Angebote (neu oder "
-"alt) mit diesem in Verbindung stehen."
+"Der Landwirt kann nicht gelöscht werden, da einige Angebote (neu oder alt) "
+"noch mit ihm verbunden sind.."
 
 #: src/controller/Vendor.hx:1987
 msgid "Supplier deleted"
@@ -1788,7 +1801,7 @@ msgstr "Lieferungen kopieren"
 
 #: src/controller/ContractAdmin.hx:21496
 msgid "The contract has been duplicated"
-msgstr ""
+msgstr "Der Vertrag wurde kopiert"
 
 #: src/controller/ContractAdmin.hx:22255 src/controller/ContractAdmin.hx:23113
 msgid "No delivery in this contract"
@@ -1804,19 +1817,19 @@ msgstr "Diese Lieferung wurde schon bestätigt"
 
 #: src/controller/ContractAdmin.hx:30046 src/controller/ContractAdmin.hx:31182
 msgid "Unable to find user #::num::"
-msgstr ""
+msgstr "Der User wurde nicht gefunden #::num::"
 
 #: src/controller/ContractAdmin.hx:30793
 msgid "Unable to find product ::pid::"
-msgstr ""
+msgstr "Das Produkt wurde nicht gefunden ::pid::"
 
 #: src/controller/ContractAdmin.hx:31290
 msgid "::user:: is not part of this group"
-msgstr ""
+msgstr "::user:: ist nicht Mitglied dieser Gruppe"
 
 #: src/controller/ContractAdmin.hx:31384
 msgid "Both selected accounts must be different ones"
-msgstr ""
+msgstr "es müssen zwei verschiedene Konten ausgewählt werden"
 
 #: src/controller/ContractAdmin.hx:32388 src/controller/ContractAdmin.hx:32483
 msgid "The order has been updated"
@@ -1835,7 +1848,7 @@ msgstr "Lieferungen"
 
 #: src/db/Operation.hx:4515
 msgid "Order for ::date::"
-msgstr ""
+msgstr "Bestellung vom ::date::"
 
 #: src/db/Operation.hx:11553 src/db/Distribution.hx:6752
 msgid "Text"
@@ -2110,15 +2123,15 @@ msgstr "Landwirt"
 
 #: src/db/Vendor.hx:899
 msgid "Supplier name"
-msgstr ""
+msgstr "Name des Landwirt"
 
 #: src/db/Vendor.hx:1180
 msgid "Link text"
-msgstr ""
+msgstr "Link Texte Homepage"
 
 #: src/db/Vendor.hx:1220
 msgid "Link URL"
-msgstr ""
+msgstr "Webseite URL der Gruppe"
 
 #: src/db/UserAmap.hx:2084
 msgid "Administrator"
@@ -2130,7 +2143,7 @@ msgstr "Nachrichten"
 
 #: src/db/UserAmap.hx:2176
 msgid "Members management"
-msgstr ""
+msgstr "Mitglieder Management"
 
 #: src/db/UserAmap.hx:2264
 msgid "Management of all contracts"
@@ -2138,7 +2151,7 @@ msgstr "Management aller Angebote"
 
 #: src/db/UserAmap.hx:2366
 msgid "Contract management"
-msgstr ""
+msgstr "Angebote Management"
 
 #: src/payment/Cash.hx:323
 msgid "Pay by cash at product distribution"
@@ -2280,6 +2293,12 @@ msgid ""
 "products and then select a category in the list at the bottom of the page. "
 "Click then on \"add\".<br /><b>To remove a category:<b/> click on it."
 msgstr ""
+"Sie können ihre Produkte Kategorien zuordnen, um ihren Katalog "
+"übersichtlicher zu gestallten.<br/><b>Um Kategorien hinzuzufügen: </"
+"b>klicken Sie die jeweiligen Ankreuzfelder der Produite an und wählen Sie "
+"eine Kategorie aus der Liste am Ende der Seite aus. Klicken Sie auf \\"
+"\"hinzufügen\\\".<br /><b>Um eine Kategorie zu löschen:<b/> klicken Sie "
+"diese an."
 
 #: lang/master/tpl/product/categorize.mtt:685
 msgid "Select all"
@@ -2311,11 +2330,12 @@ msgid "Warning"
 msgstr "Achtung"
 
 #: lang/master/tpl/product/import.mtt:972
+#, fuzzy
 msgid ""
 "Before validating the import, please check if the table above is correctly "
 "filled.<br/>If data are not in line or not corresponding to the right "
 "column, it means that your CSV file is not correct."
-msgstr ""
+msgstr "löschen"
 
 #: lang/master/tpl/product/import.mtt:1344
 msgid "Import these products in the database"
@@ -2327,7 +2347,7 @@ msgstr "Ups!"
 
 #: lang/master/tpl/product/import.mtt:1488
 msgid "It seems that there is no data to import."
-msgstr ""
+msgstr "Es wurden keine Dateien zum Importieren gefunden."
 
 #: lang/master/tpl/product/import.mtt:1703
 msgid "Products already available in the database"
@@ -2368,7 +2388,7 @@ msgstr ""
 #: lang/master/tpl/product/import.mtt:2785
 msgid "To start, <a href=\"/produits.xls\">Download this demo file</a>"
 msgstr ""
-"Zu Beginn, <a href=\"/produits.xls\">downloade dir diese Demoversion</a>"
+"Zu Beginn, <a href=\\\"/produits.xls\\\">downloade dir diese Demoversion</a>"
 
 #: lang/master/tpl/product/import.mtt:2874
 msgid ""
@@ -2383,14 +2403,16 @@ msgid ""
 "When your file is ready, click on\"Save as\" in your Excel sheet and choose "
 "the format CSV"
 msgstr ""
-"Zum erfolgreichen Abschließen ihrer Datei, klicken Sie auf \"Save as\" in "
-"ihrem Excel-Blatt und wählen Sie das Format CSV"
+"Zum erfolgreichen Abschließen ihrer Datei, klicken Sie auf \\\"Save as\\\" "
+"in ihrem Excel-Blatt und wählen Sie das Format CSV"
 
 #: lang/master/tpl/product/import.mtt:3111
 msgid ""
 "Choose the following options: separation characters: <b>comma</b>, encoding: "
 "<b>Unicode UTF8<b/>"
 msgstr ""
+"Wählen Sie folgende Optionen: Zeichen trennen : <b>Komma</b>, Kodierung: "
+"<b>Unicode UTF8<b/>;;"
 
 #: lang/master/tpl/product/import.mtt:3234
 msgid "Save your file"
@@ -2399,7 +2421,8 @@ msgstr "Speichern ihrer Datei"
 #: lang/master/tpl/product/import.mtt:3274
 msgid "Then click on the button above \"Choose a file\" and send your file"
 msgstr ""
-"Dann klicken Sie auf den Button \"Datei wählen\" und importieren ihre Datei"
+"Dann klicken Sie auf den Button \\\"Datei wählen\\\" und importieren ihre "
+"Datei"
 
 #: lang/master/tpl/product/addimage.mtt:44
 msgid "Import a photo of the product"
@@ -2426,7 +2449,7 @@ msgstr "Management von Zugangsrechten"
 
 #: lang/master/tpl/amapadmin/rights.mtt:102
 msgid "Add a right"
-msgstr ""
+msgstr "Rechte hinzufügen"
 
 #: lang/master/tpl/amapadmin/rights.mtt:259
 msgid "Actions"
@@ -2473,21 +2496,23 @@ msgstr "Angebote in Bearbeitung"
 
 #: lang/master/tpl/amapadmin/default.mtt:288
 msgid "Edit properties"
-msgstr ""
+msgstr "Eigenschaften bearbeiten"
 
 #: lang/master/tpl/amapadmin/default.mtt:519
 msgid ""
 "Your group has a public page, You can use it as a micro-website.<br/>Copy-"
 "paste the address of this page and share it !"
 msgstr ""
+"Ihre Gruppe hat eine öffentliche Seite. Sie können diese als Mini-Webseite "
+"benutzen.<br/>Kopieren Sie die Adresse der Seite um sie zu teilen !"
 
 #: lang/master/tpl/amapadmin/default.mtt:963
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: lang/master/tpl/amapadmin/default.mtt:1115
 msgid "Display"
-msgstr ""
+msgstr "Anzeigen"
 
 #: lang/master/tpl/member/view.mtt:52 lang/master/tpl/member/payments.mtt:52
 msgid "Contact informations"
@@ -2827,15 +2852,16 @@ msgid ""
 "li></ul>"
 msgstr ""
 "Hier können Sie eine Mitgliederliste per Excel Datei oder ähnlichem direkt "
-"in ihre Datenbank importieren .<br/><ul><li>Der erste Schritt ist <a href=\"/"
-"adherents.xls\">die Demo-Datei herunterzuladen.</a></li><li>Füllen oder "
+"in ihre Datenbank importieren .<br/><ul><li>Der erste Schritt ist <a href=\\"
+"\"/adherents.xls\\\">die Demo-Datei herunterzuladen.</a></li><li>Füllen oder "
 "ändern Sie die Tabelle so, dass die Reihenfolge und das Zusammenpassen der "
 "Spalten strikte Beachtung finden. </li><li>Sobald ihre Datei vollständig "
-"ist, klicken Sie auf \"speichern unter\" in ihrem Excelblatt und wählen den "
-"Dateityp “CSV” aus</li><li>Wählen Sie folgende Option : Trennzeichen : "
-"<b>Komma</b>, Encoding : <b>Unicode UTF-8</b></li><li>Speichern Sie die "
-"Datei</li><li>zum Schluss, klicken Sie auf “Datei wählen” hier auf dieser "
-"Seite und laden sie die Datei hoch.</li></ul>"
+"ist, klicken Sie auf \\\"speichern unter\\\" in ihrem Excelblatt und wählen "
+"den Dateityp \\\"CSV\\\" aus</li><li>Wählen Sie folgende Option : "
+"Trennzeichen : <b>Komma</b>, Encoding : <b>Unicode UTF-8</b></"
+"li><li>Speichern Sie die Datei</li><li>zum Schluss, klicken Sie auf \\"
+"\"Datei wählen\\\" hier auf dieser Seite und laden sie die Datei hoch.</li></"
+"ul>"
 
 #: lang/master/tpl/member/balance.mtt:52
 msgid "Balance of members"
@@ -3002,7 +3028,7 @@ msgstr "abwechselnd mit"
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:3924
 #: lang/master/tpl/distribution/listByDate.mtt:5890
 msgid "Push on \"Control + P\" to print this page."
-msgstr "Klicke auf \"Control + P\" um die Seite zu drucken."
+msgstr "Klicke auf \\\"Control + P\\\" um die Seite zu drucken."
 
 #: lang/master/tpl/distribution/list.mtt:244
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:303
@@ -3015,7 +3041,7 @@ msgstr "Lieferung vom"
 
 #: lang/master/tpl/distribution/list.mtt:463
 msgid "Contact in charge of the contract"
-msgstr ""
+msgstr "Der Kontakt für dieses Angebot"
 
 #: lang/master/tpl/distribution/list.mtt:584
 #: lang/master/tpl/contractadmin/default.mtt:2806
@@ -3060,11 +3086,14 @@ msgid "Planning of deliveries:"
 msgstr "Lieferpläne:"
 
 #: lang/master/tpl/distribution/planning.mtt:161
+#, fuzzy
 msgid ""
 "Subscribe now by selecting checkboxes corresponding to dates which are "
 "convenient for you. The goal of attendances consists in helping during the "
 "delivery of products."
 msgstr ""
+"Jetzt anmelden und die Daten ankreuzen, an denen ihr aushelfen könnt. Die "
+"Teilnehmeranzahl kann bei der Lieferung von Produkten unterstützen"
 
 #: lang/master/tpl/distribution/planning.mtt:1997
 #: lang/master/tpl/distribution/planning.mtt:2199
@@ -3139,7 +3168,7 @@ msgstr ""
 
 #: lang/master/tpl/error.mtt:282
 msgid "Technical description of the error"
-msgstr ""
+msgstr "Technische Beschreibung der Fehlermeldung"
 
 #: lang/master/tpl/base.mtt:3260
 msgid "Close"
@@ -3227,7 +3256,6 @@ msgid "Cagette Pro"
 msgstr "Lemilo Pro"
 
 #: lang/master/tpl/user/choose.mtt:1740
-#, fuzzy
 msgid "Choose"
 msgstr "Auswählen"
 
@@ -3244,9 +3272,8 @@ msgid "Find other groups near me"
 msgstr "Gruppe in meiner Umgebung finden"
 
 #: lang/master/tpl/user/choose.mtt:2684
-#, fuzzy
 msgid "Subscriptions on waiting list"
-msgstr "Anmeldungen auf die Warteliste"
+msgstr "Anmeldungen aux der Warteliste"
 
 #: lang/master/tpl/categories/default.mtt:73
 msgid ""
@@ -3260,6 +3287,8 @@ msgid ""
 "You currently have no category. Would you like to create the list of "
 "categories by default ?"
 msgstr ""
+"Derzeit besitzen Sie keine Kategorien. Möchten Sie unsere standardisierte "
+"Liste nutzen?"
 
 #: lang/master/tpl/categories/default.mtt:482
 msgid "Create the list of default categories"
@@ -3279,7 +3308,7 @@ msgstr "Löschen"
 
 #: lang/master/tpl/categories/default.mtt:1407
 msgid "Add a category in this group"
-msgstr ""
+msgstr "Dieser Gruppe eine Kategorie hinzufügen"
 
 #: lang/master/tpl/categories/default.mtt:1565
 msgid "Add a group"
@@ -3398,12 +3427,13 @@ msgstr "Zurück zur Lieferung"
 
 #: lang/master/tpl/mail/invitation.mtt:324
 msgid "As a member of <b>::groupName::</b>"
-msgstr ""
+msgstr "Als Mitglied von <b>::groupName::</b>"
 
 #: lang/master/tpl/mail/invitation.mtt:405
 #: lang/master/tpl/mail/invitation.mtt:481
+#, fuzzy
 msgid "you have been pre-registered on Cagette.net"
-msgstr ""
+msgstr "löschen"
 
 #: lang/master/tpl/mail/invitation.mtt:566
 msgid ""
@@ -3486,10 +3516,12 @@ msgstr "Weiter lesen"
 #: lang/master/tpl/shop/needLogin.mtt:438
 msgid "In order to confirm your basket, <br/>You need to authenticate."
 msgstr ""
+"Um ihre Bestellung zu bestätigen, <br/>müssen Sie sich identifizieren. Bitte "
+"geben Sie ihren Login ein."
 
 #: lang/master/tpl/shop/needLogin.mtt:887
 msgid "Sign up"
-msgstr ""
+msgstr "Anmelden"
 
 #: lang/master/tpl/shop/default.mtt:803
 msgid "Orders will close on"
@@ -3513,7 +3545,8 @@ msgstr "Meine Bestellung"
 
 #: lang/master/tpl/shop/default.mtt:4049 lang/master/tpl/contract/view.mtt:3369
 msgid "You can check your previous orders in 'my account' section"
-msgstr "Sie können Ihre vorherige Bestellungen in \"Mein Konto\" überprüfen"
+msgstr ""
+"Sie können Ihre vorherige Bestellungen in \\\"Mein Konto\\\" überprüfen"
 
 #: lang/master/tpl/shop/default.mtt:4289
 msgid "All products"
@@ -3574,7 +3607,7 @@ msgstr "Verwaltung"
 
 #: lang/master/tpl/design.mtt:4503
 msgid "HELP"
-msgstr ""
+msgstr "HILFE"
 
 #: lang/master/tpl/design.mtt:4600
 msgid "Documentation"
@@ -3582,19 +3615,20 @@ msgstr "Dokumentation"
 
 #: lang/master/tpl/design.mtt:4733
 msgid "Facebook group"
-msgstr ""
+msgstr "Facebook-Gruppe"
 
 #: lang/master/tpl/design.mtt:5007
 msgid "Vous êtes producteur ?"
-msgstr ""
+msgstr "Sind Sie ein Landwirt?"
 
 #: lang/master/tpl/design.mtt:5054
+#, fuzzy
 msgid "Découvrez nos formations gratuites pour utiliser <b>Cagette Pro</b> "
-msgstr ""
+msgstr "löschen"
 
 #: lang/master/tpl/design.mtt:5323 lang/master/tpl/design.mtt:6192
 msgid "CONTACT US"
-msgstr ""
+msgstr "KONTAKTIEREN SIE UNS"
 
 #: lang/master/tpl/design.mtt:5471
 msgid "Propose features"
@@ -3602,13 +3636,14 @@ msgstr "Features vorschlagen"
 
 #: lang/master/tpl/design.mtt:5577
 msgid "FOLLOW US"
-msgstr ""
+msgstr "FOLGEN SIE UNS"
 
 #: lang/master/tpl/design.mtt:6289
+#, fuzzy
 msgid ""
 "Cagette.net is made by <a href='https://www.alilo.fr' target='_blank'><img "
 "src='/img/alilo-trans-black.png' /></a>"
-msgstr ""
+msgstr "löschen"
 
 #: lang/master/tpl/amap/default.mtt:1173 lang/master/tpl/contract/view.mtt:1943
 msgid "Coordinator"
@@ -3634,7 +3669,7 @@ msgstr "Löschen"
 
 #: lang/master/tpl/membership/default.mtt:636
 msgid "Key-in a subscription payment"
-msgstr ""
+msgstr "Mitgliedsbeitrag einfügen"
 
 #: lang/master/tpl/group/view.mtt:766
 msgid "Go to my account"
@@ -3703,7 +3738,7 @@ msgstr "Eine Angebotsart wählen:"
 
 #: lang/master/tpl/contract/insertChoose.mtt:278
 msgid "Create a <b>CSA</b> contract"
-msgstr "Ein \"festes Angebot\" erstellen"
+msgstr "Ein \\\"festes Angebot\\\" erstellen"
 
 #: lang/master/tpl/contract/insertChoose.mtt:345
 msgid ""
@@ -3782,7 +3817,7 @@ msgstr "Verantwortlicher:"
 
 #: lang/master/tpl/contract/orderByDate.mtt:93
 msgid "Modify the order delivered on ::date::"
-msgstr ""
+msgstr "Bestellung ändern, geliefert am ::date::"
 
 #: lang/master/tpl/contract/orderByDate.mtt:184
 msgid ""
@@ -3808,7 +3843,7 @@ msgstr ""
 
 #: lang/master/tpl/contract/order.mtt:3009
 msgid "Tip: to remove an order please key-in the quantity 0"
-msgstr "Tip: Um eine Bestellung zu löschen, bitte die \"Anzahl\" 0 angeben"
+msgstr "Tip: Um eine Bestellung zu löschen, bitte die \\\"Anzahl\\\" 0 angeben"
 
 #: lang/master/tpl/contract/default.mtt:51
 msgid "Last orders"
@@ -3961,7 +3996,7 @@ msgstr ""
 
 #: lang/master/tpl/contractadmin/distributionp.mtt:273
 msgid "::distribs:: deliveries requiring ::distributorNum:: person(s)"
-msgstr ""
+msgstr "::distribs:: Lieferungen brauchen ::distributorNum:: Person(en)"
 
 #: lang/master/tpl/contractadmin/distributionp.mtt:415
 msgid "person(s) using this contract"
@@ -3973,7 +4008,7 @@ msgstr "Teilnahme an zu erfolgenden Lieferungen pro Familie."
 
 #: lang/master/tpl/contractadmin/distributionp.mtt:653
 msgid "Number of participations to deliveries<br />( done or planned )"
-msgstr ""
+msgstr "Teilnehmeranzahl der Lieferungen<br />(getan oder geplant)"
 
 #: lang/master/tpl/contractadmin/distributionp.mtt:1031
 msgid "Insufficient"
@@ -4086,12 +4121,10 @@ msgid "Distribution cycles"
 msgstr "Lieferzyklen"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:2027
-#, fuzzy
 msgid "Distributions engagement"
 msgstr "Lieferverbindlichkeit"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:2162
-#, fuzzy
 msgid "Old distributions"
 msgstr "Vorherige Lieferungen"
 
@@ -4111,15 +4144,14 @@ msgstr "Lieferung vom <b>::date::</b>"
 
 #: lang/master/tpl/contractadmin/ordersByProduct.mtt:255
 #: lang/master/tpl/contractadmin/ordersByProductList.mtt:1178
-#, fuzzy
 msgid ""
 "Be careful, if the price of the product was modified during the sale, every "
 "order of a member is taken into account with the price as it was at the time "
 "of the creation of the order"
 msgstr ""
 "Vorsicht ! Wenn der Preis während einer Aktion (Sale) geändert wurde, "
-"orientieren sich alle Bestellungen der Mitglieder nur an den Preis der bei "
-"der Erstellung der Bestellung festgelegt wurde"
+"orientieren sich alle Bestellungen nur an dem Preis, der bei der Erstellung "
+"der Bestellung festgelegt wurde"
 
 #: lang/master/tpl/contractadmin/ordersByProduct.mtt:561
 #: lang/master/tpl/contractadmin/vendorsByTimeFrame.mtt:731
@@ -4145,7 +4177,6 @@ msgid "Order form"
 msgstr "Bestellung von"
 
 #: lang/master/tpl/contractadmin/design.mtt:386
-#, fuzzy
 msgid "Edit contract"
 msgstr "Angebot bearbeiten"
 
@@ -4188,7 +4219,6 @@ msgid "Enable"
 msgstr "Aktivieren"
 
 #: lang/master/tpl/contractadmin/products.mtt:4007
-#, fuzzy
 msgid "Disable"
 msgstr "Deaktivieren"
 
@@ -4276,7 +4306,7 @@ msgstr "Neuer Lieferort"
 
 #: lang/master/tpl/contractadmin/ordersByProductList.mtt:2222
 msgid "Push \"Control + P\" to print this page."
-msgstr "Klicke auf \"Control + P\" um die Seite zu drucken."
+msgstr "Klicke auf \\\"Control + P\\\" um die Seite zu drucken."
 
 #: lang/master/tpl/contractadmin/vendorsByDate.mtt:85
 msgid "Global view of orders - delivery of"
@@ -4391,7 +4421,7 @@ msgstr "Email senden"
 
 #: lang/master/tpl/vendor/addimage.mtt:54
 msgid "Import a foto for"
-msgstr ""
+msgstr "Foto importieren für"
 
 #: lang/master/tpl/vendor/addimage.mtt:277
 msgid "Recommended size of the photo: 300 x 300px"
@@ -4450,7 +4480,7 @@ msgstr "Anmeldung"
 
 #: lang/master/tpl/macros.mtt:5593
 msgid "Check to be given at the collection of products"
-msgstr ""
+msgstr "Vor dem Hinzufügen zum Produktkatalog, noch einmal überprüfen"
 
 #: lang/master/tpl/macros.mtt:5728
 msgid "Cash to be given at the collection of products"
