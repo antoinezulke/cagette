@@ -2,7 +2,7 @@
 
 <div style="max-width:400px;margin:auto;border:solid 1px #AAA;border-radius:8px;padding:12px;text-align:center;font-family:Arial;">
 	
-	<img src="http://::HOST::/img/logo2.png" title="LEMILO" />
+	<img src="http://::HOST::/img/logoTest2.png" title="::appName::" />
 	
 	<p>
 		::_("Hello"):: $$nullSafe(::name::),
