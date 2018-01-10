@@ -40,7 +40,11 @@ class Amap extends Controller
 		}
 		radioG.setActivatedValues(groups2);
 
-
+		//remove option from config_file
+		var flagz = form.getElement("flags");
+		var flags = cast(flagz, sugoi.form.elements.Flags<Dynamic>);
+		var groupOptions = App.config.get("options_to_deactivate").split(";");
+		flags.setFlagsToRemove(groupOptions);
 
 
 		if (form.checkToken()) {
