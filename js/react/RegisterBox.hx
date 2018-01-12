@@ -73,7 +73,7 @@ class RegisterBox extends react.ReactComponentOfPropsAndState<RegisterBoxProps,R
 				</form>
 				<hr/>
 				<p className="text-center">
-					<b>Haben Sie schon einen Konto?  </b>
+					<b>Noch nicht angemeldet?  </b>
 					<a onClick={loginBox} className="btn btn-default"><span className="glyphicon glyphicon-user"></span> Anmelden</a>
 				</p>
 			</div>

@@ -9,13 +9,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: src/service/UserService.hx:503
 msgid "There is no account with this email"
-msgstr "Es gibt kein Konto mit dieser Emailadresse"
+msgstr "Es wurde kein Konto mit dieser E-mail-Adresse gefunden"
 
 #: src/service/UserService.hx:636
 msgid ""
@@ -1202,7 +1202,7 @@ msgstr "Solawi"
 
 #: src/controller/Group.hx:5354 src/controller/Group.hx:5690
 msgid "Grouped orders"
-msgstr "Zusammengefasste Bestellungen"
+msgstr "Einkaufsgemeinschaft"
 
 #: src/controller/Group.hx:5427 src/controller/Group.hx:5737
 msgid "Farmers collective"
@@ -3161,7 +3161,7 @@ msgstr "Technische Beschreibung der Fehlermeldung"
 
 #: lang/master/tpl/base.mtt:3260
 msgid "Close"
-msgstr "Geschlossen"
+msgstr "Schließen"
 
 #: lang/master/tpl/user/insert.mtt:181
 msgid ""
@@ -3815,7 +3815,7 @@ msgstr ""
 "Hier können Sie ihre Bestellung noch einmal ändern. Wenn Sie ein Produkt "
 "entfernen möchten geben Sie bei der Anzahl bitte 0<br/> an. Es ist möglich "
 "das Sie nicht mehr alle Bestellungen ändern können. In dem Fall hat ein "
-"Landwirt seine Bestellungsannahme schon abgeschlossen."
+"Landwirt seine Bestellungsannahme schon abgeschlossen"
 
 #: lang/master/tpl/contract/orderByDate.mtt:1538
 msgid "Order closed or already paid"

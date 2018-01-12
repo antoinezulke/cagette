@@ -60,7 +60,7 @@ class LoginBox extends react.ReactComponentOfPropsAndState<LoginBoxProps,LoginBo
 			</form>
 			<hr/>
 			<p className="text-center">
-				<b>Kein Konto?  </b>
+				<b>Noch nicht angemeldet?  </b>
 				<a onClick={registerBox} className="btn btn-default"><span className="glyphicon glyphicon-chevron-right"></span> Konto erstellen</a>
 			</p>
 		</div>');
