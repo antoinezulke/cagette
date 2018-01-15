@@ -858,7 +858,7 @@ msgstr "Angebot aktualisiert"
 
 #: src/controller/Contract.hx:6655
 msgid "Create a contract with fixed orders"
-msgstr "Ein festes Angebot (regelmäßige Bestellungen) erstellen"
+msgstr "Ein festes Angebot (regelmäßige Lieferung) erstellen"
 
 #: src/controller/Contract.hx:6703
 msgid "Create a contract with variable orders"
@@ -1367,7 +1367,7 @@ msgstr "Die Lieferung wurde gespeichert"
 
 #: src/controller/Distribution.hx:12537
 msgid "Schedule a recurrent delivery"
-msgstr "Regelmäßiger Lieferplan"
+msgstr "Lieferplan organisieren"
 
 #: src/controller/Distribution.hx:12978
 msgid "Recurrent deliveries deleted"
@@ -1690,7 +1690,7 @@ msgid ""
 "categorize/::contractid::'>Click here to add categories</a>"
 msgstr ""
 "Vorsicht ! Mindestens ein Produkt hat keine Kategorie. <a href='/product/"
-"categorize/::contractid::'>Klicke hier um Kategorien hinzuzufügen</a>"
+"categorize/::contractid::'>Klicke hier, um Kategorien hinzuzufügen</a>"
 
 #: src/controller/ContractAdmin.hx:4099
 msgid "Copy products in: "
@@ -2005,7 +2005,7 @@ msgid ""
 "Welcome in the group of ::name::!\n"
 " You can look at the delivery planning or make a new order."
 msgstr ""
-"Willkommen in der Gruppe vom ::name::!\n"
+"Willkommen in der Gruppe von ::name::!\n"
 " Sie können sich den Lieferplan anschauen oder neue Bestellungen tätigen."
 
 #: src/db/Amap.hx:9002
@@ -2018,7 +2018,7 @@ msgstr "Kurze Beschreibung"
 
 #: src/db/Amap.hx:9084
 msgid "Homepage text"
-msgstr "Texte Homepage"
+msgstr "Text Homepage"
 
 #: src/db/Amap.hx:9126
 msgid "Text for distribution lists"
@@ -2121,7 +2121,7 @@ msgstr "Name des Landwirt"
 
 #: src/db/Vendor.hx:1180
 msgid "Link text"
-msgstr "Link Texte Homepage"
+msgstr "Link Text Homepage"
 
 #: src/db/Vendor.hx:1220
 msgid "Link URL"
@@ -2205,7 +2205,7 @@ msgstr "Meine bestellten Produkte"
 
 #: lang/master/tpl/home.mtt:3591
 msgid "Delivery"
-msgstr "Die Lieferung"
+msgstr "Lieferung"
 
 #: lang/master/tpl/home.mtt:4953 lang/master/tpl/home.mtt:5178
 msgid "It's your turn"
@@ -2908,7 +2908,7 @@ msgstr "Mitglieder mit Bestellungen oder Angeboten"
 #: lang/master/tpl/member/default.mtt:590
 #: lang/master/tpl/member/default.mtt:707
 msgid "Back to main page"
-msgstr "Zurück zur Hauptseite"
+msgstr "Zurück zur Übersicht"
 
 #: lang/master/tpl/member/default.mtt:652
 #: lang/master/tpl/member/default.mtt:3401
@@ -2965,7 +2965,7 @@ msgstr "Kontostand der Mitglieder"
 
 #: lang/master/tpl/member/default.mtt:3567
 msgid "There is <b>::waitingList::</b> people on waiting list."
-msgstr "Es stehen <b>::waitingList::</b> Leute auf der Warteliste."
+msgstr "Es stehen <b>::waitingList::</b> Personnen auf der Warteliste."
 
 #: lang/master/tpl/member/default.mtt:3725
 #: lang/master/tpl/member/default.mtt:4025
@@ -3001,7 +3001,7 @@ msgstr "Kontaktdaten"
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:584
 #: lang/master/tpl/distribution/listByDate.mtt:598
 msgid "Signature"
-msgstr "Signature"
+msgstr "Unterschrift"
 
 #: lang/master/tpl/distribution/listByDateShort.mtt:1117
 #: lang/master/tpl/distribution/list.mtt:1957
@@ -3018,7 +3018,7 @@ msgstr "abwechselnd mit"
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:3924
 #: lang/master/tpl/distribution/listByDate.mtt:5890
 msgid "Push on \"Control + P\" to print this page."
-msgstr "Klicke auf \\\"Control + P\\\" um die Seite zu drucken."
+msgstr "Klicke auf \"Control + P\" um die Seite zu drucken."
 
 #: lang/master/tpl/distribution/list.mtt:244
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:303
@@ -3031,7 +3031,7 @@ msgstr "Lieferung vom"
 
 #: lang/master/tpl/distribution/list.mtt:463
 msgid "Contact in charge of the contract"
-msgstr "Der Kontakt für dieses Angebot"
+msgstr "Kontakt :"
 
 #: lang/master/tpl/distribution/list.mtt:584
 #: lang/master/tpl/contractadmin/default.mtt:2806
@@ -3511,7 +3511,7 @@ msgstr "Anmelden"
 
 #: lang/master/tpl/shop/default.mtt:803
 msgid "Orders will close on"
-msgstr "Bestellungen sind bis zu diesem Datum möglich"
+msgstr "Bestellungen sind möglich bis"
 
 #: lang/master/tpl/shop/default.mtt:1351
 msgid "Autres"
@@ -3532,7 +3532,7 @@ msgstr "Meine Bestellung"
 #: lang/master/tpl/shop/default.mtt:4049 lang/master/tpl/contract/view.mtt:3369
 msgid "You can check your previous orders in 'my account' section"
 msgstr ""
-"Sie können Ihre vorherige Bestellungen in \\\"Mein Konto\\\" überprüfen"
+"Sie können Ihre bisherigen Bestellungen in \\\"Mein Konto\\\" überprüfen"
 
 #: lang/master/tpl/shop/default.mtt:4289
 msgid "All products"
@@ -3723,15 +3723,15 @@ msgstr "Eine Angebotsart wählen:"
 
 #: lang/master/tpl/contract/insertChoose.mtt:278
 msgid "Create a <b>CSA</b> contract"
-msgstr "Ein \\\"festes Angebot\\\" erstellen"
+msgstr "Ein <b>festes Angebot</b> erstellen"
 
 #: lang/master/tpl/contract/insertChoose.mtt:345
 msgid ""
 "It is a contract with a duration of one year or for one season. Products are "
 "always the same at each delivery"
 msgstr ""
-"Dies ist ein Angebot mit einer Laufzeit von einem Jahr oder einer Season. "
-"Die Produkte werden der Jahreszeit angepasst, aber sind nicht frei wählbar"
+"Das ist ein Angebot mit einer Laufzeit von einem Jahr oder einer Season. Die "
+"Produkte wechseln je nach Jahreszeit, sind aber nicht frei wählbar."
 
 #: lang/master/tpl/contract/insertChoose.mtt:493
 msgid ""
@@ -3740,12 +3740,12 @@ msgid ""
 "costs 15&euro; per delivery."
 msgstr ""
 "Beispiel: Es gibt ein Angebot für einen Korb Gemüse für ein ganzes Jahr. Tom "
-"nimmt einen Korb für 15€ pro Lieferung und Brigitte nimmt einen Korb für 20€/"
+"nimmt einen Korb für 15€/Lieferung und Brigitte nimmt einen Korb für 20€/"
 "Lieferung."
 
 #: lang/master/tpl/contract/insertChoose.mtt:890
 msgid "Create a contract with <b>variable orders</b>"
-msgstr "Erstelle ein Angebot mit <b>variablen Bestellungen</b>"
+msgstr "Ein <b>variables Angebot</b> erstellen"
 
 #: lang/master/tpl/contract/insertChoose.mtt:972
 msgid ""
@@ -3761,8 +3761,8 @@ msgid ""
 "then nothing for the second delivery, then a basket for 20&euro; etc."
 msgstr ""
 "Beispiel: Tom bestellt einen Korb mit Produkten im Wert von 18€. Bei der "
-"nächsten Lieferung hat er keine Bestellung getätigt. Dann bestellt er einen "
-"Korb im Wert von 11€ usw."
+"darauf folgenden Lieferung hat er keine Bestellung getätigt. Danach bestellt "
+"er einen Korb im Wert von 11€ usw."
 
 #: lang/master/tpl/contract/orderAndPay.mtt:156
 #: lang/master/tpl/contract/order.mtt:152
@@ -3804,7 +3804,7 @@ msgstr "Verantwortlicher:"
 
 #: lang/master/tpl/contract/orderByDate.mtt:93
 msgid "Modify the order delivered on ::date::"
-msgstr "Bestellung ändern, geliefert am ::date::"
+msgstr "Bestellung ändern, Lieferung am ::date::"
 
 #: lang/master/tpl/contract/orderByDate.mtt:184
 msgid ""
@@ -3813,8 +3813,8 @@ msgid ""
 "elements as the order could be closed for some suppliers"
 msgstr ""
 "Hier können Sie ihre Bestellung noch einmal ändern. Wenn Sie ein Produkt "
-"entfernen möchten geben Sie bei der Anzahl bitte 0<br/> an. Es ist möglich "
-"das Sie nicht mehr alle Bestellungen ändern können. In dem Fall hat ein "
+"entfernen möchten, geben Sie bei der Anzahl bitte 0 an.<br/>Es ist möglich, "
+"dass Sie nicht mehr alle Bestellungen ändern können. In dem Fall hat ein "
 "Landwirt seine Bestellungsannahme schon abgeschlossen"
 
 #: lang/master/tpl/contract/orderByDate.mtt:1538
@@ -3854,7 +3854,7 @@ msgstr "Noch nicht bezahlt"
 
 #: lang/master/tpl/contract/default.mtt:2409
 msgid "Varying orders"
-msgstr "Verschiedene Bestellungen"
+msgstr "Meine Bestellungen"
 
 #: lang/master/tpl/contract/default.mtt:2474
 msgid "Order delivered on"
@@ -3905,7 +3905,7 @@ msgstr "Eine andere Sprache wählen"
 
 #: lang/master/tpl/contract/default.mtt:6250
 msgid "Current language is"
-msgstr "Die gegenwärtige Sprache ist"
+msgstr "Die derzeitige Sprache ist"
 
 #: lang/master/tpl/contractadmin/view.mtt:44
 #: lang/master/tpl/contractadmin/design.mtt:304
@@ -4088,7 +4088,7 @@ msgstr "Lieferungen"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:1238
 msgid "Distribution cycle"
-msgstr "Lieferzyklus"
+msgstr "Lieferplan"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:1397
 msgid "Weekly"
@@ -4172,7 +4172,7 @@ msgstr "Bestellung von"
 
 #: lang/master/tpl/contractadmin/design.mtt:386
 msgid "Edit contract"
-msgstr "Angebot bearbeiten"
+msgstr "Angebot"
 
 #: lang/master/tpl/contractadmin/design.mtt:922
 msgid "Stats"

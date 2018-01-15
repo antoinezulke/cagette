@@ -140,7 +140,7 @@
 				<tr>
 					<td colspan="4">
 						::if !user._amap.hasPayments():: 
-							$$edit(Modifier cette commande,/contract/editOrderByDate/::d.date::)
+							$$edit(Bestellung ändern,/contract/editOrderByDate/::d.date::)
 						::end::
 						
 					</td>
