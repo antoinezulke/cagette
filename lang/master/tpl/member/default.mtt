@@ -14,7 +14,7 @@
 		::end::
 		</h2>
 	
-		<p><b>::members.current().length::</b> ::_("members")::.</p>
+		<p><b>::members.current().length::</b> ::_("member(s)")::.</p>
 		
 		<a href="/member/">::_("Back to main page")::</a>
 	::elseif search!=null::

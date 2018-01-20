@@ -241,7 +241,9 @@ class Contract extends Object
 	}
 	
 	override function toString() {
-		return name+" du "+this.startDate.toString().substr(0,10)+" au "+this.endDate.toString().substr(0,10);
+		var t = sugoi.i18n.Locale.texts; 
+    	return name + " " + t._("from") + " " + this.startDate.toString().substr(0,10)+" " + t._(" to") + " " + this.endDate.toString().substr(0,10); 
+
 	}
 	
 	public function populate() {

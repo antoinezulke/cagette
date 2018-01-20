@@ -118,7 +118,7 @@ class Messages extends Controller
 		
 		var contracts = db.Contract.getActiveContracts(app.user.amap,true);
 		for ( c in contracts) {
-			out.push({value:'c'+c.id,label: t._("Subscribers ")+c.toString()});
+			out.push({value:'c'+c.id,label: t._("Subscribers")+ " " + c.toString()}); 
 		}
 		return out ;
 		

@@ -7,7 +7,7 @@
 		</div>
 		
 		::if stat==0::
-			<h3>::_("Seniority of subscribers of "):: "::c.name::"</h3>
+			<h3>::_("Seniority of subscribers of"):: "::c.name::"</h3>
 			<table class="table" style="width:50%;">
 				<tr>
 					<th>::_("Number")::</th>

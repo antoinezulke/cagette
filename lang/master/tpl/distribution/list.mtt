@@ -16,13 +16,17 @@
 	<p>
 		::set c = contract._contact::
 		::set v = contract._vendor::
-		<b>::_("Contact in charge of the contract") :</b>  ::c.firstName:: ::c.lastName::, ::c.email::, ::c.phone::
+		<b>::_("Contact in charge of the contract") :</b>  ::c.firstName:: ::c.lastName::, ::c.email:: 
+		::if c.phone!=null:: 
+		, ::c.phone:: 
+		::end:: 
+
 	</p>
 	<p>
 		<b>::_("Farmers"):: : </b>
-		::v.name:: , 
-		::if v.email!=null :: ::v.email:: ::end::, 
-		::if v.phone!=null :: ::v.phone:: ::end::
+		::v.name:: 
+		::if v.email!=null ::, ::v.email:: ::end:: 
+		::if v.phone!=null ::, ::v.phone:: ::end:: 
 	</p>
 	<p>	
 		<b>::_("Members on duty"):: : </b>

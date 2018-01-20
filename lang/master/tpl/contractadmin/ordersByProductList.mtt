@@ -32,13 +32,13 @@
 	<p>
 		::set cc = c._contact::
 		::set cv = c._vendor::
-		<b>Responsable contrat : </b>  ::cc.firstName:: ::cc.lastName::, ::cc.email::, 
-		::if cc.phone!=null :: ::cc.phone:: ::end::
+		<b>::_("In charge of the contract:")::</b>  ::cc.firstName:: ::cc.lastName::, ::cc.email:: 
+    	::if cc.phone!=null ::, ::cc.phone:: ::end:: 
 	</p>
 	<p>
-		<b>Producteur : </b>::cv.name:: , 
-		::if cv.email!=null :: ::cv.email:: ::end::, 
-		::if cv.phone!=null :: ::cv.phone:: ::end::
+		<b>::_("Supplier:")::</b> ::cv.name:: 
+		::if cv.email!=null ::, ::cv.email:: ::end:: 
+		::if cv.phone!=null ::, ::cv.phone:: ::end:: 
 	</p>
 		
 	<p>

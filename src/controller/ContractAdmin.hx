@@ -602,7 +602,7 @@ class ContractAdmin extends Controller
 		sendNav(contract);
 		if (!app.user.isAmapManager()) throw Error("/", t._("You do not have the authorization to manage this contract"));
 		
-		view.title = "Dupliquer le contrat '"+contract.name+"'";
+		view.title = t._("Duplicate the contract '::contractName::'", {contractName:contract.name}); 
 		var form = new Form("duplicate");
 		
 		form.addElement(new StringInput("name", t._("Name of the new contract"), contract.name + " - copy "));		
