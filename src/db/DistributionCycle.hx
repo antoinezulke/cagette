@@ -44,12 +44,18 @@ class DistributionCycle extends Object
 	public static function getLabels(){
 		//var t = sugoi.i18n.Locale.texts;
 		return [
-			"cycleType"		=> "Fréquence",
-			"startDate" 	=> "Date de début",
-			"endDate"		=> "Date de fin",
-			"daysBeforeOrderStart" 		=> "Ouverture de commande (nbre de jours avant distribution)" ,			
-			"daysBeforeOrderEnd"		=> "Fermeture de commande (nbre de jours avant distribution)",			
-			
+			// "cycleType"		=> "Fréquence",
+			// "startDate" 	=> "Date de début",
+			// "endDate"		=> "Date de fin",
+			// "daysBeforeOrderStart" 		=> "Ouverture de commande (nbre de jours avant distribution)" ,			
+			// "daysBeforeOrderEnd"		=> "Fermeture de commande (nbre de jours avant distribution)",			
+
+			"cycleType"		=> "Häufigkeit",
+			"startDate" 	=> "Startdatum",
+			"endDate"		=> "Enddatum",
+			"daysBeforeOrderStart" 		=> "Öffnung der Bestellung (Anz. der Tage vor der Lieferung)" ,			
+			"daysBeforeOrderEnd"		=> "Bestellschluss (Anz. der Tage vor der Lieferung)",			
+			"place"			=> "Ort",
 		];
 	}
 	

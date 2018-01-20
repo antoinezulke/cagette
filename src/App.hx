@@ -109,7 +109,8 @@ class App extends sugoi.BaseApp {
 		// out.set("phone2", "téléphone du conjoint");
 		// out.set("select", "sélectionnez");
 		// out.set("contract", "Contrat");
-		// out.set("place", "Lieu");
+		 //out.set("place", "Lieu");
+		//out.set("place", "Ort");
 		// out.set("name", "Nom");
 		// out.set("cdate", "Date d'entrée dans le groupe");
 		// out.set("quantity", "Quantité");
@@ -129,7 +130,9 @@ class App extends sugoi.BaseApp {
 		// out.set("distributorNum", "Nbre de distributeurs nécessaires (de 0 à 4)");
 		
 		// out.set("startDate", "Date de début");
+		 out.set("startDate", "Startdatum");
 		// out.set("endDate", "Date de fin");
+		out.set("endDate", "Enddatum");
 		
 		// out.set("orderStartDate", "Date ouverture des commandes");
 		// out.set("orderEndDate", "Date fermeture des commandes");	
@@ -143,13 +146,18 @@ class App extends sugoi.BaseApp {
 		// out.set("vendor", "Producteur");
 		// out.set("text", "Texte");
 		// out.set("flags", "Options");
-		// out.set("4h", "Recevoir des notifications par email 4h avant les distributions");
+		 out.set("4h", "4 Stunden vor Lieferung eine Erinnerung erhalten");
 		// out.set("HasEmailNotif4h", "Recevoir des notifications par email 4h avant les distributions");
-		// out.set("24h", "Recevoir des notifications par email 24h avant les distributions");
-		// out.set("HasEmailNotif24h", "Recevoir des notifications par email 24h avant les distributions");
+		out.set("HasEmailNotif4h", "4 Stunden vor Lieferung eine Erinnerung erhalten");
+		 //out.set("24h", "Recevoir des notifications par email 24h avant les distributions");
+		 out.set("24h", "24 Stunden vor Lieferung eine Erinnerung erhalten");
+		 //out.set("HasEmailNotif24h", "Recevoir des notifications par email 24h avant les distributions");
+		 out.set("HasEmailNotif24h", "24 Stunden vor Lieferung eine Erinnerung erhalten");
 		// out.set("Ouverture", "Recevoir des notifications par email pour l'ouverture des commandes");
+		 out.set("Ouverture", "Bei Eröffnung einer Bestellung eine Nachricht erhalten");
 		// out.set("Tuto", "Activer tutoriels");
-		 out.set("HasMembership", "Gestion des adhésions");
+		 //out.set("HasMembership", "Gestion des adhésions");
+		 out.set("HasMembership", "Mitgliedschaft verwalten");
 		// out.set("DayOfWeek", "Jour de la semaine");
 		// out.set("Monday", "Lundi");
 		// out.set("Tuesday", "Mardi");
@@ -159,10 +167,14 @@ class App extends sugoi.BaseApp {
 		// out.set("Saturday", "Samedi");
 		// out.set("Sunday", "Dimanche");
 		// out.set("cycleType", "Récurrence");
-		// out.set("Weekly", "hebdomadaire");
+		 //out.set("Weekly", "hebdomadaire");
+		 out.set("Weekly", "wöchentlich");
 		// out.set("Monthly", "mensuelle");
+		out.set("Monthly", "monatlich");
 		// out.set("BiWeekly", "toutes les deux semaines");
+		out.set("BiWeekly", "alle 2 Wochen");
 		// out.set("TriWeekly", "toutes les 3 semaines");
+		out.set("TriWeekly", "alle 3 Wochen");
 		// out.set("price", "prix TTC");
 		// out.set("uname", "Nom");
 		// out.set("pname", "Produit");
@@ -171,37 +183,58 @@ class App extends sugoi.BaseApp {
 		
 		// out.set("membershipRenewalDate", "Adhésions : Date de renouvellement");
 		// out.set("membershipPrice", "Adhésions : Coût de l'adhésion");
-		 out.set("UsersCanOrder", "Les adhérents peuvent saisir leur commande en ligne");
-		 out.set("StockManagement", "Gestion des stocks");
+		 //out.set("UsersCanOrder", "Les adhérents peuvent saisir leur commande en ligne");
+		 out.set("UsersCanOrder", "Mitglieder können ihre Bestellung online aufgeben");
+		 //out.set("StockManagement", "Gestion des stocks");
+		 out.set("StockManagement", "Warenwirtschaft");
 		// out.set("contact", "Responsable");
-		 out.set("PercentageOnOrders", "Ajouter des frais au pourcentage de la commande");
+		 //out.set("PercentageOnOrders", "Ajouter des frais au pourcentage de la commande");
+		 out.set("PercentageOnOrders", "Kosten per Procentangabe hinzufügen");
 		// out.set("percentageValue", "Pourcentage des frais");
 		// out.set("percentageName", "Libellé pour ces frais");
 		// out.set("fees", "frais");
-		// out.set("AmapAdmin", "Administrateur du groupe");
-		// out.set("Membership", "Accès à la gestion des adhérents");
-		// out.set("Messages", "Accès à la messagerie");
+		 //out.set("AmapAdmin", "Administrateur du groupe");
+		 out.set("AmapAdmin", "Administrator der Gruppe");
+		 //out.set("Membership", "Accès à la gestion des adhérents");
+		 out.set("Membership", "Zugang zu den Mitglieder");
+		 //out.set("Messages", "Accès à la messagerie");
+		 out.set("Messages", "Zugang zu den Nachrichten");
 		// out.set("vat", "TVA");
 		// out.set("desc", "Description");
-		 out.set("ShopMode", "Mode boutique");
-		 out.set("ComputeMargin", "Appliquer une marge à la place des pourcentages");
-		 out.set("ShopCategoriesFromTaxonomy", "Catégoriser automatiquement les produits");
-		 out.set("HidePhone", "Masquer le téléphone du responsable sur la page publique");
-		 out.set("PhoneRequired", "Saisie du numéro de téléphone obligatoire");
+		 //out.set("ShopMode", "Mode boutique");
+		 out.set("ShopMode", "Online Marktplatz");
+		 //out.set("ComputeMargin", "Appliquer une marge à la place des pourcentages");
+		 out.set("ComputeMargin", "Eine Marge anstelle von % anwenden");
+		 //out.set("ShopCategoriesFromTaxonomy", "Catégoriser automatiquement les produits");
+		 out.set("ShopCategoriesFromTaxonomy", "Produkte automatisch kategorisieren");
+		 //out.set("HidePhone", "Masquer le téléphone du responsable sur la page publique");
+		 out.set("HidePhone", "Tel. des Koord. auf der öffentlichen Seite ausblenden");
+		 //out.set("PhoneRequired", "Saisie du numéro de téléphone obligatoire");
+		 out.set("PhoneRequired", "Tel.-Nr. als Pflichtfeld angeben");
 		// out.set("ref", "Référence");
 		// out.set("linkText", "Intitulé du lien");
 		// out.set("linkUrl", "URL du lien");
 		
-		 out.set("Amap", "AMAP");
-		 out.set("GroupedOrders", "Groupement d'achat");
-		 out.set("ProducerDrive", "Collectif de producteurs");
-		 out.set("FarmShop", "Vente à la ferme");
+		 //out.set("Amap", "AMAP");
+		 out.set("Amap", "Solidarische Landwirtschaft");
+		 //out.set("GroupedOrders", "Groupement d'achat");
+		 out.set("GroupedOrders", "Einkaufsgemeinschaft");
+		 //out.set("ProducerDrive", "Collectif de producteurs");
+		 out.set("ProducerDrive", "Landwirt / Bauerngemeinschaft");
+		 //out.set("FarmShop", "Vente à la ferme");
+		 out.set("FarmShop", "Hofladen");
+		 out.set("Consultant", "RepräsentantIn");
 		
 		// out.set("regOption", "Inscription de nouveaux adhérents");
-		 out.set("Closed", "Fermé : Le coordinateur ajoute les nouveaux adhérents");
-		 out.set("WaitingList", "Liste d'attente");
-		 out.set("Open", "Ouvert : tout le monde peut s'inscrire");
-		 out.set("Full", "Complet : Le groupe n'accepte plus de nouveaux adhérents");
+		 //out.set("Closed", "Fermé : Le coordinateur ajoute les nouveaux adhérents");
+		 out.set("Closed", "Geschloßen : der Kood.fügt die neuen Mitglieder hinzu");
+		 //out.set("WaitingList", "Liste d'attente");
+		 out.set("WaitingList", "Warteliste");
+		 //out.set("Open", "Ouvert : tout le monde peut s'inscrire");
+		 out.set("Open", "Geöffnet : jeder kann sich eintragen");
+		 //out.set("Full", "Complet : Le groupe n'accepte plus de nouveaux adhérents");
+		 out.set("Full", "Komplett : Die Gruppe nimmt zurzeit keine neuen Mitglieder auf");
+		 
 		// out.set("percent", "Pourcentage");
 		// out.set("pinned", "Mets en avant les produits");
 		
@@ -215,7 +248,8 @@ class App extends sugoi.BaseApp {
 		// out.set("htPrice", "Prix H.T");
 		// out.set("amount", "Montant");
 		
-		 out.set("HasPayments", "Gestion des paiements");
+		 //out.set("HasPayments", "Gestion des paiements");
+		 out.set("HasPayments", "Finanzen verwalten");
 		
 		// out.set("byMember", "Par adhérent");
 		// out.set("byProduct", "Par produit");
