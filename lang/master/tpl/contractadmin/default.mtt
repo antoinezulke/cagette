@@ -45,8 +45,8 @@
 						<b>::c.name::</b>
 					</td>
 					<td style="font-size:0.9em;">
-						du ::hDate(c.startDate)::<br/>
-						au ::hDate(c.endDate)::
+						::_("From"):: ::hDate(c.startDate)::<br/>
+						::_("To"):: ::hDate(c.endDate)::
 					</td>
 					<td>
 						
