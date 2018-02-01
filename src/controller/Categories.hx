@@ -38,7 +38,8 @@ class Categories extends controller.Controller
 		}
 		var t = sugoi.i18n.Locale.texts;
 		gen(t._("Product types"),2, [t._("Vegetables"), t._("Fruits"), t._("Fish"), t._("Red meat"), t._("Breads"), t._("Grocery"), t._("Beverages") ]);
-		gen(t._("Labels"),0, [t._("Certified organic agriculture"), t._("Uncertified organic agriculture"), t._("Non organic") ]);
+		//gen(t._("Labels"),0, [t._("Certified organic agriculture"), t._("Uncertified organic agriculture"), t._("Non organic") ]);
+		gen(t._("Labels"),0, [t._("Certified organic agriculture") ]);
 		
 		throw Ok("/amapadmin/categories", t._("Default categories have been created") );
 		

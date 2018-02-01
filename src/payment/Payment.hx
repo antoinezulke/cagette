@@ -13,7 +13,7 @@ class Payment
 	public static function getPaymentTypes(){
 		var types = [
 			new payment.Cash(),
-			new payment.Check(),
+			//new payment.Check(),
 			new payment.Transfer(),		
 		];
 		

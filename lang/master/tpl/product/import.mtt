@@ -98,7 +98,7 @@
 		::_("This page will allow you to import a large number of products in your database from an Excel file.")::
 		<br/>
 		<ul>
-			<li>::raw _("To start, <a href=\"/produits.xls\">Download this demo file</a>")::</li>
+			<li>::raw _("To start, <a href=\"/::_("products.xls")::\">Download this demo file</a>")::</li>
 			<li>::raw _("Fill correctly this file, or modify your existing file to respect strictly the order of columns")::</li>
 			<li>::raw _("When your file is ready, click on\"Save as\" in your Excel sheet and choose the format CSV")::</li>
 			<li>::raw _("Choose the following options: separation characters: <b>comma</b>, encoding: <b>Unicode UTF8<b/>"):: </li>
