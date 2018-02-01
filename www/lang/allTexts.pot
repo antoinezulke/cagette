@@ -3828,6 +3828,14 @@ msgid ""
 "process:"
 msgstr ""
 
+#: lang/master/tpl/account/payments.mtt:823
+msgid "Payments:"
+msgstr ""
+
+#: lang/master/tpl/account/payments.mtt:1207
+msgid "Balance:"
+msgstr ""
+
 #: lang/master/tpl/messages/message.mtt:181
 msgid "Sent on the"
 msgstr ""

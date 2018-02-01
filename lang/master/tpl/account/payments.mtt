@@ -1,7 +1,7 @@
 ::use 'design.mtt'::
 
 <div class="col-md-3">
-	<h2>Coordonnées</h2>
+	<h2>::_("Contact details")::</h2>
 	<div class="article">
 		
 		<div style="font-weight:bold;font-size:120%;">::member.firstName:: ::member.lastName::
@@ -34,7 +34,7 @@
 </div>
 
 <div class="col-md-9">
-	<h2>Paiements</h2>
+	<h2>::_("Payments:")::</h2>
 	<div class="article">
 		<table class="table table-striped table-condensed">
 		::foreach t transactions::
@@ -52,7 +52,7 @@
 		
 		<tr style="font-size:1.3em;">
 			<td colspan="2"></td>
-			<td>Solde&nbsp;:</td>
+			<td>::_("Balance:")::</td>
 			::if balance<0:: 
 				::set color = "C00"::
 			::else::
