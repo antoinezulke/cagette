@@ -171,11 +171,11 @@ class Product extends Controller
 					product.qt = fv.filterString(p["qt"]);
 					if(p["unit"]!=null){
 						product.unitType = switch(p["unit"].toLowerCase()){
-							case "kg" : Kilogram;
-							case "g" : Gram;
-							case "l" : Litre;
-							case "litre" : Litre;
-							default : Piece;
+							case "kg" : Kilogramm;
+							case "g" : Gramm;
+							case "l" : Liter;
+							case "litre" : Liter;
+							default : Stueckpreis;
 						}
 					}
 					if (p["stock"] != null) product.stock = fv.filterString(p["stock"]);

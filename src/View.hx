@@ -155,11 +155,11 @@ class View extends sugoi.BaseView {
 		t = sugoi.i18n.Locale.texts;
 		if(u==null) return t._("piece||unit of a product)");
 		return switch(u){
-			case Kilogram: 	t._("Kg.||kilogramms");
-			case Gram: 		t._("g.||gramms");
-			case Piece: 	t._("piece||unit of a product)");
-			case Litre: 	t._("L.||liter");
-			case Centilitre: 	t._("cl.||centiliter");
+			case Kilogramm: 	t._("Kg.||kilogramms");
+			case Gramm: 		t._("g.||gramms");
+			case Stueckpreis: 	t._("piece||unit of a product)");
+			case Liter: 	t._("L.||liter");
+			case Zentiliter: 	t._("cl.||centiliter");
 		}
 	}
 	

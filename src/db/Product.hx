@@ -152,9 +152,9 @@ class Product extends Object
 		var _unit = unitType;
 		
 		//turn small prices in Kg
-		if (_cost < 1 && this.unitType == Gram){
+		if (_cost < 1 && this.unitType == Gramm){
 			_cost *= 1000;
-			_unit = Kilogram;
+			_unit = Kilogramm;
 		}
 		
 		return {cost:_cost,qt:_qt,unit:_unit};

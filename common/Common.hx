@@ -49,11 +49,11 @@ typedef ProductInfo = {
 
 
 enum UnitType{
-	Piece;
-	Kilogram;
-	Gram;
-	Litre;
-	Centilitre;
+	Stueckpreis;
+	Kilogramm;
+	Gramm;
+	Liter;
+	Zentiliter;
 }
 
 @:keep
