@@ -47,7 +47,7 @@ class Member extends Controller
 			switch(args.select) {
 				case "nocontract":
 					if (app.params.exists("csv")) {
-						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NoContracts()), ["firstName", "lastName", "email"], t._("Without contracts"));
+						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NoContracts()), [t._("firstName"), t._("lastName"), t._("email")], t._("Without contracts"));
 						return;
 					}else {
 						browse = function(index:Int, limit:Int) { return db.User.getUsers_NoContracts(index, limit); }	
@@ -55,7 +55,7 @@ class Member extends Controller
 				case "contract":
 					
 					if (app.params.exists("csv")) {
-						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_Contracts()), ["firstName", "lastName", "email"], t._("With orders"));
+						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_Contracts()), [t._("firstName"), t._("lastName"), t._("email")], t._("With orders"));
 						return;
 					}else {
 						browse = function(index:Int, limit:Int) { return db.User.getUsers_Contracts(index, limit); }	
@@ -63,14 +63,14 @@ class Member extends Controller
 					
 				case "nomembership" :
 					if (app.params.exists("csv")) {
-						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NoMembership()), ["firstName", "lastName", "email"], t._("Memberships to be renewed"));
+						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NoMembership()), [t._("firstName"), t._("lastName"), t._("email")], t._("Memberships to be renewed"));
 						return;
 					}else {
 						browse = function(index:Int, limit:Int) { return db.User.getUsers_NoMembership(index, limit); }
 					}
 				case "newusers" :
 					if (app.params.exists("csv")) {
-						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NewUsers()), ["firstName", "lastName", "email"], t._("Never connected"));
+						sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.getUsers_NewUsers()), [t._("firstName"), t._("lastName"), t._("email")], t._("Never connected"));
 						return;
 					}else {
 						browse = function(index:Int, limit:Int) { return db.User.getUsers_NewUsers(index, limit); }
@@ -82,7 +82,7 @@ class Member extends Controller
 			
 		}else {
 			if (app.params.exists("csv")) {
-				var headers = ["firstName", "lastName", "email","phone", "firstName2", "lastName2","email2","phone2", "address1","address2","zipCode","city"];
+				var headers = [t._("firstName"), t._("lastName"), t._("email"),t._("phone"), t._("firstName2"), t._("lastName2"),t._("email2"),t._("phone2"), t._("address1"),t._("address2"),t._("zipCode"),t._("city")];
 				sugoi.tools.Csv.printCsvDataFromObjects(Lambda.array(db.User.manager.search( $id in uids, {orderBy:lastName}, false)), headers, t._("Members"));
 				return;
 			}else {
@@ -502,8 +502,8 @@ class Member extends Controller
 		if ( data != null) {
 			
 			var csv = new sugoi.tools.Csv();
-			//csv.setHeaders([t._("Firstname"), t._("Lastname"), t._("E-mail"), t._("Mobile phone"), t._("Partner's firstname"), t._("Partner's lastname"), t._("Partner's e-mail"), t._("Partner's Mobile phone"), t._("Address 1"), t._("Address 2"), t._("Post code"), t._("City")]);
-			csv.setHeaders(["Vorname", "Nachname", "E-mail", "Tel.", "Vorname des Partners", "Nachname des Partners", "E-mail des Partners", "Tel. des Partners", "Adresse 1", "Addresse 2", "Postleitzahl", "Stad"]);
+			csv.setHeaders([t._("Firstname"), t._("Lastname"), t._("E-mail"), t._("Mobile phone"), t._("Partner's firstname"), t._("Partner's lastname"), t._("Partner's e-mail"), t._("Partner's Mobile phone"), t._("Address 1"), t._("Address 2"), t._("Postal code"), t._("City")]);
+			//csv.setHeaders(["Vorname", "Nachname", "E-mail", "Tel.", "Vorname des Partners", "Nachname des Partners", "E-mail des Partners", "Tel. des Partners", "Adresse 1", "Adresse 2", "Postleitzahl", "Stad"]);
 			var unregistred = csv.importDatas(data);
 			
 			//cleaning

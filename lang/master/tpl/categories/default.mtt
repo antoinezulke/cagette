@@ -14,7 +14,7 @@
 <table class="table table-bordered">
 	<tr>
 		<th>
-			Groupe "::g.name::"
+			::_("Group"):: "::g.name::"
 		</th>
 		<th>
 			<a href="/amapadmin/categories/editGroup/::g.id::" class="btn btn-default btn-xs">::_("Modify group")::</a>

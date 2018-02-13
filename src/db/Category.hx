@@ -23,4 +23,11 @@ class Category extends sys.db.Object
 		return {id:id, name:name, /*parent:categoryGroup.id, /*pinned:categoryGroup.pinned*/};
 		
 	}
+
+	public static function getLabels(){
+		var t = sugoi.i18n.Locale.texts;
+		return [
+			"name" => t._("Name of the category"),	
+		];
+	}
 }
