@@ -80,9 +80,10 @@
 	<div>
 		
 		<a href="/member/insert" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus-sign"></span> ::_("New member")::</a>	
+		<!--
 		$$export(::Web.getURI()+"?"+Web.getParamsString()::&csv=1)
 		<a href="/member/import" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-save"></span> ::_("Import members")::</a>
-
+		-->
 	</div>
 
 	
