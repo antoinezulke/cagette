@@ -184,7 +184,7 @@ msgstr "Operation bestätigt"
 #: src/controller/Product.hx:454 src/controller/Product.hx:3265
 #: src/controller/Product.hx:3911 src/controller/Product.hx:5818
 #: src/controller/Product.hx:6548 src/controller/Product.hx:7283
-#: src/controller/Product.hx:7979 src/controller/Distribution.hx:14695
+#: src/controller/Product.hx:7979 src/controller/Distribution.hx:14652
 #: src/controller/Vendor.hx:271
 msgid "Forbidden access"
 msgstr "Kein Zugang"
@@ -249,83 +249,138 @@ msgstr "Gesamtbetrag"
 
 #: src/controller/Validate.hx:3966
 msgid "Payment saved"
-msgstr "Bezahlung gespeichert"
+msgstr "Zahlung gespeichert"
 
 #: src/controller/Validate.hx:4011
 msgid "Key-in a payment for ::user::"
-msgstr "Erfassung der Bezahlung für ::user::"
+msgstr "Erfassung der Zahlung für ::user::"
 
 #: src/controller/Validate.hx:4627
 msgid "Order validated"
 msgstr "Bestellung bestätigt"
 
-#: src/controller/Member.hx:1391
+#: src/controller/Member.hx:1356 src/controller/Member.hx:1724
+#: src/controller/Member.hx:2092 src/controller/Member.hx:2462
+#: src/controller/Member.hx:2822
+msgid "firstName"
+msgstr "Vorname"
+
+#: src/controller/Member.hx:1374 src/controller/Member.hx:1742
+#: src/controller/Member.hx:2110 src/controller/Member.hx:2480
+#: src/controller/Member.hx:2840
+msgid "lastName"
+msgstr "Nachname"
+
+#: src/controller/Member.hx:1391 src/controller/Member.hx:1759
+#: src/controller/Member.hx:2127 src/controller/Member.hx:2497
+#: src/controller/Member.hx:2857
+msgid "email"
+msgstr "Email"
+
+#: src/controller/Member.hx:1406
 msgid "Without contracts"
 msgstr "Ohne Angebot"
 
-#: src/controller/Member.hx:1744
+#: src/controller/Member.hx:1774
 msgid "With orders"
 msgstr "Mit Bestellungen"
 
-#: src/controller/Member.hx:2097 src/controller/Messages.hx:3932
+#: src/controller/Member.hx:2142 src/controller/Messages.hx:3932
 msgid "Memberships to be renewed"
 msgstr "Mitgliedschaft erneuern"
 
-#: src/controller/Member.hx:2452
+#: src/controller/Member.hx:2512
 msgid "Never connected"
 msgstr "Nie verbunden"
 
-#: src/controller/Member.hx:2633
+#: src/controller/Member.hx:2693
 msgid "Unknown selection"
 msgstr "Unbekannte Auswahl"
 
-#: src/controller/Member.hx:3022 lang/master/tpl/member/default.mtt:760
+#: src/controller/Member.hx:2870 lang/master/tpl/member/import.mtt:837
+#: lang/master/tpl/member/import.mtt:1558
+msgid "phone"
+msgstr "Telefon"
+
+#: src/controller/Member.hx:2884
+msgid "firstName2"
+msgstr "Vorname des Partners"
+
+#: src/controller/Member.hx:2903
+msgid "lastName2"
+msgstr "Nachname des Partners"
+
+#: src/controller/Member.hx:2920
+msgid "email2"
+msgstr "Email des Partners"
+
+#: src/controller/Member.hx:2934
+msgid "phone2"
+msgstr "Telefon des Partners"
+
+#: src/controller/Member.hx:2949
+msgid "address1"
+msgstr "Adresse 1"
+
+#: src/controller/Member.hx:2965
+msgid "address2"
+msgstr "Adresse 2"
+
+#: src/controller/Member.hx:2981
+msgid "zipCode"
+msgstr "Postleitzahl"
+
+#: src/controller/Member.hx:2996
+msgid "city"
+msgstr "Stadt"
+
+#: src/controller/Member.hx:3142 lang/master/tpl/member/default.mtt:760
 #: lang/master/tpl/design.mtt:2775
 msgid "Members"
 msgstr "Mitglieder"
 
-#: src/controller/Member.hx:3914
+#: src/controller/Member.hx:4034
 msgid "is now on waiting list."
 msgstr "ist jetzt auf der Warteliste."
 
-#: src/controller/Member.hx:4402
+#: src/controller/Member.hx:4522
 msgid "This user is already a member of your group."
 msgstr "Dieser Benutzer ist schon ein Mitglied ihrer Gruppe."
 
-#: src/controller/Member.hx:4626
+#: src/controller/Member.hx:4746
 msgid "Membership request accepted"
 msgstr "Mitgliedschaftsanfrage bestätigt"
 
-#: src/controller/Member.hx:4900
+#: src/controller/Member.hx:5020
 msgid "membership request deleted"
 msgstr "Mitgliedschaftsanfrage gelöscht"
 
-#: src/controller/Member.hx:5375 src/controller/Member.hx:5914
+#: src/controller/Member.hx:5495 src/controller/Member.hx:6034
 #: src/controller/Messages.hx:2462
 msgid "An error occurred while sending emails, please retry"
 msgstr ""
 "Beim Versenden der Nachricht ist ein Fehler aufgetreten, bitte versuchen Sie "
 "es noch einmal"
 
-#: src/controller/Member.hx:5482
+#: src/controller/Member.hx:5602
 msgid "Invitation sent."
 msgstr "Einladung gesendet."
 
-#: src/controller/Member.hx:6014
+#: src/controller/Member.hx:6134
 msgid "Congratulations, you just sent <b>::userLength::</b> invitations"
 msgstr ""
 "Herzlichen Glückwunsch, Sie haben eine Einladung an <b>::userLength::</b> "
 "gesandt"
 
-#: src/controller/Member.hx:6320
+#: src/controller/Member.hx:6440
 msgid "This person does not belong to your group"
 msgstr "Diese Person gehört nicht zu ihrer Gruppe"
 
-#: src/controller/Member.hx:9148
+#: src/controller/Member.hx:9268
 msgid "You cannot modify the account of an administrator"
 msgstr "Sie können das Konto eines Verwalters nicht ändern"
 
-#: src/controller/Member.hx:9802
+#: src/controller/Member.hx:9922
 msgid ""
 "For security reasons, you cannot modify the e-mail of this person because "
 "this person is a member of more than 1 group."
@@ -333,7 +388,7 @@ msgstr ""
 "Aus Sicherheitsgründen können Sie die Email dieser Person nicht ändern, da "
 "sie ein Mitglied mehrerer Gruppen ist."
 
-#: src/controller/Member.hx:10060
+#: src/controller/Member.hx:10180
 msgid ""
 "This person did not define yet a password. You are exceptionaly authorized "
 "to do it. Please don't forget to tell this person."
@@ -342,11 +397,11 @@ msgstr ""
 "autorisiert eins an seiner Stelle festzulegen. Bitte vergessen Sie nicht es "
 "der Person mitzuteilen."
 
-#: src/controller/Member.hx:10483 src/controller/Member.hx:22588
+#: src/controller/Member.hx:10603 src/controller/Member.hx:22916
 msgid "Phone number is required in this group."
 msgstr "In dieser Gruppe wird eine Telefonnr. benötigt."
 
-#: src/controller/Member.hx:11072
+#: src/controller/Member.hx:11192
 msgid ""
 "This e-mail was used by another user account. As this user account was not "
 "used, it has been merged into the current user account."
@@ -354,28 +409,28 @@ msgstr ""
 "Diese Email wurde von einem anderen User-Konto benutzt. Da dieses Konto "
 "nicht genutzt wird, haben wir die beiden Konten fusioniert."
 
-#: src/controller/Member.hx:11246
+#: src/controller/Member.hx:11366
 msgid "Warning, this e-mail or this name already exist for another account: "
 msgstr ""
 "Achtung ! Diese Email oder der Name existiert schon für ein anderes Konto: "
 
-#: src/controller/Member.hx:11463
+#: src/controller/Member.hx:11583
 msgid "These accounts cannot be merged because the second account has orders"
 msgstr ""
 "Diese Konten können nicht fusioniert werden, da das eine noch Bestellungen "
 "enthält"
 
-#: src/controller/Member.hx:11934 src/controller/User.hx:3067
+#: src/controller/Member.hx:12054 src/controller/User.hx:3067
 #: src/db/User.hx:14550 lang/master/tpl/mail/design.mtt:279
 #: lang/master/tpl/design.mtt:4322 lang/master/tpl/design.mtt:4412
 msgid "Cagette.net"
 msgstr "Lemilo.de"
 
-#: src/controller/Member.hx:12008
+#: src/controller/Member.hx:12128
 msgid "Change your e-mail in your account Cagette.net"
 msgstr "Ändern Sie ihre Email in ihrem Konto Lemilo.de"
 
-#: src/controller/Member.hx:12152 src/controller/Member.hx:12680
+#: src/controller/Member.hx:12272 src/controller/Member.hx:12800
 msgid ""
 " just modified your e-mail in your account Cagette.net.<br/>Your e-mail is "
 "now:"
@@ -383,23 +438,23 @@ msgstr ""
 " wurde ihre Email von ihrem Konto Lemilo.de geändert<br/>Ihre Email ist "
 "jetzt:"
 
-#: src/controller/Member.hx:12538
+#: src/controller/Member.hx:12658
 msgid "Change the e-mail of your account Cagette.net"
 msgstr "Die Email in ihrem Konto Lemilo.de ändern"
 
-#: src/controller/Member.hx:12878
+#: src/controller/Member.hx:12998
 msgid "This member has beed updated"
 msgstr "Dieses Mitglied wurde aktualisiert"
 
-#: src/controller/Member.hx:13135
+#: src/controller/Member.hx:13255
 msgid "You cannot do that."
 msgstr "Diese Aktion können Sie nicht ausführen."
 
-#: src/controller/Member.hx:13231
+#: src/controller/Member.hx:13351
 msgid "You cannot delete yourself."
 msgstr "Sie können ihr Konto nicht selber löschen."
 
-#: src/controller/Member.hx:13378
+#: src/controller/Member.hx:13498
 msgid ""
 "Warning, this account has orders. <a class='btn btn-default btn-xs' href='/"
 "member/delete/::userid::?token=::argstoken::&confirm=1'>Delete anyway</a>"
@@ -408,19 +463,19 @@ msgstr ""
 "xs’ href=‘/member/delete/::userid::?token=::argstoken::&confirm=1’>Trotzdem "
 "löschen</a>"
 
-#: src/controller/Member.hx:13719
+#: src/controller/Member.hx:13839
 msgid " has been deleted from your group"
 msgstr " ist aus der Gruppe gelöscht worden"
 
-#: src/controller/Member.hx:13800
+#: src/controller/Member.hx:13920
 msgid "This person does not belong to \"::amapname::\""
 msgstr "Diese Person gehört nicht zu \"::amapname::\""
 
-#: src/controller/Member.hx:14106
+#: src/controller/Member.hx:14226
 msgid "Merge an account with another one"
 msgstr "Ein Konto mit einem anderen fusionieren"
 
-#: src/controller/Member.hx:14162
+#: src/controller/Member.hx:14282
 msgid ""
 "This action allows you to merge two accounts (when you have duplicates in "
 "the database for example).<br/>Contracts of account 2 will be moved to "
@@ -432,80 +487,80 @@ msgstr ""
 "Konto verschoben. Das 2. Konto wird gelöscht. Achtung, es ist nicht möglich "
 "diese Aktion zu wiederrufen."
 
-#: src/controller/Member.hx:14645
+#: src/controller/Member.hx:14765
 msgid "Account 1"
 msgstr "Konto 1"
 
-#: src/controller/Member.hx:14761
+#: src/controller/Member.hx:14881
 msgid "Account 2"
 msgstr "Konto 2"
 
-#: src/controller/Member.hx:15918
+#: src/controller/Member.hx:16038
 msgid "Both accounts have been merged"
 msgstr "Die beiden Konten wurden fusioniert"
 
-#: src/controller/Member.hx:16313
+#: src/controller/Member.hx:16435
 msgid "Firstname"
 msgstr "Vorname"
 
-#: src/controller/Member.hx:16331
+#: src/controller/Member.hx:16453
 msgid "Lastname"
 msgstr "Nachname"
 
-#: src/controller/Member.hx:16348 lang/master/tpl/member/view.mtt:613
+#: src/controller/Member.hx:16470 lang/master/tpl/member/view.mtt:613
 #: lang/master/tpl/member/view.mtt:737
 msgid "E-mail"
 msgstr "E-mail"
 
-#: src/controller/Member.hx:16363
+#: src/controller/Member.hx:16485
 msgid "Mobile phone"
 msgstr "Handynummer"
 
-#: src/controller/Member.hx:16384
+#: src/controller/Member.hx:16506
 msgid "Partner's firstname"
 msgstr "Vorname (Partner)"
 
-#: src/controller/Member.hx:16412
+#: src/controller/Member.hx:16534
 msgid "Partner's lastname"
 msgstr "Nachname (Partner)"
 
-#: src/controller/Member.hx:16439
+#: src/controller/Member.hx:16561
 msgid "Partner's e-mail"
 msgstr "Email (Partner)"
 
-#: src/controller/Member.hx:16464
+#: src/controller/Member.hx:16586
 msgid "Partner's Mobile phone"
 msgstr "Handynummer (Partner)"
 
-#: src/controller/Member.hx:16495 src/db/User.hx:15786 src/db/Place.hx:1374
+#: src/controller/Member.hx:16617 src/db/User.hx:15786 src/db/Place.hx:1374
 #: src/db/Vendor.hx:1040 lang/master/tpl/member/import.mtt:866
 #: lang/master/tpl/member/import.mtt:1586
 msgid "Address 1"
 msgstr "Adresse 1"
 
-#: src/controller/Member.hx:16513 src/db/User.hx:15821 src/db/Place.hx:1409
+#: src/controller/Member.hx:16635 src/db/User.hx:15821 src/db/Place.hx:1409
 #: src/db/Vendor.hx:1078 lang/master/tpl/member/import.mtt:899
 #: lang/master/tpl/member/import.mtt:1618
 msgid "Address 2"
 msgstr "Adresse 2"
 
-#: src/controller/Member.hx:16531
+#: src/controller/Member.hx:16653
 msgid "Post code"
 msgstr "Postleitzahl"
 
-#: src/controller/Member.hx:16549 src/controller/Group.hx:3778
+#: src/controller/Member.hx:16671 src/controller/Group.hx:3778
 #: src/db/User.hx:15886 src/db/Place.hx:1474 src/db/Vendor.hx:1144
 #: lang/master/tpl/member/import.mtt:964 lang/master/tpl/member/import.mtt:1681
 msgid "City"
 msgstr "Stadt"
 
-#: src/controller/Member.hx:16775
+#: src/controller/Member.hx:17103
 msgid ""
 "You must fill the name and the firstname of the person. This line is "
 "incomplete: "
 msgstr "Unvollständig! Bitte geben Sie Vor- und Nachnamen der Person an: "
 
-#: src/controller/Member.hx:16941
+#: src/controller/Member.hx:17269
 msgid ""
 "Each person must have an e-mail to be able to log in. ::user0:: ::user1:: "
 "don't have one. "
@@ -513,11 +568,11 @@ msgstr ""
 "Jede Person muss eine Emailadresse haben um sich einzuloggen. ::user0:: ::"
 "user1:: hat keine. "
 
-#: src/controller/Member.hx:18704
+#: src/controller/Member.hx:19032
 msgid "The E-mail ::useremail:: is invalid, please modify your file"
 msgstr "Die Email ::useremail:: ist ungültig, bitte ändern Sie ihre Datei"
 
-#: src/controller/Member.hx:19032
+#: src/controller/Member.hx:19360
 msgid ""
 "The E-mail of the partner of ::userFirstName:: ::userLastName:: '::"
 "userEmail::' is invalid, please check your file"
@@ -525,23 +580,23 @@ msgstr ""
 "Die Emailadresse ihres Parteners ::userFirstName:: ::userLastName:: ‘::"
 "userEmail::’ ist ungültig, bitte ändern Sie ihre Datei"
 
-#: src/controller/Member.hx:20590 src/controller/Product.hx:1971
+#: src/controller/Member.hx:20918 src/controller/Product.hx:1971
 #: src/controller/Contract.hx:4206 src/controller/Contract.hx:6508
 #: src/controller/Distribution.hx:662 src/controller/Distribution.hx:4176
-#: src/controller/Distribution.hx:10093 src/controller/Distribution.hx:12703
+#: src/controller/Distribution.hx:10050 src/controller/Distribution.hx:12660
 #: src/controller/Vendor.hx:1665
 msgid "Forbidden action"
 msgstr "Aktion verboten"
 
-#: src/controller/Member.hx:21000
+#: src/controller/Member.hx:21328
 msgid "Send an E-mail to the person in charge of the group"
 msgstr "Mail an Gruppenverantwortlichen senden"
 
-#: src/controller/Member.hx:21698
+#: src/controller/Member.hx:22026
 msgid "This person is already member of this group"
 msgstr "Diese Person ist schon ein Mitglied dieser Gruppe"
 
-#: src/controller/Member.hx:22041
+#: src/controller/Member.hx:22369
 msgid ""
 "This person already had an account on Cagette.net, and is now member of your "
 "group."
@@ -549,7 +604,7 @@ msgstr ""
 "Diese Person hat schon ein Konto auf Lemilo.de und ist jetzt ein Mitglied "
 "ihrer Gruppe."
 
-#: src/controller/Member.hx:22241
+#: src/controller/Member.hx:22569
 msgid ""
 "Not possible to add this person because there are already some people in the "
 "database having the same firstname and name. Please contact the "
@@ -558,7 +613,7 @@ msgstr ""
 "Vor- und Nachname sind schon vorhanden. Bitte kontaktieren Sie den "
 "Verantwortlichen."
 
-#: src/controller/Member.hx:23029
+#: src/controller/Member.hx:23357
 msgid ""
 "::admin:: just keyed-in contact details of a new member: <br/><strong>::"
 "newMember::</strong><br/> <a href='::url::'>See contact details</a>"
@@ -567,11 +622,11 @@ msgstr ""
 "><strong>::newMember::</strong><br/> <a href=‘::url::’>Kontaktdaten "
 "einsehen</a>"
 
-#: src/controller/Member.hx:23333 lang/master/tpl/member/default.mtt:2121
+#: src/controller/Member.hx:23661 lang/master/tpl/member/default.mtt:2121
 msgid "New member"
 msgstr "Neues Mitglied"
 
-#: src/controller/Member.hx:23487
+#: src/controller/Member.hx:23815
 msgid "This person is now member of the group"
 msgstr "Diese Person ist jetzt ein Mitglied ihrer Gruppe"
 
@@ -585,15 +640,23 @@ msgstr ""
 msgid "Your order is empty"
 msgstr "Keine Bestellungen vorhanden"
 
-#: src/controller/Shop.hx:4786
+#: src/controller/Shop.hx:4709
+msgid ""
+"The order could not be validated. The quantity of the product <b>::pname::</"
+"b> cannot be below 1."
+msgstr ""
+"Die Bestellung konnte nicht bestätigt werden. Geben Sie bei der Menge <b>::"
+"pname::</b> mindestens 1 an."
+
+#: src/controller/Shop.hx:5013
 msgid "Error, This cart is invalid"
 msgstr "Fehlermeldung, ihr Korb ist abgelaufen"
 
-#: src/controller/Shop.hx:4969 src/controller/Shop.hx:5281
+#: src/controller/Shop.hx:5196 src/controller/Shop.hx:5508
 msgid "The product <b>::pname::</b> is not available in this distribution"
 msgstr "Das Produkt <b>::pname::</b> ist bei dieser Lieferung nicht erhältlich"
 
-#: src/controller/Shop.hx:5698
+#: src/controller/Shop.hx:5925
 msgid ""
 "We reduced your order of ::pname:: to quantity ::oquantity:: as the stock is "
 "not sufficient"
@@ -601,7 +664,7 @@ msgstr ""
 "Wir reduzieren ihre Bestellung von ::pname:: zu einer Anzahl von ::"
 "oquantity:: da der Vorrat nicht ausreicht"
 
-#: src/controller/Shop.hx:6507
+#: src/controller/Shop.hx:6735
 msgid "Your order has been successfully recorded"
 msgstr "Ihre Bestellung wurde erfolgreich abgeschloßen"
 
@@ -931,7 +994,7 @@ msgstr "Diese Kategorie ist nicht leer."
 
 #: src/controller/Categories.hx:877
 msgid "Product types"
-msgstr "Produkteingenschaft"
+msgstr "Kategorien"
 
 #: src/controller/Categories.hx:902
 msgid "Vegetables"
@@ -961,70 +1024,74 @@ msgstr "Einkauf"
 msgid "Beverages"
 msgstr "Getränke"
 
-#: src/controller/Categories.hx:1024
+#: src/controller/Categories.hx:1026 src/controller/Categories.hx:1151
 msgid "Labels"
-msgstr "Label"
+msgstr "Eingenschaften"
 
-#: src/controller/Categories.hx:1042
+#: src/controller/Categories.hx:1044 src/controller/Categories.hx:1169
 msgid "Certified organic agriculture"
 msgstr "Zertifizierte Biolandwirtschaft"
 
-#: src/controller/Categories.hx:1080
+#: src/controller/Categories.hx:1082
 msgid "Uncertified organic agriculture"
 msgstr "Nicht geprüfte Biolandwirtschaft"
 
-#: src/controller/Categories.hx:1120
+#: src/controller/Categories.hx:1122
 msgid "Non organic"
 msgstr "Nicht biologisch"
 
-#: src/controller/Categories.hx:1182
+#: src/controller/Categories.hx:1249
 msgid "Default categories have been created"
 msgstr "Vorhandene Kategorien wurden erstellt"
 
-#: src/controller/Categories.hx:1520 src/db/CategoryGroup.hx:1031
+#: src/controller/Categories.hx:1587 src/db/CategoryGroup.hx:1031
 msgid "Color"
 msgstr "Farbe"
 
-#: src/controller/Categories.hx:1663
+#: src/controller/Categories.hx:1730
 msgid "Group modified"
 msgstr "Gruppe geändert"
 
-#: src/controller/Categories.hx:1713
+#: src/controller/Categories.hx:1780
 msgid "Modify the group "
 msgstr "Gruppe ändern "
 
-#: src/controller/Categories.hx:2191
+#: src/controller/Categories.hx:2093
+msgid "Colour"
+msgstr "Farbe"
+
+#: src/controller/Categories.hx:2262
 msgid "Group added"
 msgstr "Gruppe hinzufügen"
 
-#: src/controller/Categories.hx:2238
+#: src/controller/Categories.hx:2309
 msgid "Create a group of categories"
 msgstr "Kategoriegruppe erstellen und hinzufügen"
 
-#: src/controller/Categories.hx:2606
+#: src/controller/Categories.hx:2677
 msgid "Category added"
 msgstr "Kategorie hinzugefügt"
 
-#: src/controller/Categories.hx:2656
+#: src/controller/Categories.hx:2727
 msgid "Create a category"
 msgstr "Kategorie erstellen"
 
-#: src/controller/Categories.hx:3007
+#: src/controller/Categories.hx:3078
 msgid "Modify the category "
 msgstr "Kategorie ändern "
 
-#: src/controller/Categories.hx:3238
+#: src/controller/Categories.hx:3309
 msgid ""
 "You must first remove categories from this group before removing the group."
 msgstr ""
 "Bevor die Gruppe gelöscht werden kann, müssen die einzelnen Kategorien "
 "löschen werden."
 
-#: src/controller/Categories.hx:3392
+#: src/controller/Categories.hx:3463
 msgid "Group deleted"
 msgstr "Gruppe gelöscht"
 
-#: src/controller/Categories.hx:3625
+#: src/controller/Categories.hx:3696
 msgid "Category deleted"
 msgstr "Kategorie gelöscht"
 
@@ -1047,7 +1114,7 @@ msgstr "Zahlungsart"
 
 #: src/controller/Transaction.hx:1358 src/controller/Transaction.hx:3377
 msgid "As a payment for :"
-msgstr "Als Bezahlung für :"
+msgstr "Als Zahlung für :"
 
 #: src/controller/Transaction.hx:2023
 msgid "Payment recorded"
@@ -1299,7 +1366,7 @@ msgid "the delivery has been deleted"
 msgstr "die Lieferung wurde gelöscht"
 
 #: src/controller/Distribution.hx:5048 src/controller/Distribution.hx:6979
-#: src/controller/Distribution.hx:10665
+#: src/controller/Distribution.hx:10622
 msgid "End time"
 msgstr "Endzeit"
 
@@ -1341,7 +1408,7 @@ msgstr "Die Lieferung wurde gespeichert"
 msgid "Create a distribution"
 msgstr "Eine Lieferung hinzufügen"
 
-#: src/controller/Distribution.hx:9026 src/controller/Distribution.hx:11891
+#: src/controller/Distribution.hx:9026 src/controller/Distribution.hx:11848
 msgid ""
 "The date of the delivery must be prior to the end of the contract (::"
 "contractEndDate::)"
@@ -1349,7 +1416,7 @@ msgstr ""
 "Das Lieferdatum muss vor dem Enddatum ihres Angebotes liegen (::"
 "contractEndDate::)"
 
-#: src/controller/Distribution.hx:9264 src/controller/Distribution.hx:12135
+#: src/controller/Distribution.hx:9264 src/controller/Distribution.hx:12092
 msgid ""
 "The date of the delivery must be after the begining of the contract (::"
 "contractBeginDate::)"
@@ -1357,27 +1424,35 @@ msgstr ""
 "Das Lieferdatum muss nach dem Startdatum ihres Angebotes liegen (::"
 "contractBeginDate::)"
 
-#: src/controller/Distribution.hx:10470
+#: src/controller/Distribution.hx:9573
+msgid "The delivery date must be prior to the closure date of orders"
+msgstr ""
+
+#: src/controller/Distribution.hx:9768
+msgid "The closure date of orders must be after the opening date of orders!"
+msgstr ""
+
+#: src/controller/Distribution.hx:10427
 msgid "Start time"
 msgstr "Startzeit"
 
-#: src/controller/Distribution.hx:11012
+#: src/controller/Distribution.hx:10969
 msgid "Opening time"
 msgstr "Öffnungszeit"
 
-#: src/controller/Distribution.hx:11305
+#: src/controller/Distribution.hx:11262
 msgid "Closing time"
 msgstr "Schlusszeit"
 
-#: src/controller/Distribution.hx:12386
+#: src/controller/Distribution.hx:12343
 msgid "The delivery has been saved"
 msgstr "Die Lieferung wurde gespeichert"
 
-#: src/controller/Distribution.hx:12537
+#: src/controller/Distribution.hx:12494
 msgid "Schedule a recurrent delivery"
 msgstr "Lieferplan organisieren"
 
-#: src/controller/Distribution.hx:12978
+#: src/controller/Distribution.hx:12935
 msgid "Recurrent deliveries deleted"
 msgstr "Regelmäßiger Lieferungen gelöscht"
 
@@ -1486,8 +1561,8 @@ msgid ""
 "<li>Confirm the reception of payments (checks, cash, transfers) in order to "
 "mark orders as 'paid'</li></ul>"
 msgstr ""
-"<li>Erhaltene Zahlungen bestätigen (checks, cash, transfers) um Bestellungen "
-"als ’bezahlt’ zu markieren</li></ul>"
+"<li>Erhaltene Zahlungen bestätigen (bar, überwiesen) um Bestellungen als "
+"’bezahlt’ zu markieren</li></ul>"
 
 #: src/controller/Cron.hx:11301
 msgid "Validation of the distribution of the "
@@ -1564,7 +1639,7 @@ msgstr "Zutritt nicht erlaubt"
 #: src/controller/AmapAdmin.hx:569 lang/master/tpl/member/payments.mtt:867
 #: lang/master/tpl/contract/default.mtt:4580
 msgid "Payments"
-msgstr "Zahlung"
+msgstr "Betrag"
 
 #: src/controller/AmapAdmin.hx:1627
 msgid "The image sent is too heavy. The maximum authorized weight is 12Mb"
@@ -2060,6 +2135,10 @@ msgstr "Anmeldung"
 msgid "Main contact"
 msgstr "Hauptkontakt"
 
+#: src/db/Category.hx:647
+msgid "Name of the category"
+msgstr "Name"
+
 #: src/db/CategoryGroup.hx:946
 msgid "Category group name"
 msgstr "Gruppenname der Kategorie"
@@ -2255,13 +2334,13 @@ msgstr ""
 "übernommen !"
 
 #. Order button on homepage
-#: lang/master/tpl/home.mtt:8133 lang/master/tpl/shop/default.mtt:3491
-#: lang/master/tpl/shop/choose.mtt:2086 lang/master/tpl/contract/view.mtt:2925
+#: lang/master/tpl/home.mtt:8133 lang/master/tpl/shop/choose.mtt:2089
+#: lang/master/tpl/contract/view.mtt:2925
 #: lang/master/tpl/contract/view.mtt:3263
 #: lang/master/tpl/contract/orderAndPay.mtt:88
 #: lang/master/tpl/contract/order.mtt:88 lang/master/tpl/macros.mtt:4804
 msgid "Order"
-msgstr "Bestellung"
+msgstr "Bestellen"
 
 #: lang/master/tpl/home.mtt:8363
 msgid "Order closed since"
@@ -2402,9 +2481,9 @@ msgstr ""
 "in ihre Datenbank zu importieren."
 
 #: lang/master/tpl/product/import.mtt:2785
-msgid "To start, <a href=\"/produits.xls\">Download this demo file</a>"
+msgid "To start, <a href=\"/products.xls\">Download this demo file</a>"
 msgstr ""
-"Zu Beginn, <a href=\"/produits.xls\">downloade dir diese Demoversion</a>"
+"Zu Beginn, <a href=\"/produkte.xls\">downloade dir diese Demoversion</a>"
 
 #: lang/master/tpl/product/import.mtt:2874
 msgid ""
@@ -2471,7 +2550,7 @@ msgid "Actions"
 msgstr "Aktion"
 
 #: lang/master/tpl/amapadmin/rights.mtt:540
-#: lang/master/tpl/categories/default.mtt:1135
+#: lang/master/tpl/categories/default.mtt:1143
 msgid "Modify"
 msgstr "Ändern"
 
@@ -2746,7 +2825,7 @@ msgstr "Gesamtsumme"
 #: lang/master/tpl/member/view.mtt:5930
 #: lang/master/tpl/contract/default.mtt:5051
 msgid "Payments details"
-msgstr "Zahlungeinzelheiten"
+msgstr "Zahlungseinzelheiten"
 
 #: lang/master/tpl/member/lastMessages.mtt:75
 msgid "Subject"
@@ -2778,10 +2857,6 @@ msgstr "Anfrage ablehnen"
 #: lang/master/tpl/member/import.mtt:344
 msgid "Users to import"
 msgstr "Importiere Kundenliste"
-
-#: lang/master/tpl/member/import.mtt:837 lang/master/tpl/member/import.mtt:1558
-msgid "phone"
-msgstr "Telefon"
 
 #: lang/master/tpl/member/import.mtt:932 lang/master/tpl/member/import.mtt:1650
 msgid "zip code"
@@ -2864,7 +2939,7 @@ msgid ""
 msgstr ""
 "Hier können Sie eine Mitgliederliste per Excel Datei oder ähnlichem direkt "
 "in ihre Datenbank importieren .<br/><ul><li>Der erste Schritt ist <a href=\"/"
-"adherents.xls\">die Demo-Datei herunterzuladen.</a></li><li>Füllen oder "
+"mitglieder.xls\">die Demo-Datei herunterzuladen.</a></li><li>Füllen oder "
 "ändern Sie die Tabelle so, dass die Reihenfolge und das Zusammenpassen der "
 "Spalten strikte Beachtung finden. </li><li>Sobald ihre Datei vollständig "
 "ist, klicken Sie auf \"speichern unter\" in ihrem Excelblatt und wählen den "
@@ -3114,13 +3189,13 @@ msgid "full"
 msgstr "voll"
 
 #: lang/master/tpl/distribution/planning.mtt:2794
-#: lang/master/tpl/shop/default.mtt:3988
+#: lang/master/tpl/shop/default.mtt:3986
 msgid "Validate"
 msgstr "Bestätigen"
 
 #: lang/master/tpl/distribution/listByDate.mtt:2799
 msgid "Payment:"
-msgstr "Zahlung:"
+msgstr "Betrag:"
 
 #: lang/master/tpl/distribution/listByDate.mtt:3886
 #: lang/master/tpl/distribution/listByDate.mtt:5381
@@ -3305,23 +3380,27 @@ msgstr ""
 msgid "Create the list of default categories"
 msgstr "Kategorien automatisch erstellen"
 
-#: lang/master/tpl/categories/default.mtt:733
+#: lang/master/tpl/categories/default.mtt:613 lang/master/tpl/design.mtt:3291
+msgid "Group"
+msgstr "Gruppe"
+
+#: lang/master/tpl/categories/default.mtt:741
 msgid "Modify group"
 msgstr "Gruppe ändern"
 
-#: lang/master/tpl/categories/default.mtt:874
+#: lang/master/tpl/categories/default.mtt:882
 msgid "Remove group"
 msgstr "Gruppe löschen"
 
-#: lang/master/tpl/categories/default.mtt:1266
+#: lang/master/tpl/categories/default.mtt:1274
 msgid "Remove"
 msgstr "Löschen"
 
-#: lang/master/tpl/categories/default.mtt:1407
+#: lang/master/tpl/categories/default.mtt:1415
 msgid "Add a category in this group"
 msgstr "Dieser Gruppe eine Kategorie hinzufügen"
 
-#: lang/master/tpl/categories/default.mtt:1565
+#: lang/master/tpl/categories/default.mtt:1573
 msgid "Add a group"
 msgstr "Eine Gruppe hinzufügen"
 
@@ -3554,16 +3633,20 @@ msgstr "Nicht vorrätig"
 msgid "Only ::pstock:: items in stock"
 msgstr "Nur ::pstock:: Produkte auf Vorrat"
 
-#: lang/master/tpl/shop/default.mtt:3837
+#. Order button
+#: lang/master/tpl/shop/default.mtt:3491
+msgid "Buy"
+msgstr "Bestellen"
+
+#: lang/master/tpl/shop/default.mtt:3835
 msgid "My order"
 msgstr "Meine Bestellung"
 
-#: lang/master/tpl/shop/default.mtt:4049 lang/master/tpl/contract/view.mtt:3369
+#: lang/master/tpl/shop/default.mtt:4047 lang/master/tpl/contract/view.mtt:3369
 msgid "You can check your previous orders in 'my account' section"
-msgstr ""
-"Sie können Ihre bisherigen Bestellungen in \\\"Mein Konto\\\" überprüfen"
+msgstr "Sie können Ihre bisherigen Bestellungen in 'Mein Konto' überprüfen"
 
-#: lang/master/tpl/shop/default.mtt:4289
+#: lang/master/tpl/shop/default.mtt:4287
 msgid "All products"
 msgstr "Alle Produkte"
 
@@ -3575,7 +3658,7 @@ msgstr "Lieferung wählen"
 msgid "There is currently no delivery planned."
 msgstr "Derzeit keine  Lieferung geplant."
 
-#: lang/master/tpl/shop/choose.mtt:2197
+#: lang/master/tpl/shop/choose.mtt:2200
 msgid "Opening of orders"
 msgstr "Bestellungen geöffnet"
 
@@ -3611,10 +3694,6 @@ msgstr "Mein Konto"
 #: lang/master/tpl/contractadmin/default.mtt:590
 msgid "Contracts"
 msgstr "Angebote"
-
-#: lang/master/tpl/design.mtt:3291
-msgid "Group"
-msgstr "Gruppe"
 
 #: lang/master/tpl/design.mtt:3425
 msgid "Admin"
@@ -3763,7 +3842,7 @@ msgid ""
 "It is a contract with a duration of one year or for one season. Products are "
 "always the same at each delivery"
 msgstr ""
-"Das ist ein Angebot mit einer Laufzeit von einem Jahr oder einer Season. Die "
+"Das ist ein Angebot mit einer Laufzeit von einem Jahr oder einer Saison. Die "
 "Produkte wechseln je nach Jahreszeit, sind aber nicht frei wählbar."
 
 #: lang/master/tpl/contract/insertChoose.mtt:493
@@ -3876,7 +3955,7 @@ msgstr "Tip: Um eine Bestellung zu löschen, bitte die Anzahl 0 angeben"
 
 #: lang/master/tpl/contract/default.mtt:51
 msgid "Last orders"
-msgstr "Die letzten Bestellungen"
+msgstr "Kürzlich aufgegebene Bestellungen"
 
 #: lang/master/tpl/contract/default.mtt:169
 msgid "CSA Contracts"
@@ -3892,11 +3971,11 @@ msgstr "Meine Bestellungen"
 
 #: lang/master/tpl/contract/default.mtt:2474
 msgid "Order delivered on"
-msgstr "Bestellung geliefert am"
+msgstr "Liefertermin am"
 
 #: lang/master/tpl/contract/default.mtt:4005
 msgid "Profile"
-msgstr "Benutzerprofil"
+msgstr "Persönliche Infos"
 
 #: lang/master/tpl/contract/default.mtt:4207
 msgid ""
@@ -4364,7 +4443,7 @@ msgstr "Ihre Bestellung wurde aufgenommen!"
 
 #: lang/master/tpl/transaction/cash.mtt:339
 msgid "You chose to pay by cash at the product distribution"
-msgstr "Sie haben gewählt die Produkte bei Lieferung bar zu bezahlen"
+msgstr "Sie möchten die Produkte bei Lieferung bar bezahlen"
 
 #: lang/master/tpl/transaction/cash.mtt:430
 msgid "Please prepare the following amount for the distribution :"
@@ -4374,15 +4453,15 @@ msgstr "Bitte halten Sie den folgenden Betrag bei ihrer Lieferung bereit :"
 #: lang/master/tpl/transaction/transfer.mtt:896
 #: lang/master/tpl/transaction/check.mtt:922
 msgid "Check my orders"
-msgstr "Überprüfe meine Bestellung"
+msgstr "Meine Bestellung überprüfen"
 
 #: lang/master/tpl/transaction/transfer.mtt:335
 msgid "You chose to pay by transfer"
-msgstr "Sie wählen per Überweisung zu zahlen"
+msgstr "Sie möchten per Überweisung zahlen"
 
 #: lang/master/tpl/transaction/transfer.mtt:398
 msgid "Please make a transfer of"
-msgstr "Bitte tätigen Sie eine Überweisung auf"
+msgstr "Bitte tätigen Sie eine Überweisung von"
 
 #: lang/master/tpl/transaction/transfer.mtt:491
 msgid "to the following bank account:"
@@ -4408,7 +4487,7 @@ msgstr "Ihre derzeitige Bilanz ist"
 
 #: lang/master/tpl/transaction/pay.mtt:243
 msgid "Amount to pay"
-msgstr "Zahlungsbetrag"
+msgstr "Gesamtbetrag"
 
 #: lang/master/tpl/transaction/pay.mtt:328
 msgid ""
@@ -4440,7 +4519,7 @@ msgstr "löschen"
 
 #: lang/master/tpl/account/payments.mtt:835
 msgid "Payments:"
-msgstr "Zahlungen"
+msgstr "Beträge"
 
 #: lang/master/tpl/account/payments.mtt:1219
 msgid "Balance:"
@@ -4774,6 +4853,10 @@ msgstr ""
 "einen guten Gesamtüberblick der Software vermitteln können.<br/>Für weitere "
 "Infos zögern Sie nicht unter<b>Dokumentation</b> einen weitere Hinweise "
 "aufzurufen. Der Link ist immer am Ende der Seite verfügbar.</p>"
+
+#~ msgid "To start, <a href=\"/produits.xls\">Download this demo file</a>"
+#~ msgstr ""
+#~ "Zu Beginn, <a href=\"/produkte.xls\">downloade dir diese Demoversion</a>"
 
 #~ msgid "Seniority of subscribers of "
 #~ msgstr "Mitglied seit "
