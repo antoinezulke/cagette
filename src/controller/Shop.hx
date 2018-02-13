@@ -157,17 +157,24 @@ class Shop extends Controller
 		}
 		
 		if (place == null) throw "place cannot be null";
-		if (date == null) throw "date cannot be null";		
+		if (date == null) throw "date cannot be null";
 
 		var products = getProducts(place, date);
 
 		var errors = [];
 		order.total = 0.0;
 		
+		var test = "";
 		//cleaning
 		for (o in order.products.copy()) {
-			
+
 			var p = db.Product.manager.get(o.productId, false);
+
+			//Check if the quantity is below 1
+			if(o.quantity < 1)
+			{
+				throw Error("/", t._("The order could not be validated. The quantity of the product <b>::pname::</b> cannot be below 1.",{pname:p.name}) );
+			}
 			
 			//check that the products are from this group (we never know...)
 			if (p.contract.amap.id != app.user.amap.id){
@@ -204,6 +211,7 @@ class Shop extends Controller
 			}
 		
 			order.total += p.getPrice() * o.quantity;
+
 		}
 		
 		order.userId = app.user.id;
