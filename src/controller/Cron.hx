@@ -92,15 +92,14 @@ class Cron extends Controller
 		
 		//DB cleaning : I dont know how, but some people have empty string emails...
 		for ( u in db.User.manager.search($email == "", true)){
-			u.email = Std.random(9999) + "@cagette.net";
+			//u.email = Std.random(9999) + "@cagette.net";
+			u.email = "userwithoutemail@lemilo.de";
 			u.update();
 		}
 		for ( u in db.User.manager.search($email2 == "", true)){
 			u.email2 = null;
 			u.update();
 		}
-		
-		
 	}
 	
 	/**
