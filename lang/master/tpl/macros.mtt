@@ -1,6 +1,6 @@
 <macros>
 
-	<macro name="jsConfirm(?text)">confirm(::if text==null::'Confirmer cette action ?'::else::'::escapeJS(text)::'::end::)</macro>
+	<macro name="jsConfirm(?text)">confirm(::if text==null::'::_("Confirm this action?")::'::else::'::escapeJS(text)::'::end::)</macro>
 	
 	<macro name="confirm(?text)" onclick="return $$jsConfirm(::text::)"/>
 	
@@ -108,7 +108,7 @@
 				::if Std.parseInt(h)<=12::
 					::_("THIS MORNING")::
 				::elseif Std.parseInt(h)<18::
-					<span style="font-size:14px;">CET<br/>::_("AFTERNOON")::</span>
+					<span style="font-size:14px;">::raw _("THIS<br/>AFTERNOON")::</span>
 				::else::
 					::_("THIS EVENING")::
 				::end::

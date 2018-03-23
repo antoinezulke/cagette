@@ -123,10 +123,10 @@ class Categories extends controller.Controller
 			
 			form.toSpod(c);
 			c.update();
-			throw Ok("/amapadmin/categories","Catégorie modifiée");			
+			throw Ok("/amapadmin/categories", t._("The category has been modified"));
 		}
 		
-		view.title = t._("Modify the category ") + c.name;
+		view.title = t._("Modify the category ::cname::", {cname:c.name});
 		view.form = form;
 	}
 	
