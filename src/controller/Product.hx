@@ -71,7 +71,7 @@ class Product extends Controller
 		
 		var d = new db.Product();
 		var f = sugoi.form.Form.fromSpod(d);
-		
+
 		//f.removeElement( f.getElement("type") );		
 		//var pt = new form.ProductTypeRadioGroup("type", "type", "1");
 		//f.addElement( pt );
@@ -107,7 +107,7 @@ class Product extends Controller
 		}
 		
 		view.form = f;
-		view.title = t._("Key-in a new product");
+		view.title = t._("Key-in a new product");	
 	}
 	
 	public function doDelete(p:db.Product) {
@@ -171,11 +171,16 @@ class Product extends Controller
 					product.qt = fv.filterString(p["qt"]);
 					if(p["unit"]!=null){
 						product.unitType = switch(p["unit"].toLowerCase()){
-							case "kg" : Kilogramm;
-							case "g" : Gramm;
-							case "l" : Liter;
-							case "litre" : Liter;
-							default : Stueckpreis;
+							// case "kg" : Kilogramm;
+							// case "g" : Gramm;
+							// case "l" : Liter;
+							// case "litre" : Liter;
+							// default : Stueckpreis;
+							case "kg" : Kilogram; 
+							case "g" : Gram; 
+							case "l" : Litre; 
+							case "litre" : Litre; 
+							default : Piece; 
 						}
 					}
 					if (p["stock"] != null) product.stock = fv.filterString(p["stock"]);

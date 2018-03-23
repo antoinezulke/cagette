@@ -241,10 +241,12 @@ class App extends sugoi.BaseApp {
 		 out.set("CagetteNetwork", "Me lister dans l'annuaire des groupes Cagette.net");
 		// out.set("unitType", "Unité");
 		// out.set("qt", "Quantité");
-		// out.set("Unit", "Pièce");
-		// out.set("Kilogram", "Kilogrammes");
-		// out.set("Gram", "Grammes");
-		// out.set("Litre", "Litres");		
+		 //out.set("Unit", "Pièce");
+		 out.set("Kilogram", "Kilogramm");
+		 out.set("Gram", "Gramm");
+		 out.set("Litre", "Liter");
+		 out.set("Centilitre", "Zentiliter");
+		 out.set("Piece", "Stückpreis");
 		// out.set("htPrice", "Prix H.T");
 		// out.set("amount", "Montant");
 		
