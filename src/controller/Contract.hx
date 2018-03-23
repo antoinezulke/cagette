@@ -41,6 +41,7 @@ class Contract extends Controller
 		}
 		view.langLinks = langLinks;
 		view.langText = langNames[langs.indexOf(app.session.lang)];
+		view.langNum = i;
 
 		//change account lang
 		if (app.params.exists("lang") && app.user!=null){

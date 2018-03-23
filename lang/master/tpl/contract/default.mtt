@@ -235,6 +235,7 @@
 	</div>	
 	::end::
 	
+	::if langNum > 1::
 	<h3>::_("Language")::</h3>
 	<div class="article">
 		::_("Display the interface in another language")::
@@ -251,6 +252,7 @@
 			</b>
 		</p>
 	</div>
+	::end::
 	
 </div>
 
