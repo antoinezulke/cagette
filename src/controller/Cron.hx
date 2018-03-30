@@ -34,13 +34,15 @@ class Cron extends Controller
 	}
 	
 	public function doMinute() {
+		//sendMailCronOK("Minute");
 		if (!canRun()) return;
 		
 		app.event(MinutelyCron);
 	}
 	
 	public function doHour() {
-		
+		//sendMailCronOK("Hour");
+
 		// this function can be locally tested by
 		// cd /data/cagette/www/ && neko index.n cron/hour > cron.log
 		
@@ -51,11 +53,22 @@ class Cron extends Controller
 		distribNotif(0, db.User.UserFlags.HasEmailNotifOuverture); //on command open
 		
 		distribValidationNotif();
-		
+	}
+
+	public function sendMailCronOK(type:String)
+	{
+		var m = new Mail();
+		m.setSender(App.config.get("default_email"),"LEMILO");
+		m.addRecipient(App.config.get("webmaster_email"));
+		m.setSubject("Notif admin prod - Cron " + type + " started at " + Date.now().toString());
+		m.setHtmlBody("Notif admin prod - Cron " + type + " started at " + Date.now().toString());
+		App.sendMail(m);
 	}
 	
 	
 	public function doDaily() {
+		sendMailCronOK("Daily");
+
 		if (!canRun()) return;
 		
 		app.event(DailyCron);
