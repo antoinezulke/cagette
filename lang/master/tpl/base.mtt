@@ -62,6 +62,10 @@
 		::if HOST.substr(0,3)=="pp."::
 		<div style="position: absolute;background: #F60;padding: 8px;left: 0;color: #FF0;">PREPROD</div>
 		::end::
+
+		::if HOST.substr(0,5)=="test."::
+		<div style="position: absolute;background: #F60;padding: 8px;left: 0;color: #FF0;">TEST</div>
+		::end::
 		
 		<!-- Modal window -->
 		<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
