@@ -4234,7 +4234,7 @@ msgstr "Alle drei Wochen"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:1754
 msgid "New distribution"
-msgstr "Neue Lieferung"
+msgstr "Einmalige Lieferung"
 
 #: lang/master/tpl/contractadmin/deliveries.mtt:1823
 msgid "Distribution cycles"
