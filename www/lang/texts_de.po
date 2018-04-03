@@ -2701,7 +2701,7 @@ msgstr "Regelmäßige Angebote (Solawi)"
 #. short version for quantity
 #: lang/master/tpl/member/view.mtt:2998 lang/master/tpl/member/view.mtt:3987
 #: lang/master/tpl/distribution/listByDateShort.mtt:482
-#: lang/master/tpl/distribution/list.mtt:2308
+#: lang/master/tpl/distribution/list.mtt:2376
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:424
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:453
 #: lang/master/tpl/distribution/listByDate.mtt:455
@@ -2718,7 +2718,7 @@ msgstr "Menge"
 
 #: lang/master/tpl/member/view.mtt:3053 lang/master/tpl/member/view.mtt:4044
 #: lang/master/tpl/distribution/listByDateShort.mtt:509
-#: lang/master/tpl/distribution/list.mtt:2366
+#: lang/master/tpl/distribution/list.mtt:2434
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:448
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:477
 #: lang/master/tpl/distribution/listByDate.mtt:482
@@ -2762,7 +2762,7 @@ msgid "U.P"
 msgstr "Einzelpreis"
 
 #: lang/master/tpl/member/view.mtt:4238
-#: lang/master/tpl/distribution/list.mtt:2429
+#: lang/master/tpl/distribution/list.mtt:2497
 #: lang/master/tpl/validate/user.mtt:990
 #: lang/master/tpl/contract/orderByDate.mtt:645
 #: lang/master/tpl/contract/default.mtt:580
@@ -2774,7 +2774,7 @@ msgid "Sub-total"
 msgstr "Zwischensumme"
 
 #: lang/master/tpl/member/view.mtt:4273
-#: lang/master/tpl/distribution/list.mtt:2464
+#: lang/master/tpl/distribution/list.mtt:2532
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:501
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:530
 #: lang/master/tpl/distribution/listByDate.mtt:541
@@ -2789,7 +2789,7 @@ msgid "Fees"
 msgstr "Gebühren"
 
 #: lang/master/tpl/member/view.mtt:4303
-#: lang/master/tpl/distribution/list.mtt:2494
+#: lang/master/tpl/distribution/list.mtt:2562
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:526
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:555
 #: lang/master/tpl/distribution/listByDate.mtt:569
@@ -2812,7 +2812,7 @@ msgid "Total"
 msgstr "Gesamt"
 
 #: lang/master/tpl/member/view.mtt:5254
-#: lang/master/tpl/distribution/list.mtt:3861
+#: lang/master/tpl/distribution/list.mtt:3929
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:3113
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:3675
 #: lang/master/tpl/distribution/listByDate.mtt:2493
@@ -3098,7 +3098,7 @@ msgid "Contact details"
 msgstr "Kontaktdaten"
 
 #: lang/master/tpl/distribution/listByDateShort.mtt:546
-#: lang/master/tpl/distribution/list.mtt:2525
+#: lang/master/tpl/distribution/list.mtt:2593
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:555
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:584
 #: lang/master/tpl/distribution/listByDate.mtt:598
@@ -3106,7 +3106,7 @@ msgid "Signature"
 msgstr "Unterschrift"
 
 #: lang/master/tpl/distribution/listByDateShort.mtt:1117
-#: lang/master/tpl/distribution/list.mtt:2012
+#: lang/master/tpl/distribution/list.mtt:2080
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:1488
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:1516
 #: lang/master/tpl/distribution/listByDate.mtt:1133
@@ -3115,7 +3115,7 @@ msgid "alternately with"
 msgstr "abwechselnd mit"
 
 #: lang/master/tpl/distribution/listByDateShort.mtt:2059
-#: lang/master/tpl/distribution/list.mtt:4398
+#: lang/master/tpl/distribution/list.mtt:4466
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:3362
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:3924
 #: lang/master/tpl/distribution/listByDate.mtt:5890
@@ -3131,31 +3131,35 @@ msgstr "Klicke auf \"Control + P\" um die Seite zu drucken."
 msgid "Delivery of the"
 msgstr "Lieferung am"
 
-#: lang/master/tpl/distribution/list.mtt:475
+#: lang/master/tpl/distribution/list.mtt:412
+msgid "Delivery place"
+msgstr "Lieferort"
+
+#: lang/master/tpl/distribution/list.mtt:545
 msgid "Contact in charge of the contract"
 msgstr "Kontakt :"
 
-#: lang/master/tpl/distribution/list.mtt:633
+#: lang/master/tpl/distribution/list.mtt:702
 #: lang/master/tpl/contractadmin/default.mtt:2826
 msgid "Farmers"
 msgstr "Landwirte"
 
-#: lang/master/tpl/distribution/list.mtt:777
+#: lang/master/tpl/distribution/list.mtt:845
 msgid "Members on duty"
 msgstr "Mitglieder im Diensteinsatz"
 
-#: lang/master/tpl/distribution/list.mtt:1734
+#: lang/master/tpl/distribution/list.mtt:1801
 msgid "N°"
 msgstr "Nr."
 
-#: lang/master/tpl/distribution/list.mtt:2337
+#: lang/master/tpl/distribution/list.mtt:2405
 #: lang/master/tpl/validate/user.mtt:807
 #: lang/master/tpl/contractadmin/ordersByDate.mtt:2435
 #: lang/master/tpl/contractadmin/ordersByTimeFrame.mtt:1707
 msgid "Ref"
 msgstr "Ref"
 
-#: lang/master/tpl/distribution/list.mtt:2399
+#: lang/master/tpl/distribution/list.mtt:2467
 #: lang/master/tpl/distribution/listByDateOnePage.mtt:476
 #: lang/master/tpl/distribution/listByDateOnePageContract.mtt:505
 #: lang/master/tpl/distribution/listByDate.mtt:513
@@ -3166,7 +3170,7 @@ msgstr "Ref"
 msgid "U.P."
 msgstr "St.-Pr."
 
-#: lang/master/tpl/distribution/list.mtt:4156
+#: lang/master/tpl/distribution/list.mtt:4224
 msgid "Total order:"
 msgstr "Gesamte Bestellungen:"
 
