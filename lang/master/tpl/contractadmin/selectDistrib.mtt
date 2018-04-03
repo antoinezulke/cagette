@@ -24,7 +24,7 @@
 					<td>
 						<a href="/contractAdmin/orders/::c.id::?d=::d.id::" class="btn btn-default">
 							<span class="glyphicon glyphicon-list"></span>
-							::_("Orders")::
+							::_("Orders Overview")::
 						</a>
 						
 					</td>

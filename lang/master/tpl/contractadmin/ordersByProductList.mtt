@@ -16,7 +16,7 @@
 			<td>
 				<h1>::c._amap.name::</h1>
 				::if distribution!=null::
-					<h2>Livraison du <b>::hDate(distribution.date)::</b></h2>
+					<h2>::_("Delivery of the "):: <b>::hDate(distribution.date)::</b></h2>
 				::end::
 				<h2>::c.name:: - ::c._vendor.name::</h2>		
 			</td>

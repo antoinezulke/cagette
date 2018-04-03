@@ -8,7 +8,7 @@
 <body>
 	
 	::set date = getDate(distrib.date)::
-	<h2>::contract._amap.name:: - ::_("Delivery of the"):: ::date.dow:: ::date.d:: ::date.m::</h2>
+	<h2>::contract._amap.name:: - ::_("Delivery of the"):: ::date.dow:: ::date.d::. ::date.m:: ::date.y::</h2>
 	
 	
 	<h2>::distrib._contract.name:: - ::distrib._contract._vendor.name::</h2>	
@@ -51,7 +51,7 @@
 							<td colspan="8">
 								<span  style="font-size:1.3em;">
 									::set basket = getBasket(m.userId,distrib._place.id,distrib.date)::							
-									<span ::cond basket!=null::>N°::basket.num:: - </span>	
+									<span ::cond basket!=null::>::_("N°"):: ::basket.num:: - </span>	
 									
 									::m.userName::
 								</span>
