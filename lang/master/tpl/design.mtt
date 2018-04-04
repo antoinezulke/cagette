@@ -195,7 +195,7 @@
 				</table>
 			</div>
 		</div>
-		
+		<!--
 			::if (user!=null && user.isAmapManager())::
 			<script>
 			// Include the UserVoice JavaScript SDK (only needed once on a page)
@@ -241,4 +241,5 @@
 			UserVoice.push(['autoprompt', {}]);
 			</script>
 			::end::
+			-->
 ::end::
