@@ -5,7 +5,25 @@ import sugoi.form.ListData.FormData;
 import sugoi.form.elements.FloatInput;
 import sugoi.form.elements.FloatSelect;
 import sugoi.form.elements.IntSelect;
+import neko.Web;
+import haxe.web.Dispatch;
 using Std;
+
+class UUID {
+	public static function uuid() {
+		// Based on https://gist.github.com/LeverOne/1308368
+		var uid = new StringBuf(), a = 8;
+		uid.add(StringTools.hex(Std.int(Date.now().getTime()), 8));
+		while((a++) < 36) {
+			uid.add(a*51 & 52 != 0
+				? StringTools.hex(a^15 != 0 ? 8^Std.int(Math.random() * (a^20 != 0 ? 16 : 4)) : 4)
+				: "-"
+			);
+		}
+		return uid.toString().toLowerCase();
+	}
+}
+
 class Product extends Controller
 {
 
@@ -145,9 +163,16 @@ class Product extends Controller
 		
 		// get the uploaded file content
 		if (request.get("file") != null) {
-			
-			var datas = csv.importDatasAsMap(request.get("file"));
-			
+
+			var tmp = "/tmp/f"+UUID.uuid();
+			sys.io.File.saveContent(tmp+".xlsx", request.get("file"));
+			var r=Sys.command("/usr/bin/unoconv", ["-f", "csv", tmp+".xlsx"]);
+
+			var ct="";
+			if (r == 0) {
+				ct=sys.io.File.getContent(tmp+".csv");
+			}	
+			var datas = csv.importDatasAsMap(ct);
 			app.session.data.csvImportedData = datas;
 			
 			csv.step = 2;
