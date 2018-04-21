@@ -53,8 +53,8 @@ class DistributionCycle extends Object
 			"cycleType"		=> "Häufigkeit",
 			"startDate" 	=> "Startdatum",
 			"endDate"		=> "Enddatum",
-			"daysBeforeOrderStart" 		=> "Öffnung der Bestellung (Anz. der Tage vor der Lieferung)" ,			
-			"daysBeforeOrderEnd"		=> "Bestellschluss (Anz. der Tage vor der Lieferung)",			
+			"daysBeforeOrderStart" 		=> "Bestellzeitraum Anfang (Anz. der Tage vor der Lieferung)" ,			
+			"daysBeforeOrderEnd"		=> "Bestellzeitraum Ende (Anz. der Tage vor der Lieferung)",			
 			"place"			=> "Ort",
 		];
 	}

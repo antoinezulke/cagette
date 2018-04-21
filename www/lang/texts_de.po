@@ -1696,7 +1696,7 @@ msgstr "Rechte ändern von ::user::"
 
 #: src/controller/AmapAdmin.hx:6632 src/controller/AmapAdmin.hx:6896
 msgid "Name "
-msgstr "Name "
+msgstr "Text "
 
 #: src/controller/AmapAdmin.hx:6695 src/controller/AmapAdmin.hx:6960
 msgid "Rate "
@@ -1731,9 +1731,8 @@ msgid "Authorized payment types"
 msgstr "Bezahlungsart wählen"
 
 #: src/controller/AmapAdmin.hx:8948
-#, fuzzy
 msgid "Make the check payable to"
-msgstr "löschen"
+msgstr "Überweisung an"
 
 #: src/controller/AmapAdmin.hx:9078
 msgid "IBAN of your bank account for transfers"
@@ -2344,7 +2343,7 @@ msgstr ""
 #: lang/master/tpl/contract/orderAndPay.mtt:88
 #: lang/master/tpl/contract/order.mtt:88 lang/master/tpl/macros.mtt:4814
 msgid "Order"
-msgstr "Bestellen"
+msgstr "Bestellung"
 
 #: lang/master/tpl/home.mtt:8363
 msgid "Order closed since"
@@ -2684,7 +2683,7 @@ msgstr "Mitgliedschaft zu erneuern"
 #. full sentence : Membership up to date for the period 2017-2018
 #: lang/master/tpl/member/view.mtt:2472
 msgid "for the period"
-msgstr "Für den Zeitraum"
+msgstr "für den Zeitraum"
 
 #: lang/master/tpl/member/view.mtt:2679
 msgid "Manage membership fees"
@@ -3376,7 +3375,7 @@ msgid ""
 "groups of categories in order to sort products as we wish."
 msgstr ""
 "Um Produkte schneller und leichter zuzuordnen oder wieder zu finden, ist es "
-"gut Kategorien anzulegen. Zum Beispiel “Gemüse, Fleisch, Bäckerei, etc.”<br/>"
+"gut Kategorien anzulegen. Zum Beispiel “Gemüse, Fleisch, Gebäck, etc.”<br/>"
 "\tEs ist möglich so viele Kategorien wie gewünscht zu erstellen, um seine "
 "Produkte besser sortieren zu können."
 
@@ -4686,8 +4685,8 @@ msgid ""
 "coordinators of the group</ul>"
 msgstr ""
 "Dieses Menü ist für allen Mitglieder sichtbar.</br> Es führt zu drei Seiten :"
-"\\<ul><li> der Seite <b>Marktplatz</b> , die die Bestellungen und den "
-"Lieferplan anzeigt.</li>\\<li> der Seite <b>Mein Konto</b> um seine "
+"<ul><li> der Seite <b>Marktplatz</b> , die die Bestellungen und den "
+"Lieferplan anzeigt.</li><li> der Seite <b>Mein Konto</b> um seine "
 "Kontaktdaten zu ändern und einen Überblick seiner Bestellungen zu gewinnen.</"
 "li><li> der Seite <b>Meine Gruppe</b>, um die verschiedene Landwirte und "
 "Koordinatoren seiner Gruppe kennenzulernen.</ul>"
@@ -4700,7 +4699,7 @@ msgid ""
 msgstr ""
 "Dieser Teil ist den <b>Koordinatoren</b> vorbehalten. Hier könnt Ihr neue "
 "Mitglieder in eure Liste aufnehmen, die Bestellungen eintragen, Produkte "
-"hinzufügen, etc.<br/><p>Klicken Sie jetzt auf<b>Mitglieder verwalten</b></p>"
+"hinzufügen, etc.<br/><p>Klicken Sie jetzt auf <b>Mitglieder</b></p>"
 
 #: common/Common.hx:6890
 msgid ""
@@ -4712,8 +4711,8 @@ msgstr ""
 "Hier wird die Liste der Mitglieder einer Gruppe <br/>verwaltet. Für jedes "
 "neu angemeldete Mitglied wird ein Konto auf seinen Namen erstellt. Jetzt "
 "kann ein Mitglied sich auf Lemilo.de einloggen und seine Bestellungen "
-"aufgeben oder seinen Lieferplan einsehen.<p>Klicken Sie jetzt "
-"auf<b>Mitglied</b></p>"
+"aufgeben oder seinen Lieferplan einsehen.<p><b>Klicken Sie jetzt auf den "
+"Namen eines Mitglieds</b></p>"
 
 #: common/Common.hx:7320
 msgid ""
@@ -4743,8 +4742,8 @@ msgstr ""
 "Hier finden Sie die Liste der verschiedenen <b>Angebote</b>. Sie beinhalten "
 "ein Anfangsdatum, ein Enddatum, und schildert die Beziehung zu einem "
 "Landwirt. <br/><p> Verwaltemit einem Klick :<ul><li>die Liste der Produkte "
-"dieses Erzeugers</li>\\<li>die Bestellungen der Mitglierder dieses "
-"Erzeugers</li><li>und planen der Lieferungen</li></ul></p>"
+"dieses Erzeugers</li><li>die Bestellungen der Mitglierder dieses Erzeugers</"
+"li><li>und planen der Lieferungen</li></ul></p>"
 
 #: common/Common.hx:8245
 msgid ""
