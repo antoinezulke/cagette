@@ -1,0 +1,2 @@
+cd $HOME/Projects/Lemilo
+make -f deploy tdeploy

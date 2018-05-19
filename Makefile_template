@@ -19,10 +19,4 @@ deploy_site:
 
 deploy_tpl:
 	rsync $(ROPTS) lang/$(LANG) antoine@198.178.126.78:/home/antoine/lemilo/lang/
-	
 
-	
-
-	
-
-	

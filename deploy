@@ -1,0 +1,25 @@
+ROPTS=-zav --no-p --chmod=u=rwX,g=rX,o= --delete --exclude=www/.htaccess --exclude=.svn --exclude=.git --exclude=*.mtt --exclude=tpl/css --exclude=www/file --exclude=*node_modules* --exclude=*.php
+LANG=de
+
+compile:
+	haxe templateGeneration.hxml
+	haxe cagette.hxml
+	haxe cagetteJs.hxml
+	npm run build
+	(cd lang/de/tpl; temploc2 -macros macros.mtt -output ../tmp/ *.mtt */*.mtt */*/*.mtt)
+
+c:
+	haxe cagette.hxml
+
+pdeploy:
+	rsync $(ROPTS) www antoine@198.178.126.78:/home/antoine/lemilo/
+	rsync $(ROPTS) data antoine@198.178.126.78:/home/antoine/lemilo/
+	rsync $(ROPTS) lang/de antoine@198.178.126.78:/home/antoine/lemilo/lang/
+	rsync $(ROPTS) lang/fr antoine@198.178.126.78:/home/antoine/lemilo/lang/
+
+
+tdeploy:
+	haxe cagette.hxml
+	rsync $(ROPTS) www antoine@198.178.126.78:/home/antoine/lemilo.test/
+	rsync $(ROPTS) data antoine@198.178.126.78:/home/antoine/lemilo.test/
+	rsync $(ROPTS) lang/de antoine@198.178.126.78:/home/antoine/lemilo.test/lang/
