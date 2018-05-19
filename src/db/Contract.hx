@@ -43,6 +43,8 @@ class Contract extends Object
 	public var percentageValue : SNull<SInt>; 		//% commission sur les ventes
 	public var percentageName : SNull<SString<64>>;	//nom de la commission, ex "participation aux frais"
 	
+	public var isTest: SBool;
+
 	public var type : SInt;
 	@:skip public static var TYPE_CONSTORDERS = 0; 	//à commande fixes
 	@:skip public static var TYPE_VARORDER = 1;		//à commandes variables
@@ -89,10 +91,9 @@ class Contract extends Object
 	 * The products can be displayed in a shop ?
 	 */
 	public function isVisibleInShop():Bool {
-		
 		//yes if the contract is active and the 'UsersCanOrder' flag is checked
 		var n = Date.now().getTime();
-		return flags.has(UsersCanOrder) && n < this.endDate.getTime() && n > this.startDate.getTime();
+		return isTest == false && flags.has(UsersCanOrder) && n < this.endDate.getTime() && n > this.startDate.getTime();
 	}
 	
 	/**
@@ -145,12 +146,12 @@ class Contract extends Object
 	public static function getActiveContracts(amap:Amap,?large = false, ?lock = false) {
 		var now = Date.now();
 		var end = Date.now();
-	
+		var currentUserIsAdmin = App.current.user == null || App.current.user.isAdmin();
 		if (large) {
 			end = DateTools.delta(end , -1000.0 * 60 * 60 * 24 * 30);
-			return db.Contract.manager.search($amap == amap && $endDate > end,{orderBy:-startDate}, lock);	
+			return db.Contract.manager.search((currentUserIsAdmin || $isTest == true) && $amap == amap && $endDate > end,{orderBy:-startDate}, lock);	
 		}else {
-			return db.Contract.manager.search($amap == amap && $endDate > now && $startDate < now,{orderBy:-startDate}, lock);	
+			return db.Contract.manager.search((currentUserIsAdmin || $isTest == true) && $amap == amap && $endDate > now && $startDate < now,{orderBy:-startDate}, lock);	
 		}
 		
 		
@@ -273,7 +274,8 @@ class Contract extends Object
 			"flags" 			=> t._("Options"),
 			"percentageValue" 	=> t._("Fees percentage"),
 			"percentageName" 	=> t._("Fees label"),			
-			"contact" 			=> t._("Contact"),			
+			"contact" 			=> t._("Contact"),		
+			"isTest"			=> t._("Test Contract (true/false)"),
 			"vendor" 			=> t._("Farmer"),			
 		];
 	}

@@ -11,7 +11,6 @@ class Group extends controller.Controller
 
 	@tpl('group/view.mtt')
 	function doDefault(group:db.Amap){
-		
 		if (group.regOption == db.Amap.RegOption.Open) {
 			app.session.data.amapId = group.id;
 			throw Redirect("/");
@@ -25,6 +24,7 @@ class Group extends controller.Controller
 			
 			view.isMember = Lambda.has(app.user.getAmaps(), group);
 		}
+
 	}
 	
 	/**
@@ -297,6 +297,7 @@ class Group extends controller.Controller
 			contract.name = t._("Chicken Contract - Example");
 			contract.description = t._("Example of contract with variable orders. It is allowed to order something else at every delivery.");
 			contract.amap  = g;
+			contract.isTest = true;
 			contract.type = 1;
 			contract.vendor = vendor;
 			contract.startDate = Date.now();

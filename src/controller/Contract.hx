@@ -280,7 +280,7 @@ class Contract extends Controller
 			//verif qu'il n'y a pas de commandes sur ce contrat
 			var products = c.getProducts();
 			var orders = db.UserContract.manager.count($productId in Lambda.map(products, function(p) return p.id));
-			if (orders > 0) {
+			if (orders > 0 && c.isTest == false) {
 				throw Error("/contractAdmin", t._("You cannot delete this contract because some orders are linked to this contract."));
 			}
 			

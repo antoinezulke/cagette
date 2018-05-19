@@ -49,6 +49,11 @@
 						::_("To"):: ::hDate(c.endDate)::
 					</td>
 					<td>
+						::if c.isTest::
+							TEST
+						::end::
+					</td>
+					<td>
 						
 						<div class="btn-group" role="group">
 						$$edit(::_("Manage")::,/contractAdmin/view/::c.id::)
