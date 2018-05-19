@@ -5,7 +5,7 @@ import sugoi.form.Form;
 import sugoi.form.elements.Selectbox;
 import sugoi.form.validators.EmailValidator;
 import sugoi.tools.Utils;
-
+import payment.UUID;
 
 class Member extends Controller
 {
@@ -497,14 +497,54 @@ class Member extends Controller
 		var step = 1;
 		var request = Utils.getMultipart(1024 * 1024 * 4); //4mb
 		
+// funca
+/*
+		var csv = new sugoi.tools.Csv();
+		csv.step = 1;
+		var request = sugoi.tools.Utils.getMultipart(1024 * 1024 * 4);
+		csv.setHeaders( ["productName","price","ref","desc","qt","unit","organic","floatQt","vat","stock"] );
+		view.contract = c;
+		
+		// get the uploaded file content
+		if (request.get("file") != null) {
+
+			var tmp = "/tmp/f"+UUID.uuid();
+			sys.io.File.saveContent(tmp+".xlsx", request.get("file"));
+			var r=Sys.command("/usr/bin/unoconv", ["-f", "csv", tmp+".xlsx"]);
+
+			var ct="";
+			if (r == 0) {
+				ct=sys.io.File.getContent(tmp+".csv");
+			}	
+			var datas = csv.importDatasAsMap(ct);
+			app.session.data.csvImportedData = datas;
+			
+			csv.step = 2;
+			view.csv = csv;
+		}
+*/
+
+// no funca
+
 		//on recupere le contenu de l'upload
 		var data = request.get("file");
 		if ( data != null) {
-			
 			var csv = new sugoi.tools.Csv();
+			csv.step = 1;
 			csv.setHeaders([t._("Firstname"), t._("Lastname"), t._("E-mail"), t._("Mobile phone"), t._("Partner's firstname"), t._("Partner's lastname"), t._("Partner's e-mail"), t._("Partner's Mobile phone"), t._("Address 1"), t._("Address 2"), t._("Postal code"), t._("City")]);
 			//csv.setHeaders(["Vorname", "Nachname", "E-mail", "Tel.", "Vorname des Partners", "Nachname des Partners", "E-mail des Partners", "Tel. des Partners", "Adresse 1", "Adresse 2", "Postleitzahl", "Stad"]);
-			var unregistred = csv.importDatas(data);
+
+			var tmp = "/tmp/g"+UUID.uuid();
+			sys.io.File.saveContent(tmp+".xlsx", request.get("file"));
+			var r=Sys.command("/usr/bin/unoconv", ["-f", "csv", tmp+".xlsx"]);
+
+
+			var ct="";
+			if (r == 0) {
+				ct=sys.io.File.getContent(tmp+".csv");
+			}	
+
+			var unregistred = csv.importDatas(ct);
 			
 			//cleaning
 			for ( user in unregistred.copy() ) {
