@@ -164,7 +164,7 @@ msgstr ""
 msgid "Operation validated"
 msgstr ""
 
-#: src/controller/Validate.hx:1396 src/controller/Validate.hx:2827 src/controller/Product.hx:454 src/controller/Product.hx:3264 src/controller/Product.hx:3910 src/controller/Product.hx:5976 src/controller/Product.hx:6706 src/controller/Product.hx:7441 src/controller/Product.hx:8137 src/controller/Distribution.hx:14652 src/controller/Vendor.hx:271
+#: src/controller/Validate.hx:1396 src/controller/Validate.hx:2827 src/controller/Product.hx:897 src/controller/Product.hx:3707 src/controller/Product.hx:4353 src/controller/Product.hx:6643 src/controller/Product.hx:7373 src/controller/Product.hx:8108 src/controller/Product.hx:8804 src/controller/Distribution.hx:14652 src/controller/Vendor.hx:271
 msgid "Forbidden access"
 msgstr ""
 
@@ -506,7 +506,7 @@ msgid ""
 "is invalid, please check your file"
 msgstr ""
 
-#: src/controller/Member.hx:20919 src/controller/Product.hx:1971 src/controller/Contract.hx:4226 src/controller/Contract.hx:6528 src/controller/Distribution.hx:662 src/controller/Distribution.hx:4176 src/controller/Distribution.hx:10050 src/controller/Distribution.hx:12660 src/controller/Vendor.hx:1665
+#: src/controller/Member.hx:20919 src/controller/Product.hx:2414 src/controller/Contract.hx:4226 src/controller/Contract.hx:6528 src/controller/Distribution.hx:662 src/controller/Distribution.hx:4176 src/controller/Distribution.hx:10050 src/controller/Distribution.hx:12660 src/controller/Vendor.hx:1665
 msgid "Forbidden action"
 msgstr ""
 
@@ -738,47 +738,47 @@ msgstr ""
 msgid "Congratulations ::userName::, your account is validated!"
 msgstr ""
 
-#: src/controller/Product.hx:1032 src/controller/Product.hx:2567
+#: src/controller/Product.hx:1475 src/controller/Product.hx:3010
 msgid "VAT"
 msgstr ""
 
-#: src/controller/Product.hx:1503 src/controller/Product.hx:2801 src/db/Place.hx:1344 lang/master/tpl/product/import.mtt:1866 lang/master/tpl/amapadmin/rights.mtt:203 lang/master/tpl/member/waiting.mtt:168 lang/master/tpl/distribution/listByDateShort.mtt:415 lang/master/tpl/distribution/listByDate.mtt:388 lang/master/tpl/contractadmin/view.mtt:808 lang/master/tpl/contractadmin/products.mtt:1788
+#: src/controller/Product.hx:1946 src/controller/Product.hx:3244 src/db/Place.hx:1344 lang/master/tpl/product/import.mtt:1873 lang/master/tpl/amapadmin/rights.mtt:203 lang/master/tpl/member/waiting.mtt:168 lang/master/tpl/distribution/listByDateShort.mtt:415 lang/master/tpl/distribution/listByDate.mtt:388 lang/master/tpl/contractadmin/view.mtt:808 lang/master/tpl/contractadmin/products.mtt:1775
 msgid "Name"
 msgstr ""
 
-#: src/controller/Product.hx:1688
+#: src/controller/Product.hx:2131
 msgid "The product has been updated"
 msgstr ""
 
-#: src/controller/Product.hx:1807
+#: src/controller/Product.hx:2250
 msgid "Modify a product"
 msgstr ""
 
-#: src/controller/Product.hx:3008
+#: src/controller/Product.hx:3451
 msgid "The product has been saved"
 msgstr ""
 
-#: src/controller/Product.hx:3131
+#: src/controller/Product.hx:3574
 msgid "Key-in a new product"
 msgstr ""
 
-#: src/controller/Product.hx:3491
+#: src/controller/Product.hx:3934
 msgid "Not possible to delete this product because some orders are referencing it"
 msgstr ""
 
-#: src/controller/Product.hx:3684
+#: src/controller/Product.hx:4127
 msgid "Product deleted"
 msgstr ""
 
-#: src/controller/Product.hx:3745 src/controller/Contract.hx:8429
+#: src/controller/Product.hx:4188 src/controller/Contract.hx:8429
 msgid "Token error"
 msgstr ""
 
-#: src/controller/Product.hx:6089
+#: src/controller/Product.hx:6756
 msgid "You must first define categories before you can assign a category to a product"
 msgstr ""
 
-#: src/controller/Product.hx:7966
+#: src/controller/Product.hx:8633
 msgid "Modifications saved"
 msgstr ""
 
@@ -1715,7 +1715,7 @@ msgstr ""
 msgid "The order has been updated"
 msgstr ""
 
-#: src/db/DistributionCycle.hx:5238
+#: src/db/DistributionCycle.hx:5243
 msgid "The delivery of the ::delivDate:: could not be deleted because it has orders."
 msgstr ""
 
@@ -1799,11 +1799,11 @@ msgstr ""
 msgid "Product name"
 msgstr ""
 
-#: src/db/Product.hx:4182 lang/master/tpl/contractadmin/orders.mtt:3155 lang/master/tpl/contractadmin/products.mtt:1726
+#: src/db/Product.hx:4182 lang/master/tpl/contractadmin/orders.mtt:3155 lang/master/tpl/contractadmin/products.mtt:1713
 msgid "Product ID"
 msgstr ""
 
-#: src/db/Product.hx:4218 lang/master/tpl/product/import.mtt:1895 lang/master/tpl/member/view.mtt:3084 lang/master/tpl/contract/orderAndPay.mtt:880 lang/master/tpl/contract/order.mtt:783 lang/master/tpl/contractadmin/edit.mtt:1043 lang/master/tpl/contractadmin/products.mtt:1827
+#: src/db/Product.hx:4218 lang/master/tpl/product/import.mtt:1902 lang/master/tpl/member/view.mtt:3084 lang/master/tpl/contract/orderAndPay.mtt:880 lang/master/tpl/contract/order.mtt:783 lang/master/tpl/contractadmin/edit.mtt:1043 lang/master/tpl/contractadmin/products.mtt:1814
 msgid "Price"
 msgstr ""
 
@@ -1811,7 +1811,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: src/db/Product.hx:4286 lang/master/tpl/contractadmin/products.mtt:1887
+#: src/db/Product.hx:4286 lang/master/tpl/contractadmin/products.mtt:1874
 msgid "Stock"
 msgstr ""
 
@@ -2131,7 +2131,7 @@ msgstr ""
 msgid "Set my password"
 msgstr ""
 
-#: lang/master/tpl/product/categorize.mtt:43 lang/master/tpl/amapadmin/design.mtt:434 lang/master/tpl/categories/default.mtt:38 lang/master/tpl/shop/productInfo.mtt:2304 lang/master/tpl/contractadmin/products.mtt:477
+#: lang/master/tpl/product/categorize.mtt:43 lang/master/tpl/amapadmin/design.mtt:434 lang/master/tpl/categories/default.mtt:38 lang/master/tpl/shop/productInfo.mtt:2304 lang/master/tpl/contractadmin/products.mtt:464
 msgid "Categories"
 msgstr ""
 
@@ -2167,84 +2167,88 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:930 lang/master/tpl/member/import.mtt:1904
+#: lang/master/tpl/product/import.mtt:416
+msgid "Products to import"
+msgstr ""
+
+#: lang/master/tpl/product/import.mtt:937 lang/master/tpl/member/import.mtt:1904
 msgid "Warning"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:972
+#: lang/master/tpl/product/import.mtt:979
 msgid ""
 "Before validating the import, please check if the table above is correctly "
 "filled.<br/>If data are not in line or not corresponding to the right column, "
 "it means that your CSV file is not correct."
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:1344
+#: lang/master/tpl/product/import.mtt:1351
 msgid "Import these products in the database"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:1460
+#: lang/master/tpl/product/import.mtt:1467
 msgid "Ouch!"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:1488
+#: lang/master/tpl/product/import.mtt:1495
 msgid "It seems that there is no data to import."
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:1703
+#: lang/master/tpl/product/import.mtt:1710
 msgid "Products already available in the database"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2190
+#: lang/master/tpl/product/import.mtt:2197
 msgid "Congratulations! You have imported ::num:: products in your database"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2323
+#: lang/master/tpl/product/import.mtt:2330
 msgid ""
 "You did not import anything in your database because your file was empty "
 "or contained products already present in the database."
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2528 lang/master/tpl/product/addimage.mtt:519
+#: lang/master/tpl/product/import.mtt:2535 lang/master/tpl/product/addimage.mtt:519
 msgid "Back to the management of products"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2630 lang/master/tpl/member/import.mtt:3244
+#: lang/master/tpl/product/import.mtt:2637 lang/master/tpl/member/import.mtt:3244
 msgid "Help"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2651
+#: lang/master/tpl/product/import.mtt:2658
 msgid ""
 "This page will allow you to import a large number of products in your database "
 "from an Excel file."
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2785
+#: lang/master/tpl/product/import.mtt:2792
 msgid "To start, <a href=\"/products.xls\">Download this demo file</a>"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2874
+#: lang/master/tpl/product/import.mtt:2881
 msgid ""
 "Fill correctly this file, or modify your existing file to respect strictly "
 "the order of columns"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:2995
+#: lang/master/tpl/product/import.mtt:3006
 msgid ""
 "When your file is ready, click on\"Save as\" in your Excel sheet and choose "
 "the format CSV"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:3111
+#: lang/master/tpl/product/import.mtt:3122
 msgid ""
 "Choose the following options: separation characters: <b>comma</b>, encoding: "
 "<b>Unicode UTF8<b/>"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:3234
+#: lang/master/tpl/product/import.mtt:3248
 msgid "Save your file"
 msgstr ""
 
-#: lang/master/tpl/product/import.mtt:3274
+#: lang/master/tpl/product/import.mtt:3288
 msgid "Then click on the button above \"Choose a file\" and send your file"
 msgstr ""
 
@@ -2354,7 +2358,7 @@ msgstr ""
 msgid "This member has not set a password"
 msgstr ""
 
-#: lang/master/tpl/member/view.mtt:1322 lang/master/tpl/member/payments.mtt:1100 lang/master/tpl/amap/default.mtt:216 lang/master/tpl/contract/default.mtt:4496 lang/master/tpl/contractadmin/view.mtt:535 lang/master/tpl/contractadmin/orders.mtt:2835 lang/master/tpl/contractadmin/orders.mtt:3015 lang/master/tpl/contractadmin/deliveries.mtt:837 lang/master/tpl/contractadmin/products.mtt:3267 lang/master/tpl/contractadmin/default.mtt:3182 lang/master/tpl/contractadmin/default.mtt:3795
+#: lang/master/tpl/member/view.mtt:1322 lang/master/tpl/member/payments.mtt:1100 lang/master/tpl/amap/default.mtt:216 lang/master/tpl/contract/default.mtt:4496 lang/master/tpl/contractadmin/view.mtt:535 lang/master/tpl/contractadmin/orders.mtt:2835 lang/master/tpl/contractadmin/orders.mtt:3015 lang/master/tpl/contractadmin/deliveries.mtt:837 lang/master/tpl/contractadmin/products.mtt:3254 lang/master/tpl/contractadmin/default.mtt:3182 lang/master/tpl/contractadmin/default.mtt:3795
 msgid "Edit"
 msgstr ""
 
@@ -2564,7 +2568,7 @@ msgstr ""
 msgid "In credit"
 msgstr ""
 
-#: lang/master/tpl/member/payments.mtt:1157 lang/master/tpl/contractadmin/deliveries.mtt:1643 lang/master/tpl/contractadmin/products.mtt:3472 lang/master/tpl/contractadmin/default.mtt:1569 lang/master/tpl/contractadmin/default.mtt:3874
+#: lang/master/tpl/member/payments.mtt:1157 lang/master/tpl/contractadmin/deliveries.mtt:1643 lang/master/tpl/contractadmin/products.mtt:3459 lang/master/tpl/contractadmin/default.mtt:1569 lang/master/tpl/contractadmin/default.mtt:3874
 msgid "Del."
 msgstr ""
 
@@ -3585,7 +3589,7 @@ msgstr ""
 msgid "Total order"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/edit.mtt:3917 lang/master/tpl/contractadmin/products.mtt:3692
+#: lang/master/tpl/contractadmin/edit.mtt:3917 lang/master/tpl/contractadmin/products.mtt:3679
 msgid "Check all"
 msgstr ""
 
@@ -3728,23 +3732,23 @@ msgstr ""
 msgid "New product"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/products.mtt:266
+#: lang/master/tpl/contractadmin/products.mtt:259
 msgid "Import from Excel/CSV"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/products.mtt:683 lang/master/tpl/contractadmin/products.mtt:1031
+#: lang/master/tpl/contractadmin/products.mtt:670 lang/master/tpl/contractadmin/products.mtt:1018
 msgid "You need to select at least one product to perform this action"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/products.mtt:3433 lang/master/tpl/contractadmin/default.mtt:3344
+#: lang/master/tpl/contractadmin/products.mtt:3420 lang/master/tpl/contractadmin/default.mtt:3344
 msgid "Picture"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/products.mtt:3878
+#: lang/master/tpl/contractadmin/products.mtt:3865
 msgid "Enable"
 msgstr ""
 
-#: lang/master/tpl/contractadmin/products.mtt:4016
+#: lang/master/tpl/contractadmin/products.mtt:4003
 msgid "Disable"
 msgstr ""
 
