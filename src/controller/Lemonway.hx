@@ -3,7 +3,6 @@ import sugoi.form.Form;
 
 class Lemonway extends Controller
 {
-
     public var hop:String = "hop";
 
 	public function new()
@@ -14,34 +13,32 @@ class Lemonway extends Controller
         //view.form.addElement();
 	}
 
+    @tpl("lemonway/default.mtt")
+	function doCharge() {
+		var lw=new lemonway.Lemonway();
+		var wallet="1551";
+		var result = lw.moneyIn(wallet,10,2);
+		trace("cuequintosh");
+		throw Ok(result);
+    }
 
     @tpl("lemonway/default.mtt")
-	function doDefault() {
-        var now = Date.now();
-
-		//correct the time to get the local time, by using the correction in the config file
-		//var now2 = DateTools.delta(now, DateTools.hours(Std.parseFloat(App.config.get("nowdate_correction"))));
-
-		throw Ok('/messages', "Server date now: " + now.toString());
-
-
-
-
-        // var req = new haxe.Http("http://api.coindesk.com/v1/bpi/currentprice.json");
-        // req.onData = function(data) {
-        //     this.hop += " - data: " + data;
-        //     var json = haxe.Json.parse(data);
-        //     throw Ok('/', "Data recues:"+data);
-        // }
-        // req.onError = function(error) {
-        //     this.hop += " - error: " + error;
-        //     throw Ok('/', "Error:"+error);
-        // }
-        // // req.onStatus = function(status) {
-        // //     this.hop += " - status: " + status;
-        // //     throw Ok('/', "Status:"+status);
-        // // }
-        // req.request(false);
+	function doWallet() {
+		var lw=new lemonway.Lemonway();
+		var result = lw.createWallet("1551");
+		trace("cuequintosh");
+		throw Ok(result);
     }
+
+
+	function doCancel() {
+		var cg = new db.Notification();
+		cg.wktoken = "a";
+		cg.status = "b";
+		cg.parameters = "c";
+		cg.insert();
+		trace("cuec");
+	}
+	
     
 }
