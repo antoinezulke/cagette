@@ -31,7 +31,7 @@
 					
 					::else::
 					
-						<h4>Inscriptions :</h4>
+						<h4>::_("Subscription:")::</h4>
 						::switch group._regOption::
 						
 						::case::

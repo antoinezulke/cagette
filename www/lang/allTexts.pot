@@ -1863,7 +1863,7 @@ msgstr ""
 msgid "Fees label"
 msgstr ""
 
-#: src/db/Contract.hx:8311 lang/master/tpl/group/view.mtt:3155
+#: src/db/Contract.hx:8311 lang/master/tpl/group/view.mtt:3163
 msgid "Contact"
 msgstr ""
 
@@ -3160,7 +3160,7 @@ msgstr ""
 msgid "Log out"
 msgstr ""
 
-#: lang/master/tpl/design.mtt:1458 lang/master/tpl/group/view.mtt:2338
+#: lang/master/tpl/design.mtt:1458 lang/master/tpl/group/view.mtt:2346
 msgid "Log in"
 msgstr ""
 
@@ -3254,55 +3254,59 @@ msgstr ""
 msgid "Go to my account"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:941
+#: lang/master/tpl/group/view.mtt:839
+msgid "Subscription:"
+msgstr ""
+
+#: lang/master/tpl/group/view.mtt:949
 msgid ""
 "Contact the person in charge in order to subscribe to this group and get "
 "to know membership conditions."
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:1246
+#: lang/master/tpl/group/view.mtt:1254
 msgid "Membership request"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:1341
+#: lang/master/tpl/group/view.mtt:1349
 msgid ""
 "This group accepts subscriptions on waiting list. A coordinator will contact "
 "you."
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:1595
+#: lang/master/tpl/group/view.mtt:1603
 msgid "Subscription on waiting list"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:1838
+#: lang/master/tpl/group/view.mtt:1846
 msgid "Free subscription"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:1932
+#: lang/master/tpl/group/view.mtt:1940
 msgid "This group is full and do not accept any more subscription."
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:2127
+#: lang/master/tpl/group/view.mtt:2135
 msgid "Already member? Log in:"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:2640
+#: lang/master/tpl/group/view.mtt:2648
 msgid "Next deliveries"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:3750
+#: lang/master/tpl/group/view.mtt:3758
 msgid "Suppliers and products"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:3804
+#: lang/master/tpl/group/view.mtt:3812
 msgid "Non-complete extract of available products:"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:4554
+#: lang/master/tpl/group/view.mtt:4562
 msgid "http://www.cagette.net"
 msgstr ""
 
-#: lang/master/tpl/group/view.mtt:4587
+#: lang/master/tpl/group/view.mtt:4595
 msgid "Cagette.net, the free software of food direct-selling"
 msgstr ""
 

@@ -2086,7 +2086,7 @@ msgstr "Gebühr (%)"
 msgid "Fees label"
 msgstr "Gebühren Label"
 
-#: src/db/Contract.hx:8311 lang/master/tpl/group/view.mtt:3155
+#: src/db/Contract.hx:8311 lang/master/tpl/group/view.mtt:3163
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -3686,7 +3686,7 @@ msgstr "Eine andere Gruppe wählen"
 msgid "Log out"
 msgstr "Ausloggen"
 
-#: lang/master/tpl/design.mtt:1458 lang/master/tpl/group/view.mtt:2338
+#: lang/master/tpl/design.mtt:1458 lang/master/tpl/group/view.mtt:2346
 msgid "Log in"
 msgstr "Einloggen"
 
@@ -3785,7 +3785,11 @@ msgstr "Mitgliedsbeitrag einfügen"
 msgid "Go to my account"
 msgstr "Zu meinem Konto gehen"
 
-#: lang/master/tpl/group/view.mtt:941
+#: lang/master/tpl/group/view.mtt:839
+msgid "Subscription:"
+msgstr "Anmelden"
+
+#: lang/master/tpl/group/view.mtt:949
 msgid ""
 "Contact the person in charge in order to subscribe to this group and get to "
 "know membership conditions."
@@ -3793,49 +3797,49 @@ msgstr ""
 "Kontaktiere den Verantwortlichen um der Gruppe beizutreten und mehr über die "
 "Mitgliedschaftsbedingungen zu erfahren."
 
-#: lang/master/tpl/group/view.mtt:1246
+#: lang/master/tpl/group/view.mtt:1254
 msgid "Membership request"
 msgstr "Mitgliedschaftsanfrage"
 
-#: lang/master/tpl/group/view.mtt:1341
+#: lang/master/tpl/group/view.mtt:1349
 msgid ""
 "This group accepts subscriptions on waiting list. A coordinator will contact "
 "you."
 msgstr "Diese Gruppe hat eine Warteliste. Wir freuen uns über ihre Anmeldung."
 
-#: lang/master/tpl/group/view.mtt:1595
+#: lang/master/tpl/group/view.mtt:1603
 msgid "Subscription on waiting list"
 msgstr "Auf die Warteliste setzen"
 
-#: lang/master/tpl/group/view.mtt:1838
+#: lang/master/tpl/group/view.mtt:1846
 msgid "Free subscription"
 msgstr "Gratis-Anmeldung"
 
-#: lang/master/tpl/group/view.mtt:1932
+#: lang/master/tpl/group/view.mtt:1940
 msgid "This group is full and do not accept any more subscription."
 msgstr "Diese Gruppe ist voll und kann leider keine Mitglieder mehr aufnehmen."
 
-#: lang/master/tpl/group/view.mtt:2127
+#: lang/master/tpl/group/view.mtt:2135
 msgid "Already member? Log in:"
 msgstr "Schon Mitglied ? Login:"
 
-#: lang/master/tpl/group/view.mtt:2640
+#: lang/master/tpl/group/view.mtt:2648
 msgid "Next deliveries"
 msgstr "Nächste Lieferungen"
 
-#: lang/master/tpl/group/view.mtt:3750
+#: lang/master/tpl/group/view.mtt:3758
 msgid "Suppliers and products"
 msgstr "Landwirte und Produkte"
 
-#: lang/master/tpl/group/view.mtt:3804
+#: lang/master/tpl/group/view.mtt:3812
 msgid "Non-complete extract of available products:"
 msgstr "Unvollständiger Auszug ihrer verfügbaren Produkte:"
 
-#: lang/master/tpl/group/view.mtt:4554
+#: lang/master/tpl/group/view.mtt:4562
 msgid "http://www.cagette.net"
 msgstr "http://www.lemilo.de"
 
-#: lang/master/tpl/group/view.mtt:4587
+#: lang/master/tpl/group/view.mtt:4595
 msgid "Cagette.net, the free software of food direct-selling"
 msgstr "LEMILO, die Software der Bäuerlichen Direktvermarktung"
 
