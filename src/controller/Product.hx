@@ -147,7 +147,7 @@ class Product extends Controller
 		var csv = new sugoi.tools.Csv();
 		csv.step = 1;
 		var request = sugoi.tools.Utils.getMultipart(1024 * 1024 * 4);
-		csv.setHeaders( ["productName","price","ref","desc","qt","unit","organic","floatQt","vat","stock"] );
+		csv.setHeaders( [t._("productName"),t._("price"),t._("ref"),t._("desc"),t._("qt"),t._("unit"),t._("organic"),t._("floatQt"),t._("vat"),t._("stock")] );
 		view.contract = c;
 		
 		// get the uploaded file content

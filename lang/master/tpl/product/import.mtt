@@ -44,7 +44,7 @@
 						<p>
 							::raw _("Before validating the import, please check if the table above is correctly filled.<br/>If data are not in line or not corresponding to the right column, it means that your CSV file is not correct.")::
 						</p>
-						<a href="/product/import/::contract.id::">Recommencer</a>
+						<a href="/product/import/::contract.id::">::_("Start again")::</a>
 					</div>
 				<a href="/product/import/::contract.id::?confirm=1" class="btn btn-danger">::_("Import these products in the database")::</a>
 				::else::
@@ -52,7 +52,7 @@
 					<div class="alert alert-error">
 						<b>::_("Ouch!")::</b>
 						<p>::_("It seems that there is no data to import.")::</p>
-						<a href="/product/import/::contract.id::">Recommencer</a>
+						<a href="/product/import/::contract.id::">::_("Start again")::</a>
 					</div>
 				
 				::end::
