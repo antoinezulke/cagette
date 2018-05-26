@@ -120,7 +120,7 @@
 								<span class="glyphicon glyphicon-ok"></span>
 								::_("This payment was received")::
 							</a>
-							$$delete(Suppr.,/validate/::date::/::place.id::/::member.id::/deleteOp/::tt.id::?token=::token::)
+							$$delete(::_("Delete")::,/validate/::date::/::place.id::/::member.id::/deleteOp/::tt.id::?token=::token::)
 							::end::
 						</td>
 					</tr>
@@ -216,7 +216,7 @@
 								<span class="glyphicon glyphicon-ok"></span>
 								::_("This payment has been received")::
 							</a>
-							$$delete(Suppr.,/validate/::date::/::place.id::/::member.id::/deleteOp/::op.id::?token=::token::)
+							$$delete(::_("Delete")::,/validate/::date::/::place.id::/::member.id::/deleteOp/::op.id::?token=::token::)
 							::end::
 						</td>
 					</tr>

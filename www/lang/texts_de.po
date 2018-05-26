@@ -3575,7 +3575,7 @@ msgstr ""
 
 #: lang/master/tpl/validate/user.mtt:7908
 msgid "Payment history of this member"
-msgstr ""
+msgstr "Übersicht der Zahlungen des Mitglieds"
 
 #: lang/master/tpl/mail/invitation.mtt:328
 msgid "As a member of <b>::groupName::</b>"
