@@ -58,7 +58,7 @@ class Shop extends Controller
 	private function getProducts(place,date,?categsFromTaxo=false):Array<ProductInfo> {
 
 		contracts = db.Contract.getActiveContracts(app.getCurrentGroup());
-	
+
 		for (c in Lambda.array(contracts)) {
 			//only varying orders
 			if (c.type != db.Contract.TYPE_VARORDER) {

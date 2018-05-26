@@ -93,7 +93,7 @@ class Contract extends Object
 	public function isVisibleInShop():Bool {
 		//yes if the contract is active and the 'UsersCanOrder' flag is checked
 		var n = Date.now().getTime();
-		return isTest == false && flags.has(UsersCanOrder) && n < this.endDate.getTime() && n > this.startDate.getTime();
+		return flags.has(UsersCanOrder) && n < this.endDate.getTime() && n > this.startDate.getTime();
 	}
 	
 	/**
@@ -146,12 +146,12 @@ class Contract extends Object
 	public static function getActiveContracts(amap:Amap,?large = false, ?lock = false) {
 		var now = Date.now();
 		var end = Date.now();
-		var currentUserIsAdmin = App.current.user == null || App.current.user.isAdmin();
+		var currentUserIsAdmin = App.current.user == null || App.current.user.isAmapManager();
 		if (large) {
 			end = DateTools.delta(end , -1000.0 * 60 * 60 * 24 * 30);
-			return db.Contract.manager.search((currentUserIsAdmin || $isTest == true) && $amap == amap && $endDate > end,{orderBy:-startDate}, lock);	
+			return db.Contract.manager.search(($isTest != true || currentUserIsAdmin) && $amap == amap && $endDate > end,{orderBy:-startDate}, lock);	
 		}else {
-			return db.Contract.manager.search((currentUserIsAdmin || $isTest == true) && $amap == amap && $endDate > now && $startDate < now,{orderBy:-startDate}, lock);	
+			return db.Contract.manager.search(($isTest != true || currentUserIsAdmin) && $amap == amap && $endDate > now && $startDate < now,{orderBy:-startDate}, lock);	
 		}
 		
 		

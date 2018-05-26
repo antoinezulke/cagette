@@ -1,0 +1,39 @@
+digraph G {
+	User[label="User\n(can be admin)*"];
+	UserAmap[label="UserAmap(rights)*"];
+	Amap[label="Amap\nGruppe(Minze)"];
+	Contract[label="Contract\nAngebot"];
+	Vendor[label="Vendor\nLandwirt"];
+	Distribution[label="Distribution\nLieferung"];
+	Place[label="Place*\nOrt"];
+	ProductCategory[label="ProductCategory*"];
+	UserContract[label="UserContract(quantity,paid)*\nBestellung"];
+	Basket[label="Basket*"];
+	Product[label="Product*\nProdukte"];
+	Operation[label="Operation\nZahlung"];
+	
+	ProductCategory -> Product;
+	ProductCategory -> Category;
+
+	UserContract -> User;
+	UserContract -> Product;
+	UserContract -> Distribution;
+	UserContract -> Basket;
+	
+	Basket -> User;
+	Basket -> Place;
+	Vendor -> Amap;
+	Operation -> User;
+	Operation -> Amap;
+	Place -> Amap;
+	UserAmap -> Amap;
+	UserAmap -> User;
+	Amap -> User;
+	Amap -> Place;
+	Contract -> User;
+	Contract -> Vendor;
+	Contract -> Amap;
+	Product -> Contract;
+	Distribution -> Contract;
+	Distribution -> Place;
+}

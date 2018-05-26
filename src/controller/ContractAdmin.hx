@@ -33,7 +33,6 @@ class ContractAdmin extends Controller
 	 */
 	@tpl("contractadmin/default.mtt")
 	function doDefault(?args:{old:Bool}) {
-		
 		view.nav.push("default");
 		
 		var now = Date.now();

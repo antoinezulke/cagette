@@ -147,7 +147,6 @@ class Shop extends Controller
 	
 	
 	public function doInit(args:{place:db.Place, date:String}){
-		
 		var out = {place:args.place.getInfos(), orderEndDates: new Array<{date:String,contracts:Array<String>}>() };
 		
 		//order end dates
