@@ -305,6 +305,7 @@ class Group extends controller.Controller
 			contract.contact = user;
 			contract.distributorNum = 2;
 			contract.flags.set(db.Contract.ContractFlags.UsersCanOrder);
+			contract.isTest = true;
 			contract.insert();
 			
 			var egg = new db.Product();
