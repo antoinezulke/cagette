@@ -91,7 +91,9 @@
 				
 			</table>
 			
-		
+			::set tpaid = 0::
+			::set amount = 0::
+
 			::if (user._amap.hasShopMode())::
 			<!--  PAYMENT CHECK FOR SHOP MODE -->
 			<table class="table table-condensed table-bordered">
