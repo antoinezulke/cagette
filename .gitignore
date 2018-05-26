@@ -5,6 +5,8 @@ www/plugin/*
 www/js/bundle.js
 lang/master/tpl/plugin/*
 
+bin/*
+
 lang/fr/tpl/*
 lang/en/tpl/*
 lang/de/tpl/*
