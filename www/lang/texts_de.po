@@ -3571,7 +3571,7 @@ msgstr ""
 
 #: lang/master/tpl/validate/user.mtt:7766
 msgid "Back to the delivery validation"
-msgstr ""
+msgstr "Zurück zur Bestätigung"
 
 #: lang/master/tpl/validate/user.mtt:7908
 msgid "Payment history of this member"
