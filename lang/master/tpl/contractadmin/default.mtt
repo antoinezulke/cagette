@@ -58,7 +58,7 @@
 						<div class="btn-group" role="group">
 						$$edit(::_("Manage")::,/contractAdmin/view/::c.id::)
 						
-						::if user.canManageAllContracts()::
+						::if (user.canManageAllContracts())&&(!c.isTest)::
 						$$delete(::_("Del.||short version of delete")::,/contract/delete/::c.id::?token=::token::)
 						::end::
 						</div>

@@ -172,6 +172,7 @@ class Contract extends Controller
 		var form = Form.fromSpod(c);
 		form.removeElement( form.getElement("amapId") );
 		form.removeElement(form.getElement("type"));
+		form.removeElement(form.getElement("isTest"));
 		form.getElement("userId").required = true;
 		
 		if (form.checkToken()) {
