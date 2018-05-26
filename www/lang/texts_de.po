@@ -2271,7 +2271,7 @@ msgstr "Webseite URL der Gruppe"
 
 #: src/db/UserAmap.hx:2084
 msgid "Administrator"
-msgstr "Verwalter"
+msgstr "Administrator"
 
 #: src/db/UserAmap.hx:2131 lang/master/tpl/design.mtt:3125
 msgid "Messaging"
