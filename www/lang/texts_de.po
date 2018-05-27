@@ -1917,7 +1917,7 @@ msgstr "Name des neuen Angebotes"
 
 #: src/controller/ContractAdmin.hx:19438
 msgid "Copy products"
-msgstr "Produkt kopieren"
+msgstr "Produkte kopieren"
 
 #: src/controller/ContractAdmin.hx:19516
 msgid "Copy deliveries"
