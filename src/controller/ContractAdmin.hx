@@ -607,9 +607,10 @@ class ContractAdmin extends Controller
 		form.addElement(new StringInput("name", t._("Name of the new contract"), contract.name + " - copy "));		
 		form.addElement(new Checkbox("copyProducts", t._("Copy products"),true));
 		form.addElement(new Checkbox("copyDeliveries", t._("Copy deliveries"),true));
+		form.addElement(new Checkbox("isTest", t._("Test"),false));
 		
 		if (form.checkToken()) {
-			
+
 			var nc = new db.Contract();
 			nc.name = form.getValueOf("name");
 			nc.startDate = contract.startDate;
@@ -623,8 +624,9 @@ class ContractAdmin extends Controller
 			nc.vendor = contract.vendor;
 			nc.percentageName = contract.percentageName;
 			nc.percentageValue = contract.percentageValue;
+			nc.isTest = form.getValueOf("isTest");
 			nc.insert();
-			
+
 			//give right to this contract
 			if(contract.contact!=null){
 				var ua = db.UserAmap.get(contract.contact, contract.amap);
