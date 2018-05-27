@@ -94,7 +94,7 @@ class Product extends Controller
 		for (k in app.user.amap.vatRates.keys()) {
 			data.push( { value:app.user.amap.vatRates[k], label:k } );
 		}
-		f.addElement( new FloatSelect("vat", t._("VAT"), data, d.vat ) );
+		f.addElement( new FloatSelect("vat", t._("VAT"), data, d.vat, true, "" ) );
 		
 		var formName = f.name;
 		var html = '<div id="pInput"></div><script language="javascript">_.getProductInput("pInput","",null,"$formName");</script>';
