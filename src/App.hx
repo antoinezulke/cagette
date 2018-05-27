@@ -255,6 +255,10 @@ class App extends sugoi.BaseApp {
 		
 		// out.set("byMember", "Par adhérent");
 		// out.set("byProduct", "Par produit");
+
+		out.set("cash", "Bar");
+		out.set("transfer", "Überweisung");
+
 		return out;
 	}
 	
