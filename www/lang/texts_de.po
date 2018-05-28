@@ -55,7 +55,7 @@ msgstr "Passwort"
 msgid "address"
 msgstr "Adresse"
 
-#: src/App.hx:10516
+#: src/App.hx:10583
 msgid ""
 "Please configure the email settings in a <href='/admin/emails'>this section</"
 "a>"
@@ -181,10 +181,10 @@ msgid "Operation validated"
 msgstr "Operation bestätigt"
 
 #: src/controller/Validate.hx:1396 src/controller/Validate.hx:2827
-#: src/controller/Product.hx:522 src/controller/Product.hx:3332
-#: src/controller/Product.hx:3978 src/controller/Product.hx:6318
-#: src/controller/Product.hx:7048 src/controller/Product.hx:7783
-#: src/controller/Product.hx:8479 src/controller/Distribution.hx:14652
+#: src/controller/Product.hx:522 src/controller/Product.hx:3342
+#: src/controller/Product.hx:3988 src/controller/Product.hx:6328
+#: src/controller/Product.hx:7058 src/controller/Product.hx:7793
+#: src/controller/Product.hx:8489 src/controller/Distribution.hx:14652
 #: src/controller/Vendor.hx:271
 msgid "Forbidden access"
 msgstr "Kein Zugang"
@@ -548,7 +548,7 @@ msgstr "Adresse 2"
 msgid "Postal code"
 msgstr "Postleitzahl"
 
-#: src/controller/Member.hx:17428 src/controller/Group.hx:3778
+#: src/controller/Member.hx:17428 src/controller/Group.hx:3776
 #: src/db/User.hx:15886 src/db/Place.hx:1474 src/db/Vendor.hx:1144
 #: lang/master/tpl/member/import.mtt:964 lang/master/tpl/member/import.mtt:1681
 msgid "City"
@@ -581,7 +581,7 @@ msgstr ""
 "userEmail::’ ist ungültig, bitte ändern Sie ihre Datei"
 
 #: src/controller/Member.hx:21925 src/controller/Product.hx:2039
-#: src/controller/Contract.hx:4226 src/controller/Contract.hx:6528
+#: src/controller/Contract.hx:4226 src/controller/Contract.hx:6577
 #: src/controller/Distribution.hx:662 src/controller/Distribution.hx:4176
 #: src/controller/Distribution.hx:10050 src/controller/Distribution.hx:12660
 #: src/controller/Vendor.hx:1665
@@ -630,17 +630,17 @@ msgstr "Neues Mitglied"
 msgid "This person is now member of the group"
 msgstr "Diese Person ist jetzt ein Mitglied ihrer Gruppe"
 
-#: src/controller/Shop.hx:3845
+#: src/controller/Shop.hx:3844
 msgid "In order to confirm your order, You need to authenticate."
 msgstr ""
 "Um Ihre Bestellung zu bestätigen, müssen Sie sich identifizieren. Bitte "
 "geben Sie ihren Login ein."
 
-#: src/controller/Shop.hx:4274
+#: src/controller/Shop.hx:4273
 msgid "Your order is empty"
 msgstr "Keine Bestellungen vorhanden"
 
-#: src/controller/Shop.hx:4709
+#: src/controller/Shop.hx:4708
 msgid ""
 "The order could not be validated. The quantity of the product <b>::pname::</"
 "b> cannot be below 1."
@@ -648,15 +648,15 @@ msgstr ""
 "Die Bestellung konnte nicht bestätigt werden. Geben Sie bei der Menge <b>::"
 "pname::</b> mindestens 1 an."
 
-#: src/controller/Shop.hx:5013
+#: src/controller/Shop.hx:5012
 msgid "Error, This cart is invalid"
 msgstr "Fehlermeldung, ihr Korb ist abgelaufen"
 
-#: src/controller/Shop.hx:5196 src/controller/Shop.hx:5508
+#: src/controller/Shop.hx:5195 src/controller/Shop.hx:5507
 msgid "The product <b>::pname::</b> is not available in this distribution"
 msgstr "Das Produkt <b>::pname::</b> ist bei dieser Lieferung nicht erhältlich"
 
-#: src/controller/Shop.hx:5925
+#: src/controller/Shop.hx:5924
 msgid ""
 "We reduced your order of ::pname:: to quantity ::oquantity:: as the stock is "
 "not sufficient"
@@ -664,7 +664,7 @@ msgstr ""
 "Wir reduzieren ihre Bestellung von ::pname:: zu einer Anzahl von ::"
 "oquantity:: da der Vorrat nicht ausreicht"
 
-#: src/controller/Shop.hx:6735
+#: src/controller/Shop.hx:6734
 msgid "Your order has been successfully recorded"
 msgstr "Ihre Bestellung wurde erfolgreich abgeschloßen"
 
@@ -712,17 +712,17 @@ msgstr "Der Mitgliedsbeitrag existiert nicht"
 msgid "Subscription deleted"
 msgstr "Mitgliedsbeitrag gelöscht"
 
-#: src/controller/Install.hx:953 src/controller/Group.hx:5037
+#: src/controller/Install.hx:953 src/controller/Group.hx:5035
 msgid "Name of your group"
 msgstr "Name der Gruppe"
 
-#: src/controller/Install.hx:1039 src/controller/Group.hx:1376
-#: src/controller/Group.hx:3321
+#: src/controller/Install.hx:1039 src/controller/Group.hx:1374
+#: src/controller/Group.hx:3319
 msgid "Your firstname"
 msgstr "Vorname"
 
-#: src/controller/Install.hx:1120 src/controller/Group.hx:1460
-#: src/controller/Group.hx:3405
+#: src/controller/Install.hx:1120 src/controller/Group.hx:1458
+#: src/controller/Group.hx:3403
 msgid "Your lastname"
 msgstr "Nachname"
 
@@ -746,11 +746,11 @@ msgstr "Jean Martin EURL"
 msgid "Vegetables Contract Example"
 msgstr "Angebot Beispiel Gemüse"
 
-#: src/controller/Install.hx:2780 src/controller/Group.hx:8266
+#: src/controller/Install.hx:2780 src/controller/Group.hx:8264
 msgid "Big basket of vegetables"
 msgstr "Große Gemüsekiste"
 
-#: src/controller/Install.hx:2937 src/controller/Group.hx:8430
+#: src/controller/Install.hx:2937 src/controller/Group.hx:8428
 msgid "Small basket of vegetables"
 msgstr "Kleine Gemüsekiste"
 
@@ -838,7 +838,7 @@ msgstr "Herzlichen Glückwunsch ::userName::, ihre Konto wurde bestätigt!"
 msgid "VAT"
 msgstr "MwSt"
 
-#: src/controller/Product.hx:1571 src/controller/Product.hx:2869
+#: src/controller/Product.hx:1571 src/controller/Product.hx:2879
 #: src/db/Place.hx:1344 lang/master/tpl/product/import.mtt:1891
 #: lang/master/tpl/amapadmin/rights.mtt:203
 #: lang/master/tpl/member/waiting.mtt:168
@@ -857,70 +857,70 @@ msgstr "Das Produkt wurde aktualisiert"
 msgid "Modify a product"
 msgstr "Produkt ändern"
 
-#: src/controller/Product.hx:3076
+#: src/controller/Product.hx:3086
 msgid "The product has been saved"
 msgstr "Das Produkt wurde gespeichert"
 
-#: src/controller/Product.hx:3199
+#: src/controller/Product.hx:3209
 msgid "Key-in a new product"
 msgstr "Produkt hinzufügen"
 
-#: src/controller/Product.hx:3559
+#: src/controller/Product.hx:3569
 msgid ""
 "Not possible to delete this product because some orders are referencing it"
 msgstr ""
 "Löschung des Produkts nicht möglich. Es wird noch mit einigen Bestellungen "
 "in Verbindung gebracht"
 
-#: src/controller/Product.hx:3752
+#: src/controller/Product.hx:3762
 msgid "Product deleted"
 msgstr "Produkt löschen"
 
-#: src/controller/Product.hx:3813 src/controller/Contract.hx:8429
+#: src/controller/Product.hx:3823 src/controller/Contract.hx:8499
 msgid "Token error"
 msgstr "Token Fehlermeldung"
 
-#: src/controller/Product.hx:4142
+#: src/controller/Product.hx:4152
 msgid "productName"
 msgstr "Name des Productes"
 
-#: src/controller/Product.hx:4161
+#: src/controller/Product.hx:4171
 msgid "price"
 msgstr "Preis"
 
-#: src/controller/Product.hx:4174
+#: src/controller/Product.hx:4184
 msgid "ref"
 msgstr "Ref.- Angabe"
 
-#: src/controller/Product.hx:4185
+#: src/controller/Product.hx:4195
 msgid "desc"
 msgstr "Beschreibung"
 
-#: src/controller/Product.hx:4197
+#: src/controller/Product.hx:4207
 msgid "qt"
 msgstr "Quantität"
 
-#: src/controller/Product.hx:4207
+#: src/controller/Product.hx:4217
 msgid "unit"
 msgstr "Einheit"
 
-#: src/controller/Product.hx:4219
+#: src/controller/Product.hx:4229
 msgid "organic"
 msgstr "Bio"
 
-#: src/controller/Product.hx:4234
+#: src/controller/Product.hx:4244
 msgid "floatQt"
 msgstr "MwST."
 
-#: src/controller/Product.hx:4249
+#: src/controller/Product.hx:4259
 msgid "vat"
 msgstr ""
 
-#: src/controller/Product.hx:4260
+#: src/controller/Product.hx:4270
 msgid "stock"
 msgstr "Vorrat"
 
-#: src/controller/Product.hx:6431
+#: src/controller/Product.hx:6441
 msgid ""
 "You must first define categories before you can assign a category to a "
 "product"
@@ -928,7 +928,7 @@ msgstr ""
 "Bevor Sie ihre Produkte kategorisieren, müssen Sie die Kategorien erst "
 "festlegen"
 
-#: src/controller/Product.hx:8308
+#: src/controller/Product.hx:8318
 msgid "Modifications saved"
 msgstr "Änderungen gespeichert"
 
@@ -936,14 +936,14 @@ msgstr "Änderungen gespeichert"
 msgid "You're not member of this group"
 msgstr "Sie sind kein Mitglied dieser Gruppe"
 
-#: src/controller/Contract.hx:5014
+#: src/controller/Contract.hx:5063
 msgid ""
 "If you would like to add fees to the order, define a rate (%) and label."
 msgstr ""
 "Bestimmen Sie Prozentsatz (%) und Label, falls Sie Kosten zu der Bestellung "
 "addieren möchten."
 
-#: src/controller/Contract.hx:5223
+#: src/controller/Contract.hx:5272
 msgid ""
 "Warning, the management of stock. Please fill the field \"stock\" for all "
 "your products"
@@ -951,32 +951,32 @@ msgstr ""
 "Vorsicht, Sie haben das Management für Vorräte aktiviert. Bitte füllen Sie "
 "das Feld \"Vorrat\" aller ihrer Produkte aus"
 
-#: src/controller/Contract.hx:5550
+#: src/controller/Contract.hx:5599
 msgid "The management of stock is not available for CSA contracts"
 msgstr "Das Vorrats-Management ist für Solawi-Angebote nicht verfügbar"
 
-#: src/controller/Contract.hx:6232
+#: src/controller/Contract.hx:6281
 msgid "Contract updated"
 msgstr "Angebot aktualisiert"
 
-#: src/controller/Contract.hx:6675
+#: src/controller/Contract.hx:6724
 msgid "Create a contract with fixed orders"
 msgstr "Ein festes Angebot (regelmäßige Lieferung) erstellen"
 
-#: src/controller/Contract.hx:6723
+#: src/controller/Contract.hx:6772
 msgid "Create a contract with variable orders"
 msgstr ""
 "Ein variables Angebote (freibleibende, veränderliche Bestellungen) erstellen"
 
-#: src/controller/Contract.hx:7405
+#: src/controller/Contract.hx:7454
 msgid "New contract created"
 msgstr "Neues Angebot erstellt"
 
-#: src/controller/Contract.hx:7599
+#: src/controller/Contract.hx:7648
 msgid "You don't have the authorization to remove a contract"
 msgstr "Ihnen fehlt die Genehmigung um dieses Angebot zu löschen"
 
-#: src/controller/Contract.hx:7957
+#: src/controller/Contract.hx:8027
 msgid ""
 "You cannot delete this contract because some orders are linked to this "
 "contract."
@@ -984,39 +984,39 @@ msgstr ""
 "Ein Angebot kann nicht löscht werden, wenn noch Bestellungen mit diesem "
 "Angebot in Verbindung stehen."
 
-#: src/controller/Contract.hx:8364
+#: src/controller/Contract.hx:8434
 msgid "Contract deleted"
 msgstr "Angebot gelöscht"
 
-#: src/controller/Contract.hx:8995 src/controller/Contract.hx:12257
+#: src/controller/Contract.hx:9065 src/controller/Contract.hx:12327
 msgid "This contract is not opened to orders"
 msgstr "Das Angebotes ist noch nicht für Bestellungen geöffnet"
 
-#: src/controller/Contract.hx:11224 src/controller/Contract.hx:14321
+#: src/controller/Contract.hx:11294 src/controller/Contract.hx:14391
 msgid "Not possible to find the product ::produ:: and the delivery ::deliv::"
 msgstr ""
 "Das Produkt ::produ:: wurde nicht gefunden. Auch nicht die Lieferung ::"
 "deliv::"
 
-#: src/controller/Contract.hx:11793 src/controller/Contract.hx:17562
+#: src/controller/Contract.hx:11863 src/controller/Contract.hx:17632
 msgid "Your order has been updated"
 msgstr "Ihre Bestellung wurde aktualisiert"
 
-#: src/controller/Contract.hx:14976
+#: src/controller/Contract.hx:15046
 msgid "Your CSA order has been saved"
 msgstr "Ihre Solawi Bestellung wurde gespeichert"
 
-#: src/controller/Contract.hx:15059
+#: src/controller/Contract.hx:15129
 msgid "In order to save your order, please choose a payment mean."
 msgstr "Um ihre Bestellung zu speichern, wählen Sie bitte eine Zahlungsart."
 
-#: src/controller/Contract.hx:15597
+#: src/controller/Contract.hx:15667
 msgid "This delivery already took place, you cannot modify the order any more."
 msgstr ""
 "Diese Lieferung hat schon statt gefunden. Die Bestellung kann nicht mehr "
 "geändert werden."
 
-#: src/controller/Contract.hx:15721
+#: src/controller/Contract.hx:15791
 msgid ""
 "<br/>As the manager of the contract you can modify the order from this page "
 "<a href='/contractAdmin'>Management of contracts</a>"
@@ -1024,7 +1024,7 @@ msgstr ""
 "<br/>Als Manager dieses Angebots können Sie die Bestellungen auf dieser "
 "Seite ändern <a href=‘/contractAdmin’>Management für Angebote</a>"
 
-#: src/controller/Contract.hx:17002
+#: src/controller/Contract.hx:17072
 msgid "Error, not possible to find the order"
 msgstr "Fehler, die Bestellung wurde nicht gefunden"
 
@@ -1238,29 +1238,29 @@ msgstr "Zusammenstellung aktualisiert"
 msgid "Email service configuration"
 msgstr "Emailservice konfigurieren"
 
-#: src/controller/Group.hx:1021
+#: src/controller/Group.hx:1019
 msgid "You are already in the waiting list of this group"
 msgstr "Sie sind schon auf der Warteliste dieser Gruppe"
 
-#: src/controller/Group.hx:1200 src/controller/Group.hx:2967
+#: src/controller/Group.hx:1198 src/controller/Group.hx:2965
 msgid "You are already member of this group."
 msgstr "Sie sind schon Mitglied dieser Gruppe."
 
-#: src/controller/Group.hx:1541 src/controller/Group.hx:3480
+#: src/controller/Group.hx:1539 src/controller/Group.hx:3478
 msgid "Your e-mail"
 msgstr "Email"
 
-#: src/controller/Group.hx:1637
+#: src/controller/Group.hx:1635
 msgid "Leave a message"
 msgstr "Nachricht hinterlassen"
 
-#: src/controller/Group.hx:2004
+#: src/controller/Group.hx:2002
 msgid "You already subscribed to Cagette, please log in on this page"
 msgstr ""
 "Sie sind schon bei Lemilo angemeldet. Bitten loggen Sie sich auf dieser "
 "Seite ein"
 
-#: src/controller/Group.hx:2319
+#: src/controller/Group.hx:2317
 msgid ""
 "Your subscription to the waiting list has been recorded. You will receive an "
 "e-mail as soon as your request is processed."
@@ -1268,28 +1268,28 @@ msgstr ""
 "Sie wurden auf der Warteliste eingetragen. Sobald ihre Email bearbeitet "
 "wurde, erhalten Sie eine Nachricht."
 
-#: src/controller/Group.hx:2473
+#: src/controller/Group.hx:2471
 msgid "Subscription to \"::groupeName::\" waiting list"
 msgstr "Tragen Sie sich in die \"::groupeName::\" Warteliste ein"
 
-#: src/controller/Group.hx:3093
+#: src/controller/Group.hx:3091
 msgid "Join the group"
 msgstr "Treten Sie der Gruppe bei"
 
-#: src/controller/Group.hx:3163
+#: src/controller/Group.hx:3161
 msgid "Confirm your subscription to \"::groupName::\""
 msgstr "Bestätigen Sie ihre Anmeldung zur \"::groupName::\""
 
-#: src/controller/Group.hx:3625
+#: src/controller/Group.hx:3623
 msgid "Address"
 msgstr "Adresse"
 
-#: src/controller/Group.hx:3704 src/db/User.hx:15855 src/db/Place.hx:1443
+#: src/controller/Group.hx:3702 src/db/User.hx:15855 src/db/Place.hx:1443
 #: src/db/Vendor.hx:1113
 msgid "Zip code"
 msgstr "Postleitzahl"
 
-#: src/controller/Group.hx:3849 src/db/User.hx:15561 src/db/Vendor.hx:1006
+#: src/controller/Group.hx:3847 src/db/User.hx:15561 src/db/Vendor.hx:1006
 #: lang/master/tpl/member/waiting.mtt:223 lang/master/tpl/member/import.mtt:688
 #: lang/master/tpl/member/import.mtt:1413
 #: lang/master/tpl/member/payments.mtt:521
@@ -1297,57 +1297,57 @@ msgstr "Postleitzahl"
 msgid "Phone"
 msgstr "Telefonnummer"
 
-#: src/controller/Group.hx:4388
+#: src/controller/Group.hx:4386
 msgid "You already subscribed to Cagette.net, please log in on this page"
 msgstr ""
 "Sie sind schon bei Lemilo angemeldet. Bitten loggen Sie sich auf dieser "
 "Seite ein"
 
-#: src/controller/Group.hx:4663
+#: src/controller/Group.hx:4661
 msgid "Your subscription has been taken into account"
 msgstr "Ihre Anmeldung ist bei uns eingegangen"
 
-#: src/controller/Group.hx:4740
+#: src/controller/Group.hx:4738
 msgid "Subscription to \"::groupName::\""
 msgstr "Anmeldung zur \"::groupName::\""
 
-#: src/controller/Group.hx:4926
+#: src/controller/Group.hx:4924
 msgid "Create a new Cagette Group"
 msgstr "Eine neue Lemilo-Gruppe erstellen"
 
-#: src/controller/Group.hx:5292 src/controller/Group.hx:5654
+#: src/controller/Group.hx:5290 src/controller/Group.hx:5652
 msgid "CSA"
 msgstr "Solawi"
 
-#: src/controller/Group.hx:5354 src/controller/Group.hx:5690
+#: src/controller/Group.hx:5352 src/controller/Group.hx:5688
 msgid "Grouped orders"
 msgstr "Einkaufsgemeinschaft"
 
-#: src/controller/Group.hx:5427 src/controller/Group.hx:5737
+#: src/controller/Group.hx:5425 src/controller/Group.hx:5735
 msgid "Farmers collective"
 msgstr "Bauern-Gemeinschaft"
 
-#: src/controller/Group.hx:5504 src/controller/Group.hx:5788
+#: src/controller/Group.hx:5502 src/controller/Group.hx:5786
 msgid "Farm shop"
 msgstr "Hofladen"
 
-#: src/controller/Group.hx:5572 src/controller/Group.hx:5830
+#: src/controller/Group.hx:5570 src/controller/Group.hx:5828
 msgid "Consultant"
 msgstr "Berater"
 
-#: src/controller/Group.hx:5925 src/db/Amap.hx:9318
+#: src/controller/Group.hx:5923 src/db/Amap.hx:9318
 msgid "Group type"
 msgstr "Gruppentyp"
 
-#: src/controller/Group.hx:7323
+#: src/controller/Group.hx:7321
 msgid "Market square"
 msgstr "Marktplatz"
 
-#: src/controller/Group.hx:7764
+#: src/controller/Group.hx:7762
 msgid "CSA contract Vegetables - Example"
 msgstr "Solawi Angebot : Gemüse-Beispiel"
 
-#: src/controller/Group.hx:7833
+#: src/controller/Group.hx:7831
 msgid ""
 "This contract is an example where the customer has to commit to buy the "
 "whole year as with AMAPs"
@@ -1356,19 +1356,19 @@ msgstr ""
 "(Solawi), bei dem sich der Kunde für ein Jahr finanzielle engagiert und "
 "regelmäßig Gemüse erhält"
 
-#: src/controller/Group.hx:8945
+#: src/controller/Group.hx:8943
 msgid "Farm Galinette"
 msgstr "Farm Galinette"
 
-#: src/controller/Group.hx:9012
+#: src/controller/Group.hx:9010
 msgid "Bazas"
 msgstr "Bazas"
 
-#: src/controller/Group.hx:9152
+#: src/controller/Group.hx:9150
 msgid "Chicken Contract - Example"
 msgstr "Angebot : Hühnchen-Beispiel"
 
-#: src/controller/Group.hx:9213
+#: src/controller/Group.hx:9211
 msgid ""
 "Example of contract with variable orders. It is allowed to order something "
 "else at every delivery."
@@ -1376,11 +1376,11 @@ msgstr ""
 "Beispiel für ein variables Angebot. Es handelt sich um freiwählbare "
 "Bestellungen, Produkte und Lieferdatum betreffend."
 
-#: src/controller/Group.hx:9705
+#: src/controller/Group.hx:9757
 msgid "12 eggs"
 msgstr "12 Eier"
 
-#: src/controller/Group.hx:9869
+#: src/controller/Group.hx:9921
 msgid "Chicken"
 msgstr "Bio-Hühnchen"
 
@@ -1676,7 +1676,7 @@ msgid "Place deleted"
 msgstr "Der Ort wurde gelöscht"
 
 #: src/controller/AmapAdmin.hx:322 src/controller/AmapAdmin.hx:1382
-#: src/controller/ContractAdmin.hx:2368
+#: src/controller/ContractAdmin.hx:2365
 msgid "Access forbidden"
 msgstr "Zutritt nicht erlaubt"
 
@@ -1810,7 +1810,7 @@ msgstr "Landwirt gelöscht"
 msgid "You don't have the authorization to manage contracts"
 msgstr "Ihnen fehlt die Genehmigung um dieses Angebot zu managen"
 
-#: src/controller/ContractAdmin.hx:2616
+#: src/controller/ContractAdmin.hx:2613
 msgid ""
 "Warning, at least one product does not have any category. <a href='/product/"
 "categorize/::contractid::'>Click here to add categories</a>"
@@ -1818,144 +1818,148 @@ msgstr ""
 "Vorsicht ! Mindestens ein Produkt hat keine Kategorie. <a href='/product/"
 "categorize/::contractid::'>Klicke hier, um Kategorien hinzuzufügen</a>"
 
-#: src/controller/ContractAdmin.hx:4105
+#: src/controller/ContractAdmin.hx:4102
 msgid "Copy products in: "
 msgstr "Produkte kopieren in: "
 
-#: src/controller/ContractAdmin.hx:4405
+#: src/controller/ContractAdmin.hx:4402
 msgid "Copy products from: "
 msgstr "Produkte kopieren von: "
 
-#: src/controller/ContractAdmin.hx:4521
+#: src/controller/ContractAdmin.hx:4518
 msgid "Delete existing products (all orders will be deleted!)"
 msgstr "Existieren Produkte löschen (alle Bestellungen werden gelöscht!)"
 
-#: src/controller/ContractAdmin.hx:5126
+#: src/controller/ContractAdmin.hx:5123
 msgid "Products copied from "
 msgstr "Produkte kopiert von: "
 
-#: src/controller/ContractAdmin.hx:5771
+#: src/controller/ContractAdmin.hx:5768
 msgid "Contract start "
 msgstr "Angebot Anfang "
 
-#: src/controller/ContractAdmin.hx:5945
+#: src/controller/ContractAdmin.hx:5942
 msgid "Contract end "
 msgstr "Angebot Ende "
 
-#: src/controller/ContractAdmin.hx:6235
+#: src/controller/ContractAdmin.hx:6232
 msgid "Delivery "
 msgstr "Lieferung "
 
-#: src/controller/ContractAdmin.hx:6543
+#: src/controller/ContractAdmin.hx:6540
 msgid "Opening of orders "
 msgstr "Bestellungen geöffnet "
 
-#: src/controller/ContractAdmin.hx:6789
+#: src/controller/ContractAdmin.hx:6786
 msgid "End of orders"
 msgstr "Ende der Bestellungen"
 
-#: src/controller/ContractAdmin.hx:7574 src/db/Contract.hx:7994
+#: src/controller/ContractAdmin.hx:7571 src/db/Contract.hx:8192
 msgid "Start date"
 msgstr "Startdatum"
 
-#: src/controller/ContractAdmin.hx:7707 src/db/Operation.hx:11839
-#: src/db/Contract.hx:8032 src/db/Distribution.hx:6819
+#: src/controller/ContractAdmin.hx:7704 src/db/Operation.hx:11839
+#: src/db/Contract.hx:8230 src/db/Distribution.hx:6819
 msgid "End date"
 msgstr "Enddatum"
 
-#: src/controller/ContractAdmin.hx:8054 src/controller/ContractAdmin.hx:10498
+#: src/controller/ContractAdmin.hx:8051 src/controller/ContractAdmin.hx:10495
 msgid "Global view of orders"
 msgstr "Bestellungen im Überblick"
 
-#: src/controller/ContractAdmin.hx:9135 src/controller/ContractAdmin.hx:11702
-#: src/controller/ContractAdmin.hx:13129
+#: src/controller/ContractAdmin.hx:9132 src/controller/ContractAdmin.hx:11699
+#: src/controller/ContractAdmin.hx:13126
 msgid "There is no delivery at this date"
 msgstr "An diesem Datum findet keine Lieferung statt"
 
-#: src/controller/ContractAdmin.hx:10153
+#: src/controller/ContractAdmin.hx:10150
 msgid "Delivery date"
 msgstr "Lieferdatum"
 
-#: src/controller/ContractAdmin.hx:10543
+#: src/controller/ContractAdmin.hx:10540
 msgid "This page allows you to have a global view on orders of all contracts"
 msgstr ""
 "Auf dieser Seite erhalten Sie eine Übersicht aller Bestellungen ihrer "
 "verschiedenen Angebote"
 
-#: src/controller/ContractAdmin.hx:10637
+#: src/controller/ContractAdmin.hx:10634
 msgid "<br/>Select a delivery date:"
 msgstr "<br/>Wählen Sie ein Lieferdatum:"
 
-#: src/controller/ContractAdmin.hx:14536
+#: src/controller/ContractAdmin.hx:14533
 msgid "There is no delivery during this period"
 msgstr "In diesem Zeitraum findet keine Lieferung statt"
 
-#: src/controller/ContractAdmin.hx:16601
+#: src/controller/ContractAdmin.hx:16598
 msgid "Orders from the ::fromDate:: to the ::toDate:: per supplier.csv"
 msgstr "Bestellungen von ::fromDate:: bis ::toDate:: pro Landwirt.csv"
 
-#: src/controller/ContractAdmin.hx:17231 src/controller/ContractAdmin.hx:18272
-#: src/controller/ContractAdmin.hx:19080 src/controller/ContractAdmin.hx:21873
-#: src/controller/ContractAdmin.hx:22710 src/controller/ContractAdmin.hx:23578
-#: src/controller/ContractAdmin.hx:24315 src/controller/ContractAdmin.hx:25576
-#: src/controller/ContractAdmin.hx:25867 src/controller/ContractAdmin.hx:27878
-#: src/controller/ContractAdmin.hx:28627
+#: src/controller/ContractAdmin.hx:17228 src/controller/ContractAdmin.hx:18269
+#: src/controller/ContractAdmin.hx:19077 src/controller/ContractAdmin.hx:21968
+#: src/controller/ContractAdmin.hx:22805 src/controller/ContractAdmin.hx:23673
+#: src/controller/ContractAdmin.hx:24410 src/controller/ContractAdmin.hx:25671
+#: src/controller/ContractAdmin.hx:25962 src/controller/ContractAdmin.hx:27973
+#: src/controller/ContractAdmin.hx:28722
 msgid "You do not have the authorization to manage this contract"
 msgstr "Ihnen fehlt die Genehmigung, um dieses Angebot zu managen"
 
-#: src/controller/ContractAdmin.hx:18868
+#: src/controller/ContractAdmin.hx:18865
 msgid "Prices are now up to date."
 msgstr "Die Preise wurden aktualisiert."
 
-#: src/controller/ContractAdmin.hx:19165
+#: src/controller/ContractAdmin.hx:19162
 msgid "Duplicate the contract '::contractName::'"
 msgstr "Angebot '::contractName::' kopieren"
 
-#: src/controller/ContractAdmin.hx:19326
+#: src/controller/ContractAdmin.hx:19323
 msgid "Name of the new contract"
 msgstr "Name des neuen Angebotes"
 
-#: src/controller/ContractAdmin.hx:19438
+#: src/controller/ContractAdmin.hx:19435
 msgid "Copy products"
 msgstr "Produkte kopieren"
 
-#: src/controller/ContractAdmin.hx:19516
+#: src/controller/ContractAdmin.hx:19513
 msgid "Copy deliveries"
 msgstr "Lieferungen kopieren"
 
-#: src/controller/ContractAdmin.hx:21538
+#: src/controller/ContractAdmin.hx:19585
+msgid "Test"
+msgstr ""
+
+#: src/controller/ContractAdmin.hx:21633
 msgid "The contract has been duplicated"
 msgstr "Das Angebot wurde kopiert"
 
-#: src/controller/ContractAdmin.hx:22297 src/controller/ContractAdmin.hx:23155
+#: src/controller/ContractAdmin.hx:22392 src/controller/ContractAdmin.hx:23250
 msgid "No delivery in this contract"
 msgstr "Keine Lieferung in diesem Angebot"
 
-#: src/controller/ContractAdmin.hx:28033
+#: src/controller/ContractAdmin.hx:28128
 msgid "The contract has been canceled"
 msgstr "Das Angebot wurde gelöscht"
 
-#: src/controller/ContractAdmin.hx:28801
+#: src/controller/ContractAdmin.hx:28896
 msgid "This delivery has been already validated"
 msgstr "Diese Lieferung wurde schon bestätigt"
 
-#: src/controller/ContractAdmin.hx:30088 src/controller/ContractAdmin.hx:31224
+#: src/controller/ContractAdmin.hx:30183 src/controller/ContractAdmin.hx:31319
 msgid "Unable to find user #::num::"
 msgstr "Der User wurde nicht gefunden #::num::"
 
-#: src/controller/ContractAdmin.hx:30835
+#: src/controller/ContractAdmin.hx:30930
 msgid "Unable to find product ::pid::"
 msgstr "Das Produkt wurde nicht gefunden ::pid::"
 
-#: src/controller/ContractAdmin.hx:31332
+#: src/controller/ContractAdmin.hx:31427
 msgid "::user:: is not part of this group"
 msgstr "::user:: ist nicht Mitglied dieser Gruppe"
 
-#: src/controller/ContractAdmin.hx:31426
+#: src/controller/ContractAdmin.hx:31521
 msgid "Both selected accounts must be different ones"
 msgstr "Es müssen zwei verschiedene Konten ausgewählt werden"
 
-#: src/controller/ContractAdmin.hx:32422 src/controller/ContractAdmin.hx:32517
+#: src/controller/ContractAdmin.hx:32517 src/controller/ContractAdmin.hx:32612
 msgid "The order has been updated"
 msgstr "Die Bestellung wurde aktualisiert"
 
@@ -2046,7 +2050,7 @@ msgstr "Sprache"
 msgid "Registration date"
 msgstr "Anmeldedatum"
 
-#: src/db/User.hx:15985 src/db/Contract.hx:8181 src/db/Amap.hx:9283
+#: src/db/User.hx:15985 src/db/Contract.hx:8379 src/db/Amap.hx:9283
 msgid "Options"
 msgstr "Optionen"
 
@@ -2068,7 +2072,7 @@ msgstr "Produkt ID"
 msgid "Price"
 msgstr "Preis"
 
-#: src/db/Product.hx:4249 src/db/Contract.hx:8071 src/db/Vendor.hx:938
+#: src/db/Product.hx:4249 src/db/Contract.hx:8269 src/db/Vendor.hx:938
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -2102,35 +2106,39 @@ msgstr "Biolandwirtschaft"
 msgid "VAT Rate"
 msgstr "Mehrwertsteuersatz"
 
-#: src/db/Contract.hx:7342
+#: src/db/Contract.hx:7540
 msgid "from"
 msgstr "von"
 
-#: src/db/Contract.hx:7407
+#: src/db/Contract.hx:7605
 msgid " to"
 msgstr " bis"
 
-#: src/db/Contract.hx:7952
+#: src/db/Contract.hx:8150
 msgid "Contract name"
 msgstr "Name des Angebots"
 
-#: src/db/Contract.hx:8115
+#: src/db/Contract.hx:8313
 msgid "Number of required distributors (0 to 4)"
 msgstr "Anzahl der erforderlichen Lieferanten (0-4)"
 
-#: src/db/Contract.hx:8222
+#: src/db/Contract.hx:8420
 msgid "Fees percentage"
 msgstr "Gebühr (%)"
 
-#: src/db/Contract.hx:8270
+#: src/db/Contract.hx:8468
 msgid "Fees label"
 msgstr "Gebühren Label"
 
-#: src/db/Contract.hx:8311 lang/master/tpl/group/view.mtt:3163
+#: src/db/Contract.hx:8509 lang/master/tpl/group/view.mtt:3163
 msgid "Contact"
 msgstr "Kontakt"
 
-#: src/db/Contract.hx:8348 lang/master/tpl/contractadmin/view.mtt:711
+#: src/db/Contract.hx:8544
+msgid "Test Contract (true/false)"
+msgstr "Test"
+
+#: src/db/Contract.hx:8597 lang/master/tpl/contractadmin/view.mtt:711
 msgid "Farmer"
 msgstr "Landwirt"
 
@@ -2381,7 +2389,7 @@ msgstr ""
 #: lang/master/tpl/contract/view.mtt:2925
 #: lang/master/tpl/contract/view.mtt:3263
 #: lang/master/tpl/contract/orderAndPay.mtt:88
-#: lang/master/tpl/contract/order.mtt:88 lang/master/tpl/macros.mtt:4814
+#: lang/master/tpl/contract/order.mtt:88 lang/master/tpl/macros.mtt:4815
 msgid "Order"
 msgstr "Bestellung"
 
@@ -2692,8 +2700,8 @@ msgstr "Dieses Mitglied hat noch kein Passwort erstellt"
 #: lang/master/tpl/contractadmin/orders.mtt:3015
 #: lang/master/tpl/contractadmin/deliveries.mtt:837
 #: lang/master/tpl/contractadmin/products.mtt:3254
-#: lang/master/tpl/contractadmin/default.mtt:3182
-#: lang/master/tpl/contractadmin/default.mtt:3795
+#: lang/master/tpl/contractadmin/default.mtt:3250
+#: lang/master/tpl/contractadmin/default.mtt:3863
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -3016,8 +3024,8 @@ msgstr "Kredit"
 #: lang/master/tpl/member/payments.mtt:1157
 #: lang/master/tpl/contractadmin/deliveries.mtt:1643
 #: lang/master/tpl/contractadmin/products.mtt:3459
-#: lang/master/tpl/contractadmin/default.mtt:1569
-#: lang/master/tpl/contractadmin/default.mtt:3874
+#: lang/master/tpl/contractadmin/default.mtt:1638
+#: lang/master/tpl/contractadmin/default.mtt:3942
 msgid "Del."
 msgstr "Löschen."
 
@@ -3185,7 +3193,7 @@ msgid "Contact in charge of the contract"
 msgstr "Kontakt :"
 
 #: lang/master/tpl/distribution/list.mtt:702
-#: lang/master/tpl/contractadmin/default.mtt:2826
+#: lang/master/tpl/contractadmin/default.mtt:2894
 msgid "Farmers"
 msgstr "Landwirte"
 
@@ -3462,7 +3470,7 @@ msgid "Add a group"
 msgstr "Eine Gruppe hinzufügen"
 
 #: lang/master/tpl/place/view.mtt:594 lang/master/tpl/messages/message.mtt:1212
-#: lang/master/tpl/vendor/addimage.mtt:536 lang/master/tpl/macros.mtt:6409
+#: lang/master/tpl/vendor/addimage.mtt:536 lang/master/tpl/macros.mtt:6410
 msgid "Back"
 msgstr "Zurück"
 
@@ -3499,53 +3507,60 @@ msgstr "Bezahlt"
 msgid "Total ordered"
 msgstr "Gesamte Bestellungen"
 
-#: lang/master/tpl/validate/user.mtt:2479 lang/master/tpl/macros.mtt:4994
-#: lang/master/tpl/macros.mtt:5102
+#: lang/master/tpl/validate/user.mtt:2520 lang/master/tpl/macros.mtt:4995
+#: lang/master/tpl/macros.mtt:5103
 msgid "Payment"
 msgstr "Zahlungsart"
 
-#: lang/master/tpl/validate/user.mtt:3072
+#: lang/master/tpl/validate/user.mtt:3113
 msgid "This payment was received"
 msgstr "Die Zahlung wurde erhalten"
 
-#: lang/master/tpl/validate/user.mtt:3484
+#: lang/master/tpl/validate/user.mtt:3176
+#: lang/master/tpl/validate/user.mtt:6235
+#: lang/master/tpl/membership/default.mtt:448
+#: lang/master/tpl/contractadmin/deliveries.mtt:897
+msgid "Delete"
+msgstr "Löschen"
+
+#: lang/master/tpl/validate/user.mtt:3534
 msgid "Total paid"
 msgstr "Gesamt bezahlt"
 
-#: lang/master/tpl/validate/user.mtt:3649
+#: lang/master/tpl/validate/user.mtt:3699
 msgid "This order has been made when payments were disabled"
 msgstr ""
 
-#: lang/master/tpl/validate/user.mtt:4115
+#: lang/master/tpl/validate/user.mtt:4165
 msgid "Paid too much, credit of ::amount::"
 msgstr ""
 
-#: lang/master/tpl/validate/user.mtt:4252
+#: lang/master/tpl/validate/user.mtt:4302
 msgid "Missing"
 msgstr "Vermisst"
 
-#: lang/master/tpl/validate/user.mtt:4359
+#: lang/master/tpl/validate/user.mtt:4409
 msgid "Everything is allright !"
 msgstr ""
 
-#: lang/master/tpl/validate/user.mtt:4488
-#: lang/master/tpl/validate/user.mtt:6688
+#: lang/master/tpl/validate/user.mtt:4538
+#: lang/master/tpl/validate/user.mtt:6747
 msgid "Key-in a refund"
 msgstr "Rückerstattung eingeben"
 
-#: lang/master/tpl/validate/user.mtt:4588
-#: lang/master/tpl/validate/user.mtt:6788
+#: lang/master/tpl/validate/user.mtt:4638
+#: lang/master/tpl/validate/user.mtt:6847
 msgid "Key-in a payment"
 msgstr "Bezahlung angeben"
 
-#: lang/master/tpl/validate/user.mtt:4886
-#: lang/master/tpl/validate/user.mtt:5371
-#: lang/master/tpl/validate/user.mtt:7054
-#: lang/master/tpl/validate/user.mtt:7490
+#: lang/master/tpl/validate/user.mtt:4936
+#: lang/master/tpl/validate/user.mtt:5421
+#: lang/master/tpl/validate/user.mtt:7113
+#: lang/master/tpl/validate/user.mtt:7549
 msgid "Validate this order"
 msgstr "Bestellung bestätigen"
 
-#: lang/master/tpl/validate/user.mtt:5020
+#: lang/master/tpl/validate/user.mtt:5070
 msgid ""
 "You cannot validate this order because the amount paid<br/> by the member "
 "does not correspond to the total amount of his order!"
@@ -3553,15 +3568,15 @@ msgstr ""
 "Diese Bestellung kann nicht bestätigt werden. Der bezahlte Betrag<br/> "
 "entspricht nicht dem zu zahlenden Gesamtbetrag dieser Bestellung!"
 
-#: lang/master/tpl/validate/user.mtt:5759
+#: lang/master/tpl/validate/user.mtt:5809
 msgid "Details"
 msgstr "Details"
 
-#: lang/master/tpl/validate/user.mtt:6117
+#: lang/master/tpl/validate/user.mtt:6167
 msgid "This payment has been received"
 msgstr "Die Zahlung wurde erhalten"
 
-#: lang/master/tpl/validate/user.mtt:7189
+#: lang/master/tpl/validate/user.mtt:7248
 msgid ""
 "You cannot validate this order<br/>because the balance of the member is "
 "negative"
@@ -3569,11 +3584,11 @@ msgstr ""
 "Diese Bestellung<br/> kann nicht bestätigt werden. Das Mitglied ist im "
 "Minussaldo"
 
-#: lang/master/tpl/validate/user.mtt:7766
+#: lang/master/tpl/validate/user.mtt:7825
 msgid "Back to the delivery validation"
 msgstr "Zurück zur Bestätigung"
 
-#: lang/master/tpl/validate/user.mtt:7908
+#: lang/master/tpl/validate/user.mtt:7967
 msgid "Payment history of this member"
 msgstr "Übersicht der Zahlungen des Mitglieds"
 
@@ -3816,11 +3831,6 @@ msgstr "Mitgliedsbeitrag vom"
 #: lang/master/tpl/membership/default.mtt:225
 msgid "Subscription payment date"
 msgstr "Datum des Mitgliedsbeitrages"
-
-#: lang/master/tpl/membership/default.mtt:448
-#: lang/master/tpl/contractadmin/deliveries.mtt:897
-msgid "Delete"
-msgstr "Löschen"
 
 #: lang/master/tpl/membership/default.mtt:636
 msgid "Key-in a subscription payment"
@@ -4152,7 +4162,7 @@ msgid "<b>::totalAdh::</b> member(s) in this distribution."
 msgstr "<b>::totalAdh::</b> Mitglied(er) dieser Lieferung."
 
 #: lang/master/tpl/contractadmin/calendar.mtt:222
-#: lang/master/tpl/contractadmin/default.mtt:2098
+#: lang/master/tpl/contractadmin/default.mtt:2166
 msgid "Calendar"
 msgstr "Kalender"
 
@@ -4387,7 +4397,7 @@ msgid "You need to select at least one product to perform this action"
 msgstr "Bitte wählen Sie mindestens ein Produkt aus"
 
 #: lang/master/tpl/contractadmin/products.mtt:3420
-#: lang/master/tpl/contractadmin/default.mtt:3344
+#: lang/master/tpl/contractadmin/default.mtt:3412
 msgid "Picture"
 msgstr "Bild"
 
@@ -4445,7 +4455,7 @@ msgid "You need to validate these distributions which took place recently"
 msgstr "Die gerade stadtgefundenen Lieferungen müssen bestätigt werden"
 
 #: lang/master/tpl/contractadmin/default.mtt:552
-#: lang/master/tpl/contractadmin/default.mtt:1953
+#: lang/master/tpl/contractadmin/default.mtt:2021
 msgid "Old contracts"
 msgstr "Alte Angebote"
 
@@ -4457,35 +4467,35 @@ msgstr "von"
 msgid "To"
 msgstr "bis"
 
-#: lang/master/tpl/contractadmin/default.mtt:1459
+#: lang/master/tpl/contractadmin/default.mtt:1528
 msgid "Manage"
 msgstr "Verwalten"
 
-#: lang/master/tpl/contractadmin/default.mtt:1783
+#: lang/master/tpl/contractadmin/default.mtt:1851
 msgid "New contract"
 msgstr "Neues Angebot"
 
-#: lang/master/tpl/contractadmin/default.mtt:2336
+#: lang/master/tpl/contractadmin/default.mtt:2404
 msgid "Global orders view"
 msgstr "Bestellung im Überblick"
 
-#: lang/master/tpl/contractadmin/default.mtt:2564
+#: lang/master/tpl/contractadmin/default.mtt:2632
 msgid "Same day"
 msgstr "Gleicher Tag"
 
-#: lang/master/tpl/contractadmin/default.mtt:2688
+#: lang/master/tpl/contractadmin/default.mtt:2756
 msgid "Timeframe"
 msgstr "Zeitrahmen"
 
-#: lang/master/tpl/contractadmin/default.mtt:3526
+#: lang/master/tpl/contractadmin/default.mtt:3594
 msgid "New farmer"
 msgstr "Neuer Landwirt"
 
-#: lang/master/tpl/contractadmin/default.mtt:3651
+#: lang/master/tpl/contractadmin/default.mtt:3719
 msgid "Delivery places"
 msgstr "Lieferorte"
 
-#: lang/master/tpl/contractadmin/default.mtt:4016
+#: lang/master/tpl/contractadmin/default.mtt:4084
 msgid "New delivery place"
 msgstr "Neuer Lieferort"
 
@@ -4657,43 +4667,43 @@ msgstr "Vorher"
 msgid "Next"
 msgstr "Weiter"
 
-#: lang/master/tpl/macros.mtt:2402
+#: lang/master/tpl/macros.mtt:2403
 msgid "Excel/CSV Export"
 msgstr "Excel/CSV Export"
 
-#: lang/master/tpl/macros.mtt:3508
+#: lang/master/tpl/macros.mtt:3509
 msgid "THIS MORNING"
 msgstr "HEUTE MORGEN"
 
-#: lang/master/tpl/macros.mtt:3603
+#: lang/master/tpl/macros.mtt:3604
 msgid "THIS<br/>AFTERNOON"
 msgstr "HEUTE<br/>NACHMITTAG"
 
-#: lang/master/tpl/macros.mtt:3656
+#: lang/master/tpl/macros.mtt:3657
 msgid "THIS EVENING"
 msgstr "HEUTE ABEND"
 
-#: lang/master/tpl/macros.mtt:4382
+#: lang/master/tpl/macros.mtt:4383
 msgid "No contact"
 msgstr "Kein Angebot"
 
-#: lang/master/tpl/macros.mtt:4911
+#: lang/master/tpl/macros.mtt:4912
 msgid "CSA&nbsp;contract"
 msgstr "Solawi&nbsp;Angebot"
 
-#: lang/master/tpl/macros.mtt:5211
+#: lang/master/tpl/macros.mtt:5212
 msgid "Subscription"
 msgstr "Anmeldung"
 
-#: lang/master/tpl/macros.mtt:5601
+#: lang/master/tpl/macros.mtt:5602
 msgid "Check to be given at the collection of products"
 msgstr "Vor dem Hinzufügen zum Produktkatalog, noch einmal überprüfen"
 
-#: lang/master/tpl/macros.mtt:5736
+#: lang/master/tpl/macros.mtt:5737
 msgid "Cash to be given at the collection of products"
 msgstr "Barzahlungen bei Abholung der Produkte"
 
-#: lang/master/tpl/macros.mtt:5874
+#: lang/master/tpl/macros.mtt:5875
 msgid "This transfer must be validated by a coordinator"
 msgstr "Die Überweisung muss von einem Koordinator bestätigt werden"
 
