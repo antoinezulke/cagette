@@ -1,6 +1,6 @@
 ::use 'design.mtt'::
 
-<div class="col-md-6">
+<div class="col-md-12">
 	<div class="article">
 		<h2>::_("Subscription payment of"):: ::member.getCoupleName()::</h2>
 		<table class="table table-bordered">
@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-12">
 	<div class="article">
 		<h2>::_("Key-in a subscription payment")::</h2>
 		::raw form::
