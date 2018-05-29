@@ -228,7 +228,7 @@ class Contract extends Controller
 	@tpl("contract/insertChoose.mtt")
 	function doInsertChoose() {
 		//checkToken();
-		
+		view.category = 'contractadmin';
 	}
 	
 	/**
@@ -236,6 +236,9 @@ class Contract extends Controller
 	 */
 	@tpl("form.mtt")
 	function doInsert(?type:Int) {
+
+		view.category = 'contractadmin';
+
 		if (!app.user.canManageAllContracts()) throw Error('/', t._("Forbidden action"));
 		if (type == null) throw Redirect('/contract/insertChoose');
 		
