@@ -24,10 +24,10 @@
 							::set e = getDate(d.end)::
 						::end::
 						
-						::da.dow:: ::da.d:: ::da.m::   de ::da.h+":"+da.i:: 
+						::da.dow:: ::da.d:: ::da.m::   ::_("from"):: ::da.h+":"+da.i:: 
 						
 						::if d.end!=null::
-							à ::e.h+":"+e.i::
+							::_(" to "):: ::e.h+":"+e.i::
 						::end::
 					</td>
 					<td>
@@ -60,8 +60,7 @@
 						::case::  ::_("Every 2 weeks")::
 						::case::  ::_("Every 3 weeks")::
 						::end::
-						</b>
-						: Du ::hDate(c.startDate):: au ::hDate(c.endDate)::
+						</b>: ::_("from"):: ::hDate(c.startDate):: ::_(" to "):: ::hDate(c.endDate)::
 					</td>
 					<td>
 						$$delete(::_("Del.")::,::"/distribution/deleteCycle/"+c.id::)
