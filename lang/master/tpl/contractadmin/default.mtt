@@ -42,7 +42,7 @@
 					</td>
 					<td>::c._vendor.name::</td>
 					<td>
-						<b>::c.name::</b>
+						<b>::c.name::</b>f
 					</td>
 					<td style="font-size:0.9em;">
 						::_("From"):: ::hDate(c.startDate)::<br/>
@@ -109,6 +109,8 @@
 							<a href="/vendor/addImage/::v.id::" class="btn btn-default btn-sm"> <span class="glyphicon glyphicon-picture"></span> ::_("Picture")::</a>
 							::if user.isAmapManager():: $$delete(,/vendor/delete/::v.id::?token=::token::) ::end::
 						</div>
+					</td>
+					<td> ::if v.isConfirmed == 1:: ::_("Unconfirmed"):: ::end:: 
 					</td>
 				</tr>
 			::end::

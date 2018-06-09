@@ -43,6 +43,7 @@ class Vendor extends Controller
 		
 		var form = sugoi.form.Form.fromSpod(vendor);
 		form.removeElement( form.getElement("amapId") );
+		form.removeElement( form.getElement("isConfirmed") );
 		
 		if (form.isValid()) {
 			form.toSpod(vendor); //update model
@@ -120,5 +121,13 @@ class Vendor extends Controller
 			}
 		}
 	}	
-	
+
+	@tpl('vendor/confirmed.mtt')
+	public function doConfirm(c: String) {
+		var vid = db.Confirmation.confirmForHash(c);
+		var vendor = db.Vendor.forId(vid);
+		vendor.isConfirmed = 1;
+		vendor.update();
+	}
+
 }

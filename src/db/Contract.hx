@@ -258,7 +258,9 @@ class Contract extends Object
 		var vendors = Vendor.manager.search($amap == App.current.user.amap, false);
 		var out = [];
 		for (v in vendors) {
-			out.push({label:v.name, value:v.id });
+			if (v.isConfirmed == 1) {
+				out.push({label:v.name, value:v.id });
+			}
 		}
 		return out;
 	}

@@ -247,7 +247,7 @@ class Contract extends Controller
 		var c = new db.Contract();
 		
 		var form = Form.fromSpod(c);
-		form.removeElement( form.getElement("amapId") );
+		form.removeElement(form.getElement("amapId") );
 		form.removeElement(form.getElement("type"));
 		form.getElement("userId").required = true;
 			

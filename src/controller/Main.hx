@@ -51,7 +51,7 @@ class Main extends Controller {
 		});
 		
 		view.distribs = out;
-		
+	
 		//event for additionnal blocks on home page
 		var e = Blocks([], "home");
 		app.event(e);
