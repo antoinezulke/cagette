@@ -112,11 +112,17 @@ class Validate extends controller.Controller
 		f.addElement(new sugoi.form.elements.StringInput("name", t._("Label"), t._("Additional payment"), true));
 		f.addElement(new sugoi.form.elements.FloatInput("amount", t._("Amount"), null, true));
 		f.addElement(new sugoi.form.elements.DatePicker("date", t._("Date"), Date.now(), true));
+		/*
 		var data = [
 			{label:t._("Cash"),value:"cash"},
 			{label:t._("Check"),value:"check"},
 			{label:t._("Transfer"),value:"transfer"}		
 		];
+		*/
+		var data = [];
+		for ( p in db.Operation.getPaymentTypes(app.user.amap)) data.push({label:App.t._(p.type),value:p.type});
+		f.addElement(new sugoi.form.elements.StringSelect("Mtype", t._("Means of payment"), data, null, true));
+
 		f.addElement(new sugoi.form.elements.StringSelect("Mtype", t._("Payment mean"), data, null, true));
 		
 		var b = db.Basket.get(user, place, date);
