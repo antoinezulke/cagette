@@ -189,7 +189,7 @@ class App extends sugoi.BaseApp {
 		 out.set("StockManagement", "Warenwirtschaft");
 		// out.set("contact", "Responsable");
 		 //out.set("PercentageOnOrders", "Ajouter des frais au pourcentage de la commande");
-		 out.set("PercentageOnOrders", "Kosten per Procentangabe hinzufügen");
+		 out.set("PercentageOnOrders", "Kosten als Procentangabe hinzufügen");
 		// out.set("percentageValue", "Pourcentage des frais");
 		// out.set("percentageName", "Libellé pour ces frais");
 		// out.set("fees", "frais");
@@ -227,11 +227,11 @@ class App extends sugoi.BaseApp {
 		
 		// out.set("regOption", "Inscription de nouveaux adhérents");
 		 //out.set("Closed", "Fermé : Le coordinateur ajoute les nouveaux adhérents");
-		 out.set("Closed", "Geschloßen : der Kood.fügt die neuen Mitglieder hinzu");
+		 out.set("Closed", "Geschloßen: Der Organisator fügt neue Mitglieder hinzu");
 		 //out.set("WaitingList", "Liste d'attente");
 		 out.set("WaitingList", "Warteliste");
 		 //out.set("Open", "Ouvert : tout le monde peut s'inscrire");
-		 out.set("Open", "Geöffnet : jeder kann sich eintragen");
+		 out.set("Open", "Geöffnet : Jeder der sich einträgt wird automatisch der Gruppe hinzugefügt");
 		 //out.set("Full", "Complet : Le groupe n'accepte plus de nouveaux adhérents");
 		 out.set("Full", "Komplett : Die Gruppe nimmt zurzeit keine neuen Mitglieder auf");
 		 

@@ -551,7 +551,7 @@ class Member extends Controller
 				
 				//check nom+prenom
 				if (user[0] == null || user[1] == null) {
-					throw Error("/member/import", t._("You must fill the name and the firstname of the person. This line is incomplete: ") + user);
+					throw Error("/member/import", t._("You must fill the name and the firstname of the person. This line is incomplete:") + user);
 				}
 				if (user[2] == null) {
 					throw Error("/member/import", t._("Each person must have an e-mail to be able to log in. ::user0:: ::user1:: don't have one. ", {user0:user[0], user1:user[1]}) +user);
