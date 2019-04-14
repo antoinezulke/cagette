@@ -1,4 +1,4 @@
-package lemonway;
+package mangopay;
  
 class ReturnUrl extends controller.Controller
 {

@@ -1,4 +1,4 @@
-package lemonway;
+package mangopay;
  
 class CancelUrl extends controller.Controller
 {
